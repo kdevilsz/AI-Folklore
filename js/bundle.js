@@ -8,7 +8,23 @@ async function renderHome(container) {
         `<span class="dropcap">L</span>oreBridge preserves and illuminates the timeless folktales, proverbs, and traditional wisdom of Assam. Step into a world where rivers sing and spirits whisper. <a href="#about" style="color: var(--primary); text-decoration: underline; font-weight: 500;">Read our story &rarr;</a>`;
 
     container.innerHTML = `
-        <div style="text-align: center; padding: 4rem 0;">
+        <div style="text-align: center; padding: 3.5rem 0 2rem 0;">
+            <!-- Authentic Assamese Cultural Motif -->
+            <div class="hero-motif-container" style="margin-bottom: 1.2rem; display: flex; justify-content: center;">
+                <svg class="hero-assamese-motif" viewBox="0 0 260 36" width="260" height="36" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M130 3 L145 18 L130 33 L115 18 Z" fill="var(--primary)" fill-opacity="0.18" stroke="var(--primary)" stroke-width="1.6"/>
+                    <circle cx="130" cy="18" r="3.5" fill="var(--primary)"/>
+                    <path d="M130 0 L130 3 M130 33 L130 36" stroke="var(--primary)" stroke-width="1.5"/>
+                    <path d="M102 10 L112 18 L102 26 L92 18 Z" fill="var(--primary)" fill-opacity="0.1" stroke="var(--primary)" stroke-width="1.2"/>
+                    <path d="M158 10 L168 18 L158 26 L148 18 Z" fill="var(--primary)" fill-opacity="0.1" stroke="var(--primary)" stroke-width="1.2"/>
+                    <path d="M78 13 L85 18 L78 23 L71 18 Z" fill="var(--primary)" fill-opacity="0.08" stroke="var(--primary)" stroke-width="1"/>
+                    <path d="M182 13 L189 18 L182 23 L175 18 Z" fill="var(--primary)" fill-opacity="0.08" stroke="var(--primary)" stroke-width="1"/>
+                    <path d="M10 18 L64 18 M196 18 L250 18" stroke="var(--primary)" stroke-width="1.2" stroke-linecap="round" opacity="0.45"/>
+                    <circle cx="10" cy="18" r="2.5" fill="var(--primary)" opacity="0.7"/>
+                    <circle cx="250" cy="18" r="2.5" fill="var(--primary)" opacity="0.7"/>
+                </svg>
+            </div>
+
             <h1 class="page-title">${title}</h1>
             <p class="page-subtitle">${subtitle}</p>
             
@@ -18,7 +34,12 @@ async function renderHome(container) {
                 </div>
             </div>
 
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 900px; margin: 3rem auto; text-align: left; padding: 0 1rem;">
+            <!-- Traditional Assamese Section Separator -->
+            <div class="assamese-separator">
+                <span class="assamese-separator-icon">❖</span>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 900px; margin: 2rem auto 3rem auto; text-align: left; padding: 0 1rem;">
                 <div class="card" style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
                         <h3 style="font-size: 1.4rem; margin-bottom: 1rem; font-family: 'Playfair Display', serif; color: var(--primary);">
