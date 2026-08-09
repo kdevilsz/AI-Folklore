@@ -469,7 +469,8 @@ window.loadRelatedStories = async function(storyId) {
     `;
 
     try {
-        const res = await fetch(`/api/related/${storyId}`);
+        const endpoint = window.getApiUrl ? window.getApiUrl(`/api/related/${storyId}`) : `/api/related/${storyId}`;
+        const res = await fetch(endpoint);
         if (!res.ok) throw new Error();
         const related = await res.json();
 

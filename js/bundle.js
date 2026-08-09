@@ -598,7 +598,8 @@ async function renderGraph(container) {
     `;
 
     try {
-        const res = await fetch('http://127.0.0.1:8000/api/graph');
+        const endpoint = window.getApiUrl ? window.getApiUrl('/api/graph') : '/api/graph';
+        const res = await fetch(endpoint);
         if (!res.ok) throw new Error("API Error");
         const data = await res.json();
         
@@ -932,7 +933,8 @@ async function renderChat(container) {
                 apiQuery += " (Please respond primarily in the Assamese language and script (অসমীয়া). Retell the story, explanation, roots, and moral in Assamese. Keep the section labels EXACTLY as '**Title**', '**Roots**', and '**Moral**' in English so they can be parsed, but write all their values and the rest of the response text in Assamese.)";
             }
 
-            const res = await fetch('/api/chat', {
+            const endpoint = window.getApiUrl ? window.getApiUrl('/api/chat') : '/api/chat';
+            const res = await fetch(endpoint, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({query: apiQuery, history: chatHistory})
@@ -1270,7 +1272,7 @@ async function renderAdmin(container) {
         document.head.appendChild(style);
     }
 
-    const API_URL = 'http://127.0.0.1:8000/api/admin';
+    const API_URL = window.getApiUrl ? window.getApiUrl('/api/admin') : 'http://127.0.0.1:8000/api/admin';
 
     async function loadPendingSubmissions() {
         let subs = [];
@@ -1735,7 +1737,8 @@ async function renderQuality(container) {
     `;
 
     try {
-        const res = await fetch('http://127.0.0.1:8000/api/admin/quality');
+        const endpoint = window.getApiUrl ? window.getApiUrl('/api/admin/quality') : 'http://127.0.0.1:8000/api/admin/quality';
+        const res = await fetch(endpoint);
         if (!res.ok) throw new Error("API Error");
         const data = await res.json();
         
@@ -1839,7 +1842,8 @@ async function renderEval(container) {
     `;
 
     try {
-        const res = await fetch('http://127.0.0.1:8000/api/admin/eval');
+        const endpoint = window.getApiUrl ? window.getApiUrl('/api/admin/eval') : 'http://127.0.0.1:8000/api/admin/eval';
+        const res = await fetch(endpoint);
         if (!res.ok) throw new Error("API Error");
         const data = await res.json();
         
@@ -1983,7 +1987,8 @@ function renderIngest(container) {
         };
 
         try {
-            const res = await fetch('http://127.0.0.1:8000/api/admin/ingest', {
+            const endpoint = window.getApiUrl ? window.getApiUrl('/api/admin/ingest') : 'http://127.0.0.1:8000/api/admin/ingest';
+            const res = await fetch(endpoint, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
@@ -3136,7 +3141,8 @@ window.loadRelatedStories = async function(storyId) {
     `;
 
     try {
-        const res = await fetch(`/api/related/${storyId}`);
+        const endpoint = window.getApiUrl ? window.getApiUrl(`/api/related/${storyId}`) : `/api/related/${storyId}`;
+        const res = await fetch(endpoint);
         if (!res.ok) throw new Error();
         const related = await res.json();
 

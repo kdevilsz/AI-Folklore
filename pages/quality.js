@@ -10,7 +10,8 @@ export async function renderQuality(container) {
     `;
 
     try {
-        const res = await fetch('http://127.0.0.1:8000/api/admin/quality');
+        const endpoint = window.getApiUrl ? window.getApiUrl('/api/admin/quality') : 'http://127.0.0.1:8000/api/admin/quality';
+        const res = await fetch(endpoint);
         if (!res.ok) throw new Error("API Error");
         const data = await res.json();
         

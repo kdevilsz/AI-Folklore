@@ -251,7 +251,8 @@ export async function renderChat(container) {
                 apiQuery += " (Please respond primarily in the Assamese language and script (অসমীয়া). Retell the story, explanation, roots, and moral in Assamese. Keep the section labels EXACTLY as '**Title**', '**Roots**', and '**Moral**' in English so they can be parsed, but write all their values and the rest of the response text in Assamese.)";
             }
 
-            const res = await fetch('/api/chat', {
+            const endpoint = window.getApiUrl ? window.getApiUrl('/api/chat') : '/api/chat';
+            const res = await fetch(endpoint, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({query: apiQuery, history: chatHistory})

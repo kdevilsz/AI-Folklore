@@ -10,7 +10,8 @@ export async function renderEval(container) {
     `;
 
     try {
-        const res = await fetch('http://127.0.0.1:8000/api/admin/eval');
+        const endpoint = window.getApiUrl ? window.getApiUrl('/api/admin/eval') : 'http://127.0.0.1:8000/api/admin/eval';
+        const res = await fetch(endpoint);
         if (!res.ok) throw new Error("API Error");
         const data = await res.json();
         

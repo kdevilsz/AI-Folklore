@@ -54,7 +54,8 @@ export function renderIngest(container) {
         };
 
         try {
-            const res = await fetch('http://127.0.0.1:8000/api/admin/ingest', {
+            const endpoint = window.getApiUrl ? window.getApiUrl('/api/admin/ingest') : 'http://127.0.0.1:8000/api/admin/ingest';
+            const res = await fetch(endpoint, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)

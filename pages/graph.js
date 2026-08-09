@@ -11,7 +11,8 @@ export async function renderGraph(container) {
     `;
 
     try {
-        const res = await fetch('http://127.0.0.1:8000/api/graph');
+        const endpoint = window.getApiUrl ? window.getApiUrl('/api/graph') : '/api/graph';
+        const res = await fetch(endpoint);
         if (!res.ok) throw new Error("API Error");
         const data = await res.json();
         

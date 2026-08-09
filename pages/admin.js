@@ -36,7 +36,7 @@ export async function renderAdmin(container) {
         document.head.appendChild(style);
     }
 
-    const API_URL = 'http://127.0.0.1:8000/api/admin';
+    const API_URL = window.getApiUrl ? window.getApiUrl('/api/admin') : 'http://127.0.0.1:8000/api/admin';
 
     async function loadPendingSubmissions() {
         let subs = [];
