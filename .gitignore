@@ -1,6 +1,8 @@
 .env
 .env.*
 !.env.example
+js/config.js
+!js/config.example.js
 __pycache__/
 *.pyc
 *.pyo

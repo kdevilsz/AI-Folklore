@@ -17,6 +17,7 @@ files_ordered = [
     os.path.join(pages_dir, 'eval.js'),
     os.path.join(pages_dir, 'ingest.js'),
     os.path.join(pages_dir, 'share.js'),
+    os.path.join(js_dir, 'auth.js'),
     os.path.join(js_dir, 'data.js'),
     os.path.join(js_dir, 'app.js'),
 ]
