@@ -1,0 +1,26 @@
+[
+  {
+    "id": "test_1",
+    "question": "Who wrote Burhi Aair Sadhu?",
+    "expected_answer": "Lakshminath Bezbaroa",
+    "expected_sources": ["Burhi Aair Sadhu"]
+  },
+  {
+    "id": "test_2",
+    "question": "What is the moral of the story about the frog and the princess?",
+    "expected_answer": "Promises must be kept, and true beauty lies within.",
+    "expected_sources": ["ft_002"]
+  },
+  {
+    "id": "test_3",
+    "question": "Tell me a proverb about hypocritical boasting.",
+    "expected_answer": "It should mention 'Kukur' (dog) finding a bone or someone pretending to be great.",
+    "expected_sources": ["pr_003"]
+  },
+  {
+    "id": "test_4",
+    "question": "How did the cunning fox deceive the crocodile?",
+    "expected_answer": "The fox tricked the crocodile out of his share of crops by confusing him about which part of the crop to take.",
+    "expected_sources": ["ft_005"]
+  }
+]

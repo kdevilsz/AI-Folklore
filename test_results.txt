@@ -1,0 +1,55 @@
+--- Query: Tell me the story of Tejimola ---
+Answer:
+**Title:** Tejimola (তেজীমলা)
+**Roots:** Burhi Aair Sadhu (বুঢ়ী আইৰ সাধু)
+**Moral:** Truth cannot be buried forever; good ultimately prevails over evil. (সত্যক চিৰদিনৰ বাবে পুতি ৰাখিব নোৱাৰি; শেষত ভালৰ জয় হয়।)
+
+The tale of Tejimola (তেজীমলা) is a poignant Assamese folktale from the collection of Burhi Aair Sadhu (বুঢ়ী আইৰ সাধু). It tells the story of a young, innocent girl named Tejimola who was left in the care of her wicked stepmother when her father embarked on a long trading voyage.
+
+During her father's absence, the cruel stepmother subjected Tejimola to immense suffering. One day, while Tejimola was husking rice, her stepmother brutally crushed her under a pestle (Dheki) and buried her remains in the garden.
+
+However, truth, like a seed, cannot be suppressed forever. From the very spot where Tejimola was buried, magical plants began to sprout—a bottle gourd, a pomelo, and a lotus. Each of these plants would sing a sorrowful song when approached, hinting at the tragedy that had occurred.
+
+Upon his return, Tejimola's father, unaware of the horror, went to the garden. As he attempted to pluck a lotus, the flower miraculously transformed back into his beloved daughter, Tejimola. She then revealed the full extent of her stepmother's cruelty, bringing the hidden truth to light and ensuring that good ultimately prevailed over evil.
+Sources: ['Tejimola (Burhi Aair Sadhu)', 'Tula aru Teja (Burhi Aair Sadhu)', "The Kite's Daughter (Burhi Aair Sadhu)", 'Panesoi (Assamese Mythology)', 'Phulkonwar and Monikonwar (Assamese Ballads (Geet))', 'Kukuri Kona (Burhi Aair Sadhu)', 'Champawati (Burhi Aair Sadhu)', 'Bandor Aru Xiyal (Burhi Aair Sadhu)', 'The Clever Fox and the Foolish Tiger (Burhi Aair Sadhu)', 'The Sign of a Thief (P.R. Gurdon Collection / Oral Tradition)', 'The Crane and the Fishes (P.R. Gurdon Collection / Oral Tradition)', 'Effort Brings Wealth (P.R. Gurdon Collection / Oral Tradition)']
+
+--- Query: Give me an Assamese proverb about hard work ---
+Answer:
+**Title:** পৰিশ্ৰমেই শ্ৰী আনে (Effort Brings Wealth)
+**Roots:** P.R. Gurdon Collection / Oral Tradition
+**Moral:** Hard work is the key to success and prosperity.
+
+This Assamese proverb emphasizes the profound connection between diligent effort and the attainment of prosperity. It states that এজন মানুহৰ কঠোৰ পৰিশ্ৰমে লক্ষ্মী দেৱীৰ কৃপা কঢ়িয়াই আনে (a man's hard work brings the grace of Lakshmi, the Goddess of Wealth). The essence of this saying is that true wealth and success are not merely a matter of luck or divine favor, but rather a direct result of one's persistent labor and dedication. It serves as a cultural reminder that through hard work, individuals can attract blessings and achieve a prosperous life.
+Sources: ['Effort Brings Wealth (P.R. Gurdon Collection / Oral Tradition)', 'The Crane and the Fishes (P.R. Gurdon Collection / Oral Tradition)', 'The Sign of a Thief (P.R. Gurdon Collection / Oral Tradition)', 'Bandor Aru Xiyal (Burhi Aair Sadhu)', 'Tejimola (Burhi Aair Sadhu)', 'Tula aru Teja (Burhi Aair Sadhu)', 'The Power of the Public (Oral Tradition)', 'Lightning Without Clouds (P.R. Gurdon Collection / Oral Tradition)', 'Kukuri Kona (Burhi Aair Sadhu)', 'Phulkonwar and Monikonwar (Assamese Ballads (Geet))', 'Panesoi (Assamese Mythology)', 'The Worth of a Seedling (Oral Tradition)']
+
+--- Query: What is the moral of Burhi Aair Sadhu stories? ---
+Answer:
+**Title:** বুঢ়ী আইৰ সাধুৰ নীতিশিক্ষা (The Morals of Burhi Aair Sadhu Stories)
+**Roots:** Burhi Aair Sadhu
+**Moral:** The Burhi Aair Sadhu stories consistently teach that truth, virtue, and kindness are ultimately rewarded, while wickedness, greed, and deceit lead to downfall. They emphasize the triumph of intelligence and love over brute force and jealousy.
+
+The Burhi Aair Sadhu (বুঢ়ী আইৰ সাধু) stories, as presented in the ancient texts, impart several core moral lessons that resonate across their narratives. A central theme is the unwavering belief that **truth and goodness ultimately prevail over evil** (সত্য আৰু ভালৰ শেষত জয় হয়). Tales like 'Tejimola' exemplify this, showing that cruelty and deceit cannot remain hidden forever, and justice will eventually be served, often through miraculous means.
+
+Another significant moral woven through these stories is that **virtue and kindness are rewarded, while wickedness and jealousy are punished** (সৎ গুণ আৰু দয়ালুতাৰ পুৰস্কাৰ পোৱা যায়, আনহাতে দুষ্টতা আৰু ঈৰ্ষাৰ শাস্তি হয়). 'Tula aru Teja' and 'The Kite's Daughter' vividly illustrate how innocent and benevolent characters receive help and ultimately triumph over adversity, while those driven by envy and malice face their deserved consequences.
+
+Furthermore, these narratives frequently emphasize the importance of **intelligence and wisdom over brute strength** (বুদ্ধি আৰু জ্ঞানৰ গুৰুত্ব). Stories such as 'The Clever Fox and the Foolish Tiger' and 'Bandor Aru Xiyal' teach that cunning and quick thinking can outwit even the most powerful or greedy adversaries, proving that brains can indeed conquer brawn.
+
+Finally, the Burhi Aair Sadhu collection also cautions against negative traits like **greed, blind imitation, and hiding the truth** (লোভ, অন্ধ অনুকৰণ আৰু সত্য লুকুৱাৰ পৰিণাম). 'Bandor Aru Xiyal' demonstrates how greed leads to one's own downfall, 'Champawati' warns against the dangers of covetous imitation, and 'Kukuri Kona' humorously illustrates how dishonesty and attempts to conceal the truth lead to greater embarrassment. Across these timeless tales, the enduring and fierce power of a mother's love is also celebrated, as powerfully depicted in 'The Kite's Daughter'.
+Sources: ['Tejimola (Burhi Aair Sadhu)', 'Tula aru Teja (Burhi Aair Sadhu)', 'Bandor Aru Xiyal (Burhi Aair Sadhu)', 'The Clever Fox and the Foolish Tiger (Burhi Aair Sadhu)', 'Kukuri Kona (Burhi Aair Sadhu)', "The Kite's Daughter (Burhi Aair Sadhu)", 'Champawati (Burhi Aair Sadhu)', 'Phulkonwar and Monikonwar (Assamese Ballads (Geet))', 'Panesoi (Assamese Mythology)', 'The Sign of a Thief (P.R. Gurdon Collection / Oral Tradition)', 'The Crane and the Fishes (P.R. Gurdon Collection / Oral Tradition)', 'Lightning Without Clouds (P.R. Gurdon Collection / Oral Tradition)']
+
+--- Query: Tell me about Panesoi ---
+Answer:
+**Title:** Panesoi (পানেসোই)
+**Roots:** Assamese Mythology (অসমীয়া পৌৰাণিক কাহিনী)
+**Moral:** True love and devotion can overcome even divine curses. (প্ৰকৃত প্ৰেম আৰু ভক্তিৰে দৈৱ অভিশাপকো অতিক্ৰম কৰিব পাৰি।)
+
+Panesoi is a tragic yet beautiful folktale from Assamese Mythology. It tells the story of a lovely girl named Panesoi, who, through the curse of a powerful river goddess, was transformed into a delicate water lily. Her devoted lover, however, did not give up hope. He embarked on a relentless search for her, driven by the purity and strength of his affection. Ultimately, it was their unwavering and true love that proved powerful enough to break the divine curse, leading to their heartfelt reunion.
+
+পানেসোই অসমীয়া পৌৰাণিক কাহিনীৰ এক দুখজনক অথচ সুন্দৰ লোককথা। ই পানেসোই নামৰ এগৰাকী সুন্দৰী ছোৱালীৰ কাহিনী বৰ্ণনা কৰে, যি এগৰাকী শক্তিশালী নদী দেৱীৰ অভিশাপত এক কোমল পানী পদুমলৈ ৰূপান্তৰিত হৈছিল। কিন্তু তাইৰ প্ৰেমিকে আশা এৰি দিয়া নাছিল। তেওঁৰ প্ৰেমৰ পবিত্ৰতা আৰু শক্তিৰ দ্বাৰা চালিত হৈ তেওঁ তাইক অহৰহ বিচাৰি ফুৰিছিল। শেষত, তেওঁলোকৰ অবিচলিত আৰু প্ৰকৃত প্ৰেমেই দৈৱ অভিশাপ ভাঙিবলৈ যথেষ্ট শক্তিশালী বুলি প্ৰমাণিত হৈছিল, যাৰ ফলত তেওঁলোকৰ হৃদয়স্পৰ্শী পুনৰ্মিলন হৈছিল।
+Sources: ['Panesoi (Assamese Mythology)', 'Tejimola (Burhi Aair Sadhu)', 'Phulkonwar and Monikonwar (Assamese Ballads (Geet))', 'Tula aru Teja (Burhi Aair Sadhu)', 'Kukuri Kona (Burhi Aair Sadhu)', 'Champawati (Burhi Aair Sadhu)', 'The Crane and the Fishes (P.R. Gurdon Collection / Oral Tradition)', 'The Worth of a Seedling (Oral Tradition)', 'Bandor Aru Xiyal (Burhi Aair Sadhu)', "The Kite's Daughter (Burhi Aair Sadhu)", 'Excessive Devotion (Oral Tradition)', 'The Power of the Public (Oral Tradition)']
+
+--- Query: Do you have any proverb about a thief? ---
+Answer:
+I don't have enough information from the ancient texts to answer that.
+Sources: ['The Sign of a Thief (P.R. Gurdon Collection / Oral Tradition)', 'Excessive Devotion (Oral Tradition)', 'The Dog and the Stick (Oral Tradition)', 'The Power of the Public (Oral Tradition)', 'The Crane and the Fishes (P.R. Gurdon Collection / Oral Tradition)', 'The Worth of a Seedling (Oral Tradition)', 'Lightning Without Clouds (P.R. Gurdon Collection / Oral Tradition)', 'The Biting Dog (Oral Tradition)', "The Elephant's Tusks (Oral Tradition)", 'The Public is King (Oral Tradition)', 'Bandor Aru Xiyal (Burhi Aair Sadhu)', 'Kukuri Kona (Burhi Aair Sadhu)']
+

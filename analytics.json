@@ -1,0 +1,20 @@
+{
+    "views": {},
+    "searches": [
+        "Who wrote Burhi Aair Sadhu?",
+        "What is the moral of the story about the frog and the princess?",
+        "Tell me a proverb about hypocritical boasting.",
+        "How did the cunning fox deceive the crocodile?",
+        "Tell me the full story of Tejimola",
+        "Give me 3 proverbs about hard work",
+        "Tell me a different folktale from Burhi Aair Sadhu",
+        "What is the moral behind Kukuri Kona?",
+        "Give me a proverb about hard work",
+        "What is the moral of Burhi Aair Sadhu?",
+        "Give me a proverb about hard work"
+    ],
+    "retrievals": {
+        "success": 11,
+        "failed": 0
+    }
+}

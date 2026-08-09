@@ -1,0 +1,865 @@
+{
+  "entries": [
+    {
+      "id": "ft_001",
+      "type": "folktale",
+      "title": "Tejimola",
+      "assamese": "তেজীমলা",
+      "english": "A young, innocent girl named Tejimola is left in the care of her wicked stepmother while her father goes away on a trading voyage. The stepmother cruelly crushes her under a pestle (Dheki) while she is husking rice and buries her in the garden. From her remains, magical plants sprout—a bottle gourd, a pomelo, and a lotus—each singing a sorrowful song when approached. When her father returns and attempts to pluck a lotus, the flower transforms back into Tejimola, revealing the stepmother's cruelty.",
+      "meaning": "The triumph of innocence and truth over cruelty. Nature bears witness to hidden crimes.",
+      "moral": "Truth cannot be buried forever; good ultimately prevails over evil.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "reincarnation",
+          "stepmother",
+          "magic",
+          "triumph of good"
+        ]
+      },
+      "contributor": {
+        "name": "Ananya Borah",
+        "village": "Jorhat Town",
+        "district": "Jorhat",
+        "date_submitted": "2026-07-01",
+        "approved": true
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_002",
+      "type": "folktale",
+      "title": "Kukuri Kona",
+      "assamese": "কুকুৰীকণা",
+      "english": "A comical tale about a son-in-law who suffers from night blindness (Kukuri Kona). He tries desperately to hide his affliction from his in-laws when he visits them. His attempts to navigate the house at night lead to a series of hilarious blunders, including wrestling with a goat, breaking pots, and making a fool of himself until the truth is finally revealed.",
+      "meaning": "A warning against false pride and the lengths people go to hide their flaws.",
+      "moral": "Hiding the truth leads to greater embarrassment.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "humor",
+          "deception",
+          "family",
+          "pride"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_003",
+      "type": "folktale",
+      "title": "Tula aru Teja",
+      "assamese": "তুলা আৰু তেজা",
+      "english": "Tula and Teja are step-sisters. Teja's mother passes away, and her cruel stepmother makes her do all the hard chores, while treating Tula like a princess. Despite the hardship, Teja receives magical help from animals. Eventually, the King discovers Teja's beauty and marries her. The jealous stepmother tries to replace Teja with Tula through dark magic, but the King discovers the trick, punishes the wicked, and reunites with Teja.",
+      "meaning": "A classic Cinderella archetype focusing on divine justice.",
+      "moral": "Virtue and kindness are rewarded, while jealousy and wickedness are punished.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "magic",
+          "step-sisters",
+          "royalty",
+          "justice"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_004",
+      "type": "folktale",
+      "title": "Champawati",
+      "assamese": "চম্পাৱতী",
+      "english": "Champawati is forced by her jealous stepmother to marry a python. To everyone's surprise, the python is actually a handsome divine prince cursed to live in a snake's skin. The prince sheds his skin at night. When the stepmother tries to replicate this success for her own daughter by finding a real python, it ends in tragedy.",
+      "meaning": "Greed and blind imitation without understanding lead to disastrous consequences.",
+      "moral": "Do not covet what belongs to others through blind imitation.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "curse",
+          "transformation",
+          "greed",
+          "jealousy"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "pr_001",
+      "type": "proverb",
+      "title": "The Crane and the Fishes",
+      "assamese": "অধিক মাছত বগলী কণা",
+      "english": "A crane goes blind when there are too many fishes.",
+      "meaning": "When faced with an overwhelming number of choices or opportunities, one often becomes confused and fails to make any decision at all.",
+      "moral": "Focus and decisiveness are essential; too many choices lead to confusion.",
+      "metadata": {
+        "roots": "P.R. Gurdon Collection / Oral Tradition",
+        "themes": [
+          "decision-making",
+          "greed",
+          "nature"
+        ]
+      },
+      "contributor": {
+        "name": "Devansh Deka",
+        "village": "Kahilipara",
+        "district": "Kamrup Metropolitan",
+        "date_submitted": "2026-07-05",
+        "approved": true
+      },
+      "confidence": "community"
+    },
+    {
+      "id": "pr_002",
+      "type": "proverb",
+      "title": "The Sign of a Thief",
+      "assamese": "অতি ভক্তি চোৰৰ লক্ষণ",
+      "english": "Too much devotion is a sign of a thief.",
+      "meaning": "Excessive flattery, subservience, or sudden overly polite behavior often hides malicious intent or an ulterior motive.",
+      "moral": "Beware of false flattery and excessive politeness.",
+      "metadata": {
+        "roots": "P.R. Gurdon Collection / Oral Tradition",
+        "themes": [
+          "deception",
+          "human nature",
+          "caution"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "pr_003",
+      "type": "proverb",
+      "title": "Lightning Without Clouds",
+      "assamese": "বিনা মেঘে বজ্ৰপাত",
+      "english": "Lightning without clouds.",
+      "meaning": "A sudden, unexpected disaster or tragic event that occurs without any prior warning or indication.",
+      "moral": "Life is unpredictable; be prepared for the unexpected.",
+      "metadata": {
+        "roots": "P.R. Gurdon Collection / Oral Tradition",
+        "themes": [
+          "disaster",
+          "surprise",
+          "fate"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "pr_004",
+      "type": "proverb",
+      "title": "The Power of the Public",
+      "assamese": "ৰাইজে নখ জোকাৰিলে নৈ বয়",
+      "english": "If the public shakes their nails, a river flows.",
+      "meaning": "If the community or a large group of people work together, their combined small efforts can achieve massive results, just like drops of water forming a river.",
+      "moral": "Unity is strength; collective effort can achieve the impossible.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "unity",
+          "strength",
+          "community",
+          "hard work"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_005",
+      "type": "proverb",
+      "title": "The Dog and the Stick",
+      "assamese": "যেনে কুকুৰ তেনে টাঙোন",
+      "english": "As the dog, so the stick.",
+      "meaning": "A harsh measure must be applied to deal with a harsh or unruly person. It means getting what one deserves based on their behavior.",
+      "moral": "Tit for tat; actions have equal and appropriate consequences.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "justice",
+          "karma",
+          "retribution"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_006",
+      "type": "proverb",
+      "title": "The Worth of a Seedling",
+      "assamese": "যি মূলা বাঢ়ে তাৰ দুপাততে চিন",
+      "english": "The radish that will grow is known by its first two leaves.",
+      "meaning": "Just as a healthy plant shows signs of its potential early on, a child's future greatness or character can be seen in their early childhood behavior.",
+      "moral": "Morning shows the day; early signs indicate future potential.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "potential",
+          "growth",
+          "observation"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_007",
+      "type": "proverb",
+      "title": "Effort Brings Wealth",
+      "assamese": "পুৰুষৰ পৰিশ্ৰম, লক্ষ্মীৰ কৃপা",
+      "english": "A man's hard work brings the grace of Lakshmi (Goddess of Wealth).",
+      "meaning": "Prosperity and success are not merely handed out; they are earned through diligent effort, hard work, and persistence.",
+      "moral": "Hard work is the key to success and prosperity.",
+      "metadata": {
+        "roots": "P.R. Gurdon Collection / Oral Tradition",
+        "themes": [
+          "hard work",
+          "wealth",
+          "diligence"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_005",
+      "type": "folktale",
+      "title": "Bandor Aru Xiyal",
+      "assamese": "বান্দৰ আৰু শিয়াল",
+      "english": "The Monkey and the Fox. A cunning fox tries to outsmart a monkey to steal his food, but the agile and clever monkey ultimately turns the trick around, leaving the greedy fox empty-handed and humiliated.",
+      "meaning": "Intelligence and agility can outmaneuver cunning and greed.",
+      "moral": "Do not underestimate others; greed leads to your own downfall.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "animal fable",
+          "cunning",
+          "greed",
+          "wit"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_006",
+      "type": "folktale",
+      "title": "The Kite's Daughter",
+      "assamese": "চিলনীৰ জীয়েক",
+      "english": "A childless potter and his wife adopt a baby girl dropped by a kite. The girl, Chiloneer Jiyek, grows into a beautiful woman and marries a wealthy merchant. However, her jealous co-wives torment her relentlessly and try to eliminate her. Through the magical intervention and fierce love of her biological kite mother, she is saved, and her wicked co-wives are exposed and punished.",
+      "meaning": "A magical tale of a virtuous adopted child overcoming the jealousy of co-wives through the enduring love of her kite mother.",
+      "moral": "A mother's love, no matter how unconventional, never fades; jealousy ultimately destroys those who harbor it.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "maternal love",
+          "jealousy",
+          "magic",
+          "justice"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "pr_008",
+      "type": "proverb",
+      "title": "The Elephant's Tusks",
+      "assamese": "হাতীৰ দাঁত ওলালে সোমাব নোৱাৰে",
+      "english": "An elephant's tusks, once out, cannot go back in.",
+      "meaning": "Once words are spoken or an action is committed, it cannot be undone. It symbolizes the permanence of speech and the strictness of a true commitment.",
+      "moral": "Think carefully before you speak or act; honor your commitments permanently.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "permanence",
+          "commitment",
+          "words",
+          "wisdom"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_009",
+      "type": "proverb",
+      "title": "The Biting Dog",
+      "assamese": "ভৌকা কুকুৰে নাকাঁমোৰে",
+      "english": "A barking dog does not bite.",
+      "meaning": "People who make the most noise or issue the loudest threats rarely take action. True danger usually comes quietly.",
+      "moral": "Do not be intimidated by empty threats or loud boasting.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "threats",
+          "boasting",
+          "action vs words"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "ft_007",
+      "type": "folktale",
+      "title": "The Clever Fox and the Foolish Tiger",
+      "assamese": "শিয়াল আৰু বাঘ",
+      "english": "A cunning fox manages to outwit a fierce but foolish tiger who wanted to eat him. The fox convinces the tiger that the reflection in the well is another rival tiger. The tiger jumps in and gets stuck, while the fox escapes. A classic tale of brain over brawn.",
+      "meaning": "Intelligence and wit can overcome brute physical strength.",
+      "moral": "Brain is better than brawn; think before you act.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "intelligence",
+          "wit",
+          "survival",
+          "animals"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_008",
+      "type": "folktale",
+      "title": "Panesoi",
+      "assamese": "পানেচৈ",
+      "english": "The tragic story of Panesoi, a beautiful girl who was transformed into a water lily by the curse of a river goddess. Her lover searches for her relentlessly, and ultimately their pure love breaks the curse, reuniting them.",
+      "meaning": "A romantic and tragic myth explaining the origin of the water lily and the power of enduring love.",
+      "moral": "True love and devotion can overcome even divine curses.",
+      "metadata": {
+        "roots": "Assamese Mythology",
+        "themes": [
+          "love",
+          "curse",
+          "transformation",
+          "nature"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "pr_010",
+      "type": "proverb",
+      "title": "The Public is King",
+      "assamese": "ৰাইজেই ৰজা",
+      "english": "The public is the king.",
+      "meaning": "In any society, the collective will and power of the people are supreme, surpassing even the authority of a ruler.",
+      "moral": "Respect the collective opinion; unity is the ultimate power.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "society",
+          "unity",
+          "democracy",
+          "power"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_011",
+      "type": "proverb",
+      "title": "Excessive Devotion",
+      "assamese": "অতি ভক্তি চোৰৰ লক্ষণ",
+      "english": "Too much devotion is the sign of a thief.",
+      "meaning": "When someone acts excessively humble or overly devout, it often hides a deceitful or malicious intent. True goodness is natural, not exaggerated.",
+      "moral": "Beware of people who try too hard to appear virtuous.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "deceit",
+          "suspicion",
+          "hypocrisy"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "ft_009",
+      "type": "folktale",
+      "title": "Phulkonwar and Monikonwar",
+      "assamese": "ফুলকোঁৱৰ আৰু মণিকোঁৱৰ",
+      "english": "An epic Assamese ballad telling the story of two princely friends, Phulkonwar and Monikonwar. Their adventures involve magical wooden horses, rescuing princesses, and fighting demons. Monikonwar is eventually swallowed by a river deity, leading to Phulkonwar's heroic quest to save him.",
+      "meaning": "A heroic tale of friendship, bravery, and magical quests.",
+      "moral": "True friendship demands sacrifice and unyielding bravery in the face of danger.",
+      "metadata": {
+        "roots": "Assamese Ballads (Geet)",
+        "themes": [
+          "friendship",
+          "magic",
+          "adventure",
+          "bravery"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_010",
+      "type": "folktale",
+      "title": "The Elephant-Apple Princess",
+      "assamese": "ঔ-কুঁৱৰী",
+      "english": "A magical tale about a princess born inside an Ou-Tenga (elephant-apple). A prince discovers the fruit, and at night, the beautiful Ou-Kuwori emerges from it to do household chores. The prince eventually catches her, breaks the shell, and marries her, overcoming various magical obstacles.",
+      "meaning": "A whimsical story of hidden beauty and magical transformations.",
+      "moral": "True beauty and value are often hidden beneath hard exteriors.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "magic",
+          "transformation",
+          "romance",
+          "hidden beauty"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_011",
+      "type": "folktale",
+      "title": "The Frog Prince",
+      "assamese": "ভেকুলী কোঁৱৰ",
+      "english": "A childless couple is blessed with a son who is born as a frog. Despite his appearance, the frog prince is incredibly intelligent and magically skilled. He undertakes difficult tasks for the king, eventually winning the princess's hand in marriage and transforming into a handsome prince.",
+      "meaning": "A classic transformation tale emphasizing inner worth over outward appearance.",
+      "moral": "Do not judge someone by their appearance; true worth lies within.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "transformation",
+          "inner beauty",
+          "magic",
+          "tasks"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "pr_012",
+      "type": "proverb",
+      "title": "Empty Boasts",
+      "assamese": "খোজত খৰ নাই, মুখত গৰগৰণি",
+      "english": "No swiftness in steps, but thunder in the mouth.",
+      "meaning": "Refers to someone who talks a lot and makes grand claims but takes no action or lacks the ability to back up their words.",
+      "moral": "Actions speak louder than empty boasts.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "boasting",
+          "action",
+          "hypocrisy"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_013",
+      "type": "proverb",
+      "title": "Pride and Poverty",
+      "assamese": "কৰি খাব নাজানে, মাগি খাবলৈ লাজ",
+      "english": "Does not know how to earn, but is ashamed to beg.",
+      "meaning": "Describes a person who lacks the skills or willingness to work for a living, yet has too much false pride to ask for help.",
+      "moral": "False pride combined with laziness is a path to ruin.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "laziness",
+          "pride",
+          "poverty"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "ft_012",
+      "type": "folktale",
+      "title": "The Tiger and the Crab",
+      "assamese": "বাঘ আৰু কেঁকোৰা",
+      "english": "A hungry tiger captures a crab at the edge of a pond. The clever crab challenges the tiger to a strength duel, saying it can hold onto the tiger's neck. The tiger agrees. The crab grips the tiger's neck tightly with its powerful claws, causing the tiger immense pain and forcing it to beg for mercy and flee.",
+      "meaning": "Using quick thinking and natural defense mechanisms to overpower a physically superior predator.",
+      "moral": "Intelligence and resourcefulness can defeat sheer physical strength.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "wit",
+          "survival",
+          "animals"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_013",
+      "type": "folktale",
+      "title": "The Sly Fox",
+      "assamese": "শিয়ালৰ বুদ্ধি",
+      "english": "A cunning fox accidentally falls into a deep well. When a thirsty goat walks by and asks about the water, the fox deceitfully praises the water as the best in the forest, convincing the goat to jump in. The fox then climbs onto the goat's back and horns to leap out, leaving the gullible goat trapped.",
+      "meaning": "A warning about how selfish people use trickery to exploit the innocence and greed of others.",
+      "moral": "Look before you leap; do not blindly trust the words of those in trouble.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "cunning",
+          "deception",
+          "animals",
+          "survival"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_014",
+      "type": "folktale",
+      "title": "Kanchanee",
+      "assamese": "কাঞ্চনী",
+      "english": "Kanchanee is a sweet, virtuous girl who is tormented by her wicked stepmother and stepsister. Despite her hardships, she receives magical aid from a bird and forest spirits. Her patience and purity eventually lead to her marrying a royal prince, while her cruel family is brought to justice.",
+      "meaning": "The ultimate vindication of patience, kindness, and moral integrity over domestic cruelty.",
+      "moral": "Virtue and patience always find their reward; cruelty leads to ruin.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "stepfamily",
+          "magic",
+          "royalty",
+          "justice"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_015",
+      "type": "folktale",
+      "title": "The Old Couple and the Jackals",
+      "assamese": "বুঢ়া-বুঢ়ী আৰু শিয়াল",
+      "english": "An old farmer and his wife are troubled by a pack of jackals raiding their sugarcane crop. They devise a plan where the old man plays dead and the wife invites the jackals to carry him away. Once the jackals gather, the old man leaps up with a stick, teaching the pests a painful lesson.",
+      "meaning": "Using strategic deception and cooperation to overcome persistent problems that cannot be solved by direct force.",
+      "moral": "Clever strategies and joint effort can resolve persistent troubles.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "humor",
+          "wit",
+          "trickery",
+          "animals"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_016",
+      "type": "folktale",
+      "title": "The Raven and the Sparrow",
+      "assamese": "কাউৰী আৰু ঘৰচিৰিকা",
+      "english": "A greedy raven bets a sparrow that it can eat her eggs. The sparrow agrees on the condition that the raven first wash its dirty beak. The raven seeks water, but the river demands a pot, the potter demands clay, and so forth. By the time the raven returns, the eggs have hatched and the sparrow has escaped.",
+      "meaning": "Using elaborate steps and rules to delay and defeat an aggressive and unfair oppressor.",
+      "moral": "Strategic delay and quick thinking can prevent disaster.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "birds",
+          "wit",
+          "delaying tactics"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_017",
+      "type": "folktale",
+      "title": "The Fortune Teller",
+      "assamese": "গণক",
+      "english": "A fraudulent astrologer pretends to know the future and tell fortunes. When the king's treasure is stolen, the astrologer accidentally guesses the correct location of the gold due to a series of hilarious coincidences and luck, convincing everyone of his mystical powers.",
+      "meaning": "A satirical look at how luck and circumstance can elevate fraudulent people, warning against blind superstition.",
+      "moral": "Luck may bring temporary success, but honesty is the true path.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "satire",
+          "fortune-telling",
+          "luck",
+          "humor"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_018",
+      "type": "folktale",
+      "title": "Gongatoup (The Globe Fish)",
+      "assamese": "গঙ্গাটোপ",
+      "english": "Gongatoup is a small globe fish who thinks too highly of himself. He inflates his body to a massive size to intimidate the other fish and brag about his greatness. However, he inflates himself beyond his natural limit and bursts.",
+      "meaning": "A cautionary tale about the dangers of extreme arrogance and representing oneself as larger than life.",
+      "moral": "Pride goes before a fall; do not inflate your worth beyond reality.",
+      "metadata": {
+        "roots": "Burhi Aair Sadhu",
+        "themes": [
+          "pride",
+          "animals",
+          "nature",
+          "humility"
+        ]
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "pr_014",
+      "type": "proverb",
+      "title": "The Dog's Tail",
+      "assamese": "কুকুৰৰ নেজ ডালশিলিখা কৰিব নোৱাৰি",
+      "english": "Kukuror nej dalsilikha koribo nuwari | A dog's tail can never be straightened.",
+      "meaning": "It is extremely difficult to change someone's core personality, inherent flaws, or long-standing bad habits.",
+      "moral": "Inherent nature and deep-seated habits cannot be easily altered.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "character",
+          "habit",
+          "nature"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_015",
+      "type": "proverb",
+      "title": "Washing Seeds in Mud",
+      "assamese": "বোকা মাটি গুটি ধোৱা",
+      "english": "Boka mati guti dhowa | Washing seeds in muddy soil.",
+      "meaning": "Engaging in an activity that is completely futile, counterproductive, or undoes its own progress.",
+      "moral": "Avoid self-defeating efforts that lead to no real progress.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "futility",
+          "wisdom",
+          "effort"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_016",
+      "type": "proverb",
+      "title": "Mustard Flowers in the Eyes",
+      "assamese": "চকুত সৰিয়হ ফুল দেখা",
+      "english": "Chokut xoriyoh phul dekha | Seeing mustard flowers in one's eyes.",
+      "meaning": "Finding oneself in a state of utter daze, shock, helplessness, or confusion when faced with sudden trouble.",
+      "moral": "Sudden panic can cloud judgment and make a crisis seem overwhelming.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "shock",
+          "difficulty",
+          "confusion"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_017",
+      "type": "proverb",
+      "title": "Making a Palm Tree out of a Sesame Seed",
+      "assamese": "তিলকে তাল কৰা",
+      "english": "Tiloke tal kora | Making a palm tree out of a sesame seed.",
+      "meaning": "Blowing a minor, trivial incident completely out of proportion and creating unnecessary drama.",
+      "moral": "Exaggeration harms relationships; keep small issues in perspective.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "exaggeration",
+          "truth",
+          "behavior"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_018",
+      "type": "proverb",
+      "title": "Late Umbrella after Rain",
+      "assamese": "চোৰ গ’লে বুদ্ধি, বৰষুণ গ’লে ছাতি",
+      "english": "Chor gole buddhi, boroxun gole chati | Wit after the thief has left, an umbrella after the rain has stopped.",
+      "meaning": "Receiving advice, solutions, or resources when the crisis is already over and the damage is done.",
+      "moral": "Preparation must be timely; solutions offered after the event are useless.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "timing",
+          "preparation",
+          "wisdom"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_019",
+      "type": "proverb",
+      "title": "Value of a Dead Elephant",
+      "assamese": "মৰা হাতীৰো লাখ টকা দাম",
+      "english": "Mora hatoro lakh toka dam | Even a dead elephant is worth a hundred thousand rupees.",
+      "meaning": "Even when a person of great stature, power, or value suffers a downfall or passes away, their legacy and worth remain highly respected.",
+      "moral": "True greatness and value endure beyond physical demise or failure.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "respect",
+          "value",
+          "greatness"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_020",
+      "type": "proverb",
+      "title": "The Flowing River",
+      "assamese": "নদীৰ পানী ঘাটেন ঘাটেন বয়",
+      "english": "Nodor pani ghaten ghaten boy | River water flows through many banks.",
+      "meaning": "Life is dynamic and constantly changing; one must adapt to different environments and times.",
+      "moral": "Adaptability is key to navigating the changing course of life.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "change",
+          "adaptability",
+          "life"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_021",
+      "type": "proverb",
+      "title": "Celebrating with Borrowed Cakes",
+      "assamese": "লোকৰ পিঠাৰে বিহু পতা",
+      "english": "Lokor pithare bihu pota | Celebrating Bihu with others' rice cakes.",
+      "meaning": "Trying to show off, throw a celebration, or gain prestige entirely at someone else's expense or effort.",
+      "moral": "Do not seek pride or build success on the work and expenses of others.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "honesty",
+          "effort",
+          "pride"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_022",
+      "type": "proverb",
+      "title": "The Ear and the Head",
+      "assamese": "কাণ টানিলে মূৰ আহে",
+      "english": "Kan tanile mur ahe | Pull the ears, and the head will follow.",
+      "meaning": "By tackling the main root or key instigator of a problem, all the subsequent issues get resolved automatically.",
+      "moral": "Focusing on the root cause makes complex issues easy to resolve.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "cause and effect",
+          "solution",
+          "wisdom"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_023",
+      "type": "proverb",
+      "title": "The Trap of the Mosquito",
+      "assamese": "হাতি উটি যাওঁতে মহে ফন্দি পাতে",
+      "english": "Hati uti jaote mohe phondi pate | When an elephant is swept away, the mosquito plans a trap.",
+      "meaning": "Weak or insignificant people trying to exploit situations or trap others when even the strongest and most capable are failing.",
+      "moral": "Understand your own limitations before taking on overwhelming challenges.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "ambition",
+          "limitations",
+          "foolishness"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_024",
+      "type": "proverb",
+      "title": "One's Own Hand is Jagannath",
+      "assamese": "নিজ হাত জগন্নাথ",
+      "english": "Nij hat jagannath | One's own hand is Lord Jagannath.",
+      "meaning": "Relying on one's own efforts and hard work is the most reliable way to achieve success and happiness.",
+      "moral": "Self-reliance is the greatest virtue and path to success.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "self-reliance",
+          "work",
+          "independence"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_025",
+      "type": "proverb",
+      "title": "The Pride of Lanka",
+      "assamese": "অতি দৰ্পে হত লংকা",
+      "english": "Oti dorpe hoto lonka | Excessive pride led to the destruction of Lanka.",
+      "meaning": "Being overly proud, conceited, or arrogant will eventually lead to your own absolute ruin.",
+      "moral": "Arrogance leads to downfall; humility protects from ruin.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "pride",
+          "downfall",
+          "humility"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_026",
+      "type": "proverb",
+      "title": "The Lazy Man's Gate",
+      "assamese": "আলাহৰ ঘৰৰ নঙলা",
+      "english": "Alahor ghoror nongola | The gate of a lazy man's house.",
+      "meaning": "Used to describe a state of complete disorganization, neglect, and lack of maintenance due to laziness.",
+      "moral": "Neglect and decay are the immediate fruits of laziness.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "laziness",
+          "neglect",
+          "ruin"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_027",
+      "type": "proverb",
+      "title": "Applying Lime to a Wound",
+      "assamese": "কটা ঘাত চুন দিয়া",
+      "english": "Kota ghat chun diya | Applying lime to a cut wound.",
+      "meaning": "To deliberately aggravate someone's existing pain or misery by adding insults, mockery, or fresh trouble.",
+      "moral": "Show empathy; do not make others' suffering worse.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "cruelty",
+          "suffering",
+          "empathy"
+        ]
+      },
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_028",
+      "type": "proverb",
+      "title": "Catching a Shadow",
+      "assamese": "চিলনীৰ পিঠিত ছাঁ ছাটি মৰা",
+      "english": "Chilonir pithit sa sati mora | Trying to catch the shadow of a flying kite.",
+      "meaning": "Chasing after impossible, temporary, or imaginary goals that have no real substance or chance of success.",
+      "moral": "Pursue realistic and meaningful goals rather than empty illusions.",
+      "metadata": {
+        "roots": "Oral Tradition",
+        "themes": [
+          "illusion",
+          "folly",
+          "reality"
+        ]
+      },
+      "confidence": "interview"
+    }
+  ]
+}

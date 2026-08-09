@@ -1,0 +1,433 @@
+{
+  "entries": [
+    {
+      "id": "pr_001",
+      "proverb": "অধিক মাছত বগলী কণা",
+      "translation": "A crane goes blind when there are too many fishes.",
+      "meaning": "When faced with an overwhelming number of choices or opportunities, one often becomes confused and fails to make any decision at all.",
+      "theme": [
+        "decision-making",
+        "greed",
+        "nature"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "P.R. Gurdon Collection / Oral Tradition",
+      "contributor": {
+        "name": "Devansh Deka",
+        "village": "Kahilipara",
+        "district": "Kamrup Metropolitan",
+        "date_submitted": "2026-07-05",
+        "approved": true
+      },
+      "confidence": "community"
+    },
+    {
+      "id": "pr_002",
+      "proverb": "অতি ভক্তি চোৰৰ লক্ষণ",
+      "translation": "Too much devotion is a sign of a thief.",
+      "meaning": "Excessive flattery, subservience, or sudden overly polite behavior often hides malicious intent or an ulterior motive.",
+      "theme": [
+        "deception",
+        "human nature",
+        "caution"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "P.R. Gurdon Collection / Oral Tradition",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "pr_003",
+      "proverb": "বিনা মেঘে বজ্ৰপাত",
+      "translation": "Lightning without clouds.",
+      "meaning": "A sudden, unexpected disaster or tragic event that occurs without any prior warning or indication.",
+      "theme": [
+        "disaster",
+        "surprise",
+        "fate"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "P.R. Gurdon Collection / Oral Tradition",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "pr_004",
+      "proverb": "ৰাইজে নখ জোকাৰিলে নৈ বয়",
+      "translation": "If the public shakes their nails, a river flows.",
+      "meaning": "If the community or a large group of people work together, their combined small efforts can achieve massive results, just like drops of water forming a river.",
+      "theme": [
+        "unity",
+        "strength",
+        "community",
+        "hard work"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_005",
+      "proverb": "যেনে কুকুৰ তেনে টাঙোন",
+      "translation": "As the dog, so the stick.",
+      "meaning": "A harsh measure must be applied to deal with a harsh or unruly person. It means getting what one deserves based on their behavior.",
+      "theme": [
+        "justice",
+        "karma",
+        "retribution"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_006",
+      "proverb": "যি মূলা বাঢ়ে তাৰ দুপাততে চিন",
+      "translation": "The radish that will grow is known by its first two leaves.",
+      "meaning": "Just as a healthy plant shows signs of its potential early on, a child's future greatness or character can be seen in their early childhood behavior.",
+      "theme": [
+        "potential",
+        "growth",
+        "observation"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_007",
+      "proverb": "পুৰুষৰ পৰিশ্ৰম, লক্ষ্মীৰ কৃপা",
+      "translation": "A man's hard work brings the grace of Lakshmi (Goddess of Wealth).",
+      "meaning": "Prosperity and success are not merely handed out; they are earned through diligent effort, hard work, and persistence.",
+      "theme": [
+        "hard work",
+        "wealth",
+        "diligence"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "P.R. Gurdon Collection / Oral Tradition",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "pr_008",
+      "proverb": "হাতীৰ দাঁত ওলালে সোমাব নোৱাৰে",
+      "translation": "An elephant's tusks, once out, cannot go back in.",
+      "meaning": "Once words are spoken or an action is committed, it cannot be undone. It symbolizes the permanence of speech and the strictness of a true commitment.",
+      "theme": [
+        "permanence",
+        "commitment",
+        "words",
+        "wisdom"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_009",
+      "proverb": "ভৌকা কুকুৰে নাকাঁমোৰে",
+      "translation": "A barking dog does not bite.",
+      "meaning": "People who make the most noise or issue the loudest threats rarely take action. True danger usually comes quietly.",
+      "theme": [
+        "threats",
+        "boasting",
+        "action vs words"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_010",
+      "proverb": "ৰাইজেই ৰজা",
+      "translation": "The public is the king.",
+      "meaning": "In any society, the collective will and power of the people are supreme, surpassing even the authority of a ruler.",
+      "theme": [
+        "society",
+        "unity",
+        "democracy",
+        "power"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_011",
+      "proverb": "অতি ভক্তি চোৰৰ লক্ষণ",
+      "translation": "Too much devotion is the sign of a thief.",
+      "meaning": "When someone acts excessively humble or overly devout, it often hides a deceitful or malicious intent. True goodness is natural, not exaggerated.",
+      "theme": [
+        "deceit",
+        "suspicion",
+        "hypocrisy"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_012",
+      "proverb": "খোজত খৰ নাই, মুখত গৰগৰণি",
+      "translation": "No swiftness in steps, but thunder in the mouth.",
+      "meaning": "Refers to someone who talks a lot and makes grand claims but takes no action or lacks the ability to back up their words.",
+      "theme": [
+        "boasting",
+        "action",
+        "hypocrisy"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_013",
+      "proverb": "কৰি খাব নাজানে, মাগি খাবলৈ লাজ",
+      "translation": "Does not know how to earn, but is ashamed to beg.",
+      "meaning": "Describes a person who lacks the skills or willingness to work for a living, yet has too much false pride to ask for help.",
+      "theme": [
+        "laziness",
+        "pride",
+        "poverty"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_014",
+      "proverb": "কুকুৰৰ নেজ ডালশিলিখা কৰিব নোৱাৰি",
+      "translation": "Kukuror nej dalsilikha koribo nuwari | A dog's tail can never be straightened.",
+      "meaning": "It is extremely difficult to change someone's core personality, inherent flaws, or long-standing bad habits.",
+      "theme": [
+        "character",
+        "habit",
+        "nature"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_015",
+      "proverb": "বোকা মাটি গুটি ধোৱা",
+      "translation": "Boka mati guti dhowa | Washing seeds in muddy soil.",
+      "meaning": "Engaging in an activity that is completely futile, counterproductive, or undoes its own progress.",
+      "theme": [
+        "futility",
+        "wisdom",
+        "effort"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_016",
+      "proverb": "চকুত সৰিয়হ ফুল দেখা",
+      "translation": "Chokut xoriyoh phul dekha | Seeing mustard flowers in one's eyes.",
+      "meaning": "Finding oneself in a state of utter daze, shock, helplessness, or confusion when faced with sudden trouble.",
+      "theme": [
+        "shock",
+        "difficulty",
+        "confusion"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_017",
+      "proverb": "তিলকে তাল কৰা",
+      "translation": "Tiloke tal kora | Making a palm tree out of a sesame seed.",
+      "meaning": "Blowing a minor, trivial incident completely out of proportion and creating unnecessary drama.",
+      "theme": [
+        "exaggeration",
+        "truth",
+        "behavior"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_018",
+      "proverb": "চোৰ গ’লে বুদ্ধি, বৰষুণ গ’লে ছাতি",
+      "translation": "Chor gole buddhi, boroxun gole chati | Wit after the thief has left, an umbrella after the rain has stopped.",
+      "meaning": "Receiving advice, solutions, or resources when the crisis is already over and the damage is done.",
+      "theme": [
+        "timing",
+        "preparation",
+        "wisdom"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_019",
+      "proverb": "মৰা হাতীৰো লাখ টকা দাম",
+      "translation": "Mora hatoro lakh toka dam | Even a dead elephant is worth a hundred thousand rupees.",
+      "meaning": "Even when a person of great stature, power, or value suffers a downfall or passes away, their legacy and worth remain highly respected.",
+      "theme": [
+        "respect",
+        "value",
+        "greatness"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_020",
+      "proverb": "নদীৰ পানী ঘাটেন ঘাটেন বয়",
+      "translation": "Nodor pani ghaten ghaten boy | River water flows through many banks.",
+      "meaning": "Life is dynamic and constantly changing; one must adapt to different environments and times.",
+      "theme": [
+        "change",
+        "adaptability",
+        "life"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_021",
+      "proverb": "লোকৰ পিঠাৰে বিহু পতা",
+      "translation": "Lokor pithare bihu pota | Celebrating Bihu with others' rice cakes.",
+      "meaning": "Trying to show off, throw a celebration, or gain prestige entirely at someone else's expense or effort.",
+      "theme": [
+        "honesty",
+        "effort",
+        "pride"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_022",
+      "proverb": "কাণ টানিলে মূৰ আহে",
+      "translation": "Kan tanile mur ahe | Pull the ears, and the head will follow.",
+      "meaning": "By tackling the main root or key instigator of a problem, all the subsequent issues get resolved automatically.",
+      "theme": [
+        "cause and effect",
+        "solution",
+        "wisdom"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_023",
+      "proverb": "হাতি উটি যাওঁতে মহে ফন্দি পাতে",
+      "translation": "Hati uti jaote mohe phondi pate | When an elephant is swept away, the mosquito plans a trap.",
+      "meaning": "Weak or insignificant people trying to exploit situations or trap others when even the strongest and most capable are failing.",
+      "theme": [
+        "ambition",
+        "limitations",
+        "foolishness"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_024",
+      "proverb": "নিজ হাত জগন্নাথ",
+      "translation": "Nij hat jagannath | One's own hand is Lord Jagannath.",
+      "meaning": "Relying on one's own efforts and hard work is the most reliable way to achieve success and happiness.",
+      "theme": [
+        "self-reliance",
+        "work",
+        "independence"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_025",
+      "proverb": "অতি দৰ্পে হত লংকা",
+      "translation": "Oti dorpe hoto lonka | Excessive pride led to the destruction of Lanka.",
+      "meaning": "Being overly proud, conceited, or arrogant will eventually lead to your own absolute ruin.",
+      "theme": [
+        "pride",
+        "downfall",
+        "humility"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_026",
+      "proverb": "আলাহৰ ঘৰৰ নঙলা",
+      "translation": "Alahor ghoror nongola | The gate of a lazy man's house.",
+      "meaning": "Used to describe a state of complete disorganization, neglect, and lack of maintenance due to laziness.",
+      "theme": [
+        "laziness",
+        "neglect",
+        "ruin"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_027",
+      "proverb": "কটা ঘাত চুন দিয়া",
+      "translation": "Kota ghat chun diya | Applying lime to a cut wound.",
+      "meaning": "To deliberately aggravate someone's existing pain or misery by adding insults, mockery, or fresh trouble.",
+      "theme": [
+        "cruelty",
+        "suffering",
+        "empathy"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    },
+    {
+      "id": "pr_028",
+      "proverb": "চিলনীৰ পিঠিত ছাঁ ছাটি মৰা",
+      "translation": "Chilonir pithit sa sati mora | Trying to catch the shadow of a flying kite.",
+      "meaning": "Chasing after impossible, temporary, or imaginary goals that have no real substance or chance of success.",
+      "theme": [
+        "illusion",
+        "folly",
+        "reality"
+      ],
+      "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
+      "source": "Oral Tradition",
+      "contributor": null,
+      "confidence": "interview"
+    }
+  ]
+}

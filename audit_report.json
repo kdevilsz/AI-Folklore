@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Folktales",
+    "total": 11,
+    "missing_fields": [],
+    "missing_sources": [],
+    "missing_themes": [],
+    "weak_descriptions": [],
+    "duplicates": []
+  },
+  {
+    "type": "Proverbs",
+    "total": 13,
+    "missing_fields": [],
+    "missing_sources": [],
+    "missing_themes": [],
+    "weak_descriptions": [],
+    "duplicates": [
+      "অতি ভক্তি চোৰৰ লক্ষণ"
+    ]
+  }
+]

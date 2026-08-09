@@ -1,0 +1,350 @@
+{
+  "entries": [
+    {
+      "id": "ft_001",
+      "title": "Tejimola (তেজীমলা)",
+      "summary": "A young, innocent girl named Tejimola is left in the care of her wicked stepmother while her father goes away on a trading voyage. The stepmother cruelly crushes her under a pestle (Dheki) while she is husking rice and buries her in the garden. From her remains, magical plants sprout—a bottle gourd, a pomelo, and a lotus—each singing a sorrowful song when approached. When her father returns and attempts to pluck a lotus, the flower transforms back into Tejimola, revealing the stepmother's cruelty.",
+      "characters": [
+        "Tejimola"
+      ],
+      "themes": [
+        "reincarnation",
+        "stepmother",
+        "magic",
+        "triumph of good"
+      ],
+      "moral": "Truth cannot be buried forever; good ultimately prevails over evil.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": {
+        "name": "Ananya Borah",
+        "village": "Jorhat Town",
+        "district": "Jorhat",
+        "date_submitted": "2026-07-01",
+        "approved": true
+      },
+      "confidence": "published"
+    },
+    {
+      "id": "ft_002",
+      "title": "Kukuri Kona (কুকুৰীকণা)",
+      "summary": "A comical tale about a son-in-law who suffers from night blindness (Kukuri Kona). He tries desperately to hide his affliction from his in-laws when he visits them. His attempts to navigate the house at night lead to a series of hilarious blunders, including wrestling with a goat, breaking pots, and making a fool of himself until the truth is finally revealed.",
+      "characters": [
+        "Kukuri Kona"
+      ],
+      "themes": [
+        "humor",
+        "deception",
+        "family",
+        "pride"
+      ],
+      "moral": "Hiding the truth leads to greater embarrassment.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_003",
+      "title": "Tula aru Teja (তুলা আৰু তেজা)",
+      "summary": "Tula and Teja are step-sisters. Teja's mother passes away, and her cruel stepmother makes her do all the hard chores, while treating Tula like a princess. Despite the hardship, Teja receives magical help from animals. Eventually, the King discovers Teja's beauty and marries her. The jealous stepmother tries to replace Teja with Tula through dark magic, but the King discovers the trick, punishes the wicked, and reunites with Teja.",
+      "characters": [
+        "Tula aru Teja"
+      ],
+      "themes": [
+        "magic",
+        "step-sisters",
+        "royalty",
+        "justice"
+      ],
+      "moral": "Virtue and kindness are rewarded, while jealousy and wickedness are punished.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_004",
+      "title": "Champawati (চম্পাৱতী)",
+      "summary": "Champawati is forced by her jealous stepmother to marry a python. To everyone's surprise, the python is actually a handsome divine prince cursed to live in a snake's skin. The prince sheds his skin at night. When the stepmother tries to replicate this success for her own daughter by finding a real python, it ends in tragedy.",
+      "characters": [
+        "Champawati"
+      ],
+      "themes": [
+        "curse",
+        "transformation",
+        "greed",
+        "jealousy"
+      ],
+      "moral": "Do not covet what belongs to others through blind imitation.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_005",
+      "title": "Bandor Aru Xiyal (বান্দৰ আৰু শিয়াল)",
+      "summary": "The Monkey and the Fox. A cunning fox tries to outsmart a monkey to steal his food, but the agile and clever monkey ultimately turns the trick around, leaving the greedy fox empty-handed and humiliated.",
+      "characters": [
+        "Bandor Aru Xiyal"
+      ],
+      "themes": [
+        "animal fable",
+        "cunning",
+        "greed",
+        "wit"
+      ],
+      "moral": "Do not underestimate others; greed leads to your own downfall.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_006",
+      "title": "The Kite's Daughter (চিলনীৰ জীয়েক)",
+      "summary": "A childless potter and his wife adopt a baby girl dropped by a kite. The girl, Chiloneer Jiyek, grows into a beautiful woman and marries a wealthy merchant. However, her jealous co-wives torment her relentlessly and try to eliminate her. Through the magical intervention and fierce love of her biological kite mother, she is saved, and her wicked co-wives are exposed and punished.",
+      "characters": [
+        "The Kite's Daughter"
+      ],
+      "themes": [
+        "maternal love",
+        "jealousy",
+        "magic",
+        "justice"
+      ],
+      "moral": "A mother's love, no matter how unconventional, never fades; jealousy ultimately destroys those who harbor it.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_007",
+      "title": "The Clever Fox and the Foolish Tiger (শিয়াল আৰু বাঘ)",
+      "summary": "A cunning fox manages to outwit a fierce but foolish tiger who wanted to eat him. The fox convinces the tiger that the reflection in the well is another rival tiger. The tiger jumps in and gets stuck, while the fox escapes. A classic tale of brain over brawn.",
+      "characters": [
+        "The Clever Fox and the Foolish Tiger"
+      ],
+      "themes": [
+        "intelligence",
+        "wit",
+        "survival",
+        "animals"
+      ],
+      "moral": "Brain is better than brawn; think before you act.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_008",
+      "title": "Panesoi (পানেচৈ)",
+      "summary": "The tragic story of Panesoi, a beautiful girl who was transformed into a water lily by the curse of a river goddess. Her lover searches for her relentlessly, and ultimately their pure love breaks the curse, reuniting them.",
+      "characters": [
+        "Panesoi"
+      ],
+      "themes": [
+        "love",
+        "curse",
+        "transformation",
+        "nature"
+      ],
+      "moral": "True love and devotion can overcome even divine curses.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Assamese Mythology",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_009",
+      "title": "Phulkonwar and Monikonwar (ফুলকোঁৱৰ আৰু মণিকোঁৱৰ)",
+      "summary": "An epic Assamese ballad telling the story of two princely friends, Phulkonwar and Monikonwar. Their adventures involve magical wooden horses, rescuing princesses, and fighting demons. Monikonwar is eventually swallowed by a river deity, leading to Phulkonwar's heroic quest to save him.",
+      "characters": [
+        "Phulkonwar and Monikonwar"
+      ],
+      "themes": [
+        "friendship",
+        "magic",
+        "adventure",
+        "bravery"
+      ],
+      "moral": "True friendship demands sacrifice and unyielding bravery in the face of danger.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Assamese Ballads (Geet)",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_010",
+      "title": "The Elephant-Apple Princess (ঔ-কুঁৱৰী)",
+      "summary": "A magical tale about a princess born inside an Ou-Tenga (elephant-apple). A prince discovers the fruit, and at night, the beautiful Ou-Kuwori emerges from it to do household chores. The prince eventually catches her, breaks the shell, and marries her, overcoming various magical obstacles.",
+      "characters": [
+        "The Elephant-Apple Princess"
+      ],
+      "themes": [
+        "magic",
+        "transformation",
+        "romance",
+        "hidden beauty"
+      ],
+      "moral": "True beauty and value are often hidden beneath hard exteriors.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_011",
+      "title": "The Frog Prince (ভেকুলী কোঁৱৰ)",
+      "summary": "A childless couple is blessed with a son who is born as a frog. Despite his appearance, the frog prince is incredibly intelligent and magically skilled. He undertakes difficult tasks for the king, eventually winning the princess's hand in marriage and transforming into a handsome prince.",
+      "characters": [
+        "The Frog Prince"
+      ],
+      "themes": [
+        "transformation",
+        "inner beauty",
+        "magic",
+        "tasks"
+      ],
+      "moral": "Do not judge someone by their appearance; true worth lies within.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_012",
+      "title": "The Tiger and the Crab (বাঘ আৰু কেঁকোৰা)",
+      "summary": "A hungry tiger captures a crab at the edge of a pond. The clever crab challenges the tiger to a strength duel, saying it can hold onto the tiger's neck. The tiger agrees. The crab grips the tiger's neck tightly with its powerful claws, causing the tiger immense pain and forcing it to beg for mercy and flee.",
+      "characters": [
+        "The Tiger and the Crab"
+      ],
+      "themes": [
+        "wit",
+        "survival",
+        "animals"
+      ],
+      "moral": "Intelligence and resourcefulness can defeat sheer physical strength.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_013",
+      "title": "The Sly Fox (শিয়ালৰ বুদ্ধি)",
+      "summary": "A cunning fox accidentally falls into a deep well. When a thirsty goat walks by and asks about the water, the fox deceitfully praises the water as the best in the forest, convincing the goat to jump in. The fox then climbs onto the goat's back and horns to leap out, leaving the gullible goat trapped.",
+      "characters": [
+        "The Sly Fox"
+      ],
+      "themes": [
+        "cunning",
+        "deception",
+        "animals",
+        "survival"
+      ],
+      "moral": "Look before you leap; do not blindly trust the words of those in trouble.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_014",
+      "title": "Kanchanee (কাঞ্চনী)",
+      "summary": "Kanchanee is a sweet, virtuous girl who is tormented by her wicked stepmother and stepsister. Despite her hardships, she receives magical aid from a bird and forest spirits. Her patience and purity eventually lead to her marrying a royal prince, while her cruel family is brought to justice.",
+      "characters": [
+        "Kanchanee"
+      ],
+      "themes": [
+        "stepfamily",
+        "magic",
+        "royalty",
+        "justice"
+      ],
+      "moral": "Virtue and patience always find their reward; cruelty leads to ruin.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_015",
+      "title": "The Old Couple and the Jackals (বুঢ়া-বুঢ়ী আৰু শিয়াল)",
+      "summary": "An old farmer and his wife are troubled by a pack of jackals raiding their sugarcane crop. They devise a plan where the old man plays dead and the wife invites the jackals to carry him away. Once the jackals gather, the old man leaps up with a stick, teaching the pests a painful lesson.",
+      "characters": [
+        "The Old Couple and the Jackals"
+      ],
+      "themes": [
+        "humor",
+        "wit",
+        "trickery",
+        "animals"
+      ],
+      "moral": "Clever strategies and joint effort can resolve persistent troubles.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_016",
+      "title": "The Raven and the Sparrow (কাউৰী আৰু ঘৰচিৰিকা)",
+      "summary": "A greedy raven bets a sparrow that it can eat her eggs. The sparrow agrees on the condition that the raven first wash its dirty beak. The raven seeks water, but the river demands a pot, the potter demands clay, and so forth. By the time the raven returns, the eggs have hatched and the sparrow has escaped.",
+      "characters": [
+        "The Raven and the Sparrow"
+      ],
+      "themes": [
+        "birds",
+        "wit",
+        "delaying tactics"
+      ],
+      "moral": "Strategic delay and quick thinking can prevent disaster.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_017",
+      "title": "The Fortune Teller (গণক)",
+      "summary": "A fraudulent astrologer pretends to know the future and tell fortunes. When the king's treasure is stolen, the astrologer accidentally guesses the correct location of the gold due to a series of hilarious coincidences and luck, convincing everyone of his mystical powers.",
+      "characters": [
+        "The Fortune Teller"
+      ],
+      "themes": [
+        "satire",
+        "fortune-telling",
+        "luck",
+        "humor"
+      ],
+      "moral": "Luck may bring temporary success, but honesty is the true path.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    },
+    {
+      "id": "ft_018",
+      "title": "Gongatoup (The Globe Fish) (গঙ্গাটোপ)",
+      "summary": "Gongatoup is a small globe fish who thinks too highly of himself. He inflates his body to a massive size to intimidate the other fish and brag about his greatness. However, he inflates himself beyond his natural limit and bursts.",
+      "characters": [
+        "Gongatoup (The Globe Fish)"
+      ],
+      "themes": [
+        "pride",
+        "animals",
+        "nature",
+        "humility"
+      ],
+      "moral": "Pride goes before a fall; do not inflate your worth beyond reality.",
+      "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
+      "source": "Burhi Aair Sadhu",
+      "contributor": null,
+      "confidence": "published"
+    }
+  ]
+}
