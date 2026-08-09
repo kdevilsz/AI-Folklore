@@ -6,7 +6,7 @@ from pinecone import Pinecone
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-DATA_DIR = r"c:\Users\Bhaswati Sikdar\Documents\data"
+DATA_DIR = os.getenv("DATA_DIR", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 INDEX_NAME = "assamese-folklore"
 
 def _load_env():

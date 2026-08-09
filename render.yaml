@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: lorebridge-api
+    env: python
+    buildCommand: pip install -r server/requirements.txt
+    startCommand: uvicorn server.server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PINECONE_API_KEY
+        sync: false

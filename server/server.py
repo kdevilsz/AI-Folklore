@@ -48,6 +48,11 @@ class ChatRequest(BaseModel):
     query: str
     history: list[dict] | None = None
 
+@app.get("/health")
+@app.get("/api/health")
+def health_check():
+    return {"status": "healthy", "service": "lorebridge-api"}
+
 @app.post("/api/chat")
 @limiter.limit("10/minute")
 def chat(request: Request, chat_request: ChatRequest):

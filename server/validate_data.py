@@ -2,7 +2,7 @@ import os
 import json
 from pydantic import BaseModel, ValidationError
 
-DATA_DIR = r"c:\Users\Bhaswati Sikdar\Documents\data"
+DATA_DIR = os.getenv("DATA_DIR", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FOLKTALES_JSON = os.path.join(DATA_DIR, "folktales.json")
 PROVERBS_JSON = os.path.join(DATA_DIR, "proverbs.json")
 
