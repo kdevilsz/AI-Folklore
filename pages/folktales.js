@@ -63,7 +63,7 @@ export async function renderFolktales(container) {
         let sidebarHtml = `
             <aside class="filter-sidebar">
                 <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">${lang === 'as' ? 'ফিল্টাৰ কৰক' : 'Filter by Tag'}</h4>
-                <div style="display:flex; flex-direction:column; gap:0.5rem; margin-top:1rem;">
+                <div class="filter-options">
                     <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'folktale')">${lang === 'as' ? 'আটাইবোৰ' : 'All Stories'}</button>
                     <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'folktale')" style="border-color: #ff4b4b; color: #ff4b4b;">${lang === 'as' ? 'মোৰ প্ৰিয়' : 'My Favorites'}</button>
                     ${uniqueTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'folktale')">${tag}</button>`).join('')}

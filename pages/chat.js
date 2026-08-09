@@ -94,13 +94,13 @@ export async function renderChat(container) {
             </div>
             
             <div class="chat-input-area">
-                <div class="prompt-suggestions" id="prompt-suggestions" style="display: flex; gap: 0.6rem; margin-bottom: 1.2rem; flex-wrap: wrap; justify-content: center;">
+                <div class="prompt-suggestions chat-suggestions" id="prompt-suggestions">
                     ${storyTitle ? `
-                        <button class="suggestion-chip explanation-chip" data-mode="simply" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip1}</button>
-                        <button class="suggestion-chip explanation-chip" data-mode="children" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip2}</button>
-                        <button class="suggestion-chip explanation-chip" data-mode="culturally" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip3}</button>
-                        <button class="suggestion-chip explanation-chip" data-mode="historically" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip4}</button>
-                        <button class="suggestion-chip explanation-chip" data-mode="compare" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip5}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="simply">${chip1}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="children">${chip2}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="culturally">${chip3}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="historically">${chip4}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="compare">${chip5}</button>
                     ` : `
                         <button class="suggestion-chip" onclick="document.getElementById('chat-input').value=this.innerText; document.getElementById('chat-send').click();">${suggest1}</button>
                         <button class="suggestion-chip" onclick="document.getElementById('chat-input').value=this.innerText; document.getElementById('chat-send').click();">${suggest2}</button>
@@ -108,7 +108,7 @@ export async function renderChat(container) {
                     `}
                 </div>
 
-                <div style="display: flex; gap: 1rem;">
+                <div class="chat-input-row">
                     <input type="text" id="chat-input" placeholder="${placeholderText}" autocomplete="off">
                     <button id="mic-btn" class="btn-icon" title="Speak to the Oracle">🎤</button>
                     <button id="chat-send" class="btn-primary">${sendButtonText}</button>

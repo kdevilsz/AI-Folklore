@@ -229,7 +229,7 @@ async function renderFolktales(container) {
         let sidebarHtml = `
             <aside class="filter-sidebar">
                 <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">${lang === 'as' ? 'ফিল্টাৰ কৰক' : 'Filter by Tag'}</h4>
-                <div style="display:flex; flex-direction:column; gap:0.5rem; margin-top:1rem;">
+                <div class="filter-options">
                     <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'folktale')">${lang === 'as' ? 'আটাইবোৰ' : 'All Stories'}</button>
                     <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'folktale')" style="border-color: #ff4b4b; color: #ff4b4b;">${lang === 'as' ? 'মোৰ প্ৰিয়' : 'My Favorites'}</button>
                     ${uniqueTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'folktale')">${tag}</button>`).join('')}
@@ -442,7 +442,7 @@ async function renderProverbs(container) {
         let sidebarHtml = `
             <aside class="filter-sidebar">
                 <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">${lang === 'as' ? 'ফিল্টাৰ কৰক' : 'Filter by Tag'}</h4>
-                <div style="display:flex; flex-direction:column; gap:0.5rem; margin-top:1rem;">
+                <div class="filter-options">
                     <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'proverb')">${lang === 'as' ? 'আটাইবোৰ' : 'All Proverbs'}</button>
                     <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'proverb')" style="border-color: #ff4b4b; color: #ff4b4b;">${lang === 'as' ? 'মোৰ প্ৰিয়' : 'My Favorites'}</button>
                     ${uniqueTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'proverb')">${tag}</button>`).join('')}
@@ -763,13 +763,13 @@ async function renderChat(container) {
             </div>
             
             <div class="chat-input-area">
-                <div class="prompt-suggestions" id="prompt-suggestions" style="display: flex; gap: 0.6rem; margin-bottom: 1.2rem; flex-wrap: wrap; justify-content: center;">
+                <div class="prompt-suggestions chat-suggestions" id="prompt-suggestions">
                     ${storyTitle ? `
-                        <button class="suggestion-chip explanation-chip" data-mode="simply" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip1}</button>
-                        <button class="suggestion-chip explanation-chip" data-mode="children" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip2}</button>
-                        <button class="suggestion-chip explanation-chip" data-mode="culturally" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip3}</button>
-                        <button class="suggestion-chip explanation-chip" data-mode="historically" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip4}</button>
-                        <button class="suggestion-chip explanation-chip" data-mode="compare" style="border-radius: 20px; border: 1px solid var(--primary); background: transparent; color: var(--primary); padding: 0.5rem 1rem; font-size: 0.85rem; cursor: pointer; transition: var(--transition);">${chip5}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="simply">${chip1}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="children">${chip2}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="culturally">${chip3}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="historically">${chip4}</button>
+                        <button class="suggestion-chip explanation-chip" data-mode="compare">${chip5}</button>
                     ` : `
                         <button class="suggestion-chip" onclick="document.getElementById('chat-input').value=this.innerText; document.getElementById('chat-send').click();">${suggest1}</button>
                         <button class="suggestion-chip" onclick="document.getElementById('chat-input').value=this.innerText; document.getElementById('chat-send').click();">${suggest2}</button>
@@ -777,7 +777,7 @@ async function renderChat(container) {
                     `}
                 </div>
 
-                <div style="display: flex; gap: 1rem;">
+                <div class="chat-input-row">
                     <input type="text" id="chat-input" placeholder="${placeholderText}" autocomplete="off">
                     <button id="mic-btn" class="btn-icon" title="Speak to the Oracle">🎤</button>
                     <button id="chat-send" class="btn-primary">${sendButtonText}</button>
@@ -1147,7 +1147,7 @@ function renderAbout(container) {
         <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.5rem; text-align: left; padding: 0 1rem;">
             
             <!-- Row 1: Why It Matters & The Problem -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+            <div class="about-grid-2col" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 <div class="card about-section-card" style="border-top: 3px solid var(--primary); padding-top: 1.5rem;">
                     <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 0.75rem; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 0.5rem;">
                         ${header1}
@@ -1200,7 +1200,7 @@ function renderAbout(container) {
                 <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1rem;">
                     ${text5}
                 </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; font-size: 0.85rem; color: var(--text-muted);">
+                <div class="about-grid-3col" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.2rem; font-size: 0.85rem; color: var(--text-muted);">
                     <div style="padding: 0.8rem; background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px;">
                         <strong style="color: var(--primary); display: block; margin-bottom: 0.3rem;">${tech1}</strong>
                         ${tech1_desc}
@@ -2503,6 +2503,17 @@ function route() {
     const app = document.getElementById('app');
     app.innerHTML = '';
     
+    // Close mobile nav menu if open
+    const navLinks = document.getElementById('nav-links');
+    const navToggle = document.getElementById('nav-toggle');
+    if (navLinks && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        if (navToggle) {
+            navToggle.innerText = '☰';
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+    
     document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
     const link = document.querySelector(`nav a[href="${baseHash}"]`);
     if(link) link.classList.add('active');
@@ -2803,6 +2814,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchClose = document.getElementById('search-close');
     const searchResults = document.getElementById('search-results');
     const themeToggle = document.getElementById('theme-toggle');
+
+    // Mobile Hamburger Menu Logic
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = navLinks.classList.toggle('open');
+            navToggle.innerText = isOpen ? '✕' : '☰';
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                navToggle.innerText = '☰';
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            const nav = document.getElementById('main-nav') || document.querySelector('nav');
+            if (nav && !nav.contains(e.target) && navLinks.classList.contains('open')) {
+                navLinks.classList.remove('open');
+                navToggle.innerText = '☰';
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 
     // Theme Toggle Logic
     if (themeToggle) {

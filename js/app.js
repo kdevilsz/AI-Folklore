@@ -20,6 +20,17 @@ function route() {
     const app = document.getElementById('app');
     app.innerHTML = '';
     
+    // Close mobile nav menu if open
+    const navLinks = document.getElementById('nav-links');
+    const navToggle = document.getElementById('nav-toggle');
+    if (navLinks && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        if (navToggle) {
+            navToggle.innerText = '☰';
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+    
     document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
     const link = document.querySelector(`nav a[href="${baseHash}"]`);
     if(link) link.classList.add('active');
@@ -320,6 +331,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchClose = document.getElementById('search-close');
     const searchResults = document.getElementById('search-results');
     const themeToggle = document.getElementById('theme-toggle');
+
+    // Mobile Hamburger Menu Logic
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = navLinks.classList.toggle('open');
+            navToggle.innerText = isOpen ? '✕' : '☰';
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                navToggle.innerText = '☰';
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            const nav = document.getElementById('main-nav') || document.querySelector('nav');
+            if (nav && !nav.contains(e.target) && navLinks.classList.contains('open')) {
+                navLinks.classList.remove('open');
+                navToggle.innerText = '☰';
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 
     // Theme Toggle Logic
     if (themeToggle) {

@@ -68,7 +68,7 @@ export function renderAbout(container) {
         <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.5rem; text-align: left; padding: 0 1rem;">
             
             <!-- Row 1: Why It Matters & The Problem -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+            <div class="about-grid-2col" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 <div class="card about-section-card" style="border-top: 3px solid var(--primary); padding-top: 1.5rem;">
                     <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 0.75rem; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 0.5rem;">
                         ${header1}
@@ -121,7 +121,7 @@ export function renderAbout(container) {
                 <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1rem;">
                     ${text5}
                 </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; font-size: 0.85rem; color: var(--text-muted);">
+                <div class="about-grid-3col" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.2rem; font-size: 0.85rem; color: var(--text-muted);">
                     <div style="padding: 0.8rem; background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px;">
                         <strong style="color: var(--primary); display: block; margin-bottom: 0.3rem;">${tech1}</strong>
                         ${tech1_desc}
