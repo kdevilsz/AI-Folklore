@@ -28,11 +28,10 @@ function formatDate(dateStr) {
 export async function renderProverbs(container) {
     const lang = window.currentLanguage || 'en';
 
-    const pageTitle = lang === 'as' ? "ফকৰা-যোজনা" : "Assamese Proverbs";
-    const pageSubtitle = lang === 'as' ? 
-        "অসমীয়া সমাজত ব্যৱহৃত প্ৰাচীন বুৰঞ্জী আৰু পূৰ্বপুৰুষৰ জ্ঞান অন্বেষণ কৰক।" :
-        "Discover the ancestral wisdom and cultural idioms of Assam.";
-    const loadingText = lang === 'as' ? "পূৰ্বপুৰুষৰ জ্ঞান অন্বেষণ কৰা হৈছে..." : "Unearthing ancestral wisdom...";
+    // UI Headings & Labels always remain clean and consistent in English
+    const pageTitle = "Assamese Proverbs";
+    const pageSubtitle = "Discover the ancestral wisdom and cultural idioms of Assam.";
+    const loadingText = "Unearthing ancestral wisdom...";
 
     container.innerHTML = `
         <h1 class="page-title">${pageTitle}</h1>
@@ -61,10 +60,10 @@ export async function renderProverbs(container) {
 
         let sidebarHtml = `
             <aside class="filter-sidebar">
-                <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">${lang === 'as' ? 'ফিল্টাৰ কৰক' : 'Filter by Tag'}</h4>
+                <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">Filter by Tag</h4>
                 <div class="filter-options">
-                    <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'proverb')">${lang === 'as' ? 'আটাইবোৰ' : 'All Proverbs'}</button>
-                    <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'proverb')" style="border-color: #ff4b4b; color: #ff4b4b;">${lang === 'as' ? 'মোৰ প্ৰিয়' : 'My Favorites'}</button>
+                    <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'proverb')">All Proverbs</button>
+                    <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'proverb')" style="border-color: #ff4b4b; color: #ff4b4b;">My Favorites</button>
                     ${uniqueTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'proverb')">${tag}</button>`).join('')}
                 </div>
             </aside>
@@ -83,6 +82,8 @@ export async function renderProverbs(container) {
             const themes = p.theme ? p.theme : [];
             const cardTags = [roots, ...themes].map(t => t.toLowerCase()).join('|');
             
+            // In Assamese mode, headline is Assamese script with English subtitle
+            // In English mode, headline is English translation with Assamese subtitle
             const primaryHeader = lang === 'as' ? p.proverb : p.translation;
             const secondaryHeader = lang === 'as' ? p.translation : p.proverb;
             
@@ -90,10 +91,10 @@ export async function renderProverbs(container) {
                 <div class="card proverb-card" data-tags="${cardTags.replace(/"/g, '&quot;')}" data-id="${p.id}">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
                         <div style="flex:1;">
-                            <h4 style="font-size: 1.5rem; color: var(--text); margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; line-height: 1.35;">
+                            <h4 style="font-size: 1.45rem; color: var(--text); margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; line-height: 1.35;">
                                 ${primaryHeader}
                             </h4>
-                            <p style="color: var(--primary); font-weight: 500; font-size: 1.1rem; margin-bottom: 0; font-family: 'Outfit', sans-serif;">${secondaryHeader}</p>
+                            <p style="color: var(--primary); font-weight: 500; font-size: 1.05rem; margin-bottom: 0; font-family: 'Outfit', sans-serif;">${secondaryHeader}</p>
                         </div>
                         <div style="display:flex; gap:0.5rem; align-items:center;">
                             <span id="view-count-${p.id}" style="font-size:0.8rem; color:var(--text-muted); cursor:help;" title="Views">👁️ ${window.getViewCount ? window.getViewCount(p.id) : 0}</span>
@@ -130,7 +131,7 @@ export async function renderProverbs(container) {
                             </div>
                              <div class="card-section" style="margin-top: auto; padding-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1);">
                                 <h5>Cultural Context</h5>
-                                <p style="font-size: 0.85rem; color: var(--text-muted);">${p.cultural_context}</p>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">${p.cultural_context || 'Used in traditional Assamese discourse to impart ancestral wisdom.'}</p>
                             </div>
                             <div class="card-section" style="margin-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem;">
                                 <h5>Source Confidence</h5>

@@ -2,10 +2,8 @@
 async function renderHome(container) {
     const lang = window.currentLanguage || 'en';
     
-    const title = lang === 'as' ? "ব্ৰহ্মপুত্ৰৰ প্ৰতিধ্বনি" : "Echoes of the Brahmaputra";
-    const subtitle = lang === 'as' ? 
-        `<span class="dropcap">ল</span>ৰীব্ৰীজে অসমৰ কালজয়ী সাধুকথা, ফকৰা-যোজনা আৰু পৰম্পৰাগত জ্ঞান সংৰক্ষণ কৰে আৰু পোহৰাই তোলে। নদীয়ে গীত গোৱা আৰু আত্মাই ফুচফুচাই কথা কোৱা এখন জগতত প্ৰৱেশ কৰক। <a href="#about" style="color: var(--primary); text-decoration: underline; font-weight: 500;">আমাৰ কাহিনী পঢ়ক &rarr;</a>` :
-        `<span class="dropcap">L</span>oreBridge preserves and illuminates the timeless folktales, proverbs, and traditional wisdom of Assam. Step into a world where rivers sing and spirits whisper. <a href="#about" style="color: var(--primary); text-decoration: underline; font-weight: 500;">Read our story &rarr;</a>`;
+    const title = "Echoes of the Brahmaputra";
+    const subtitle = `<span class="dropcap">L</span>oreBridge preserves and illuminates the timeless folktales, proverbs, and traditional wisdom of Assam. Step into a world where rivers sing and spirits whisper. <a href="#about" style="color: var(--primary); text-decoration: underline; font-weight: 500;">Read our story &rarr;</a>`;
 
     container.innerHTML = `
         <div style="text-align: center; padding: 3.5rem 0 2rem 0;">
@@ -43,27 +41,28 @@ async function renderHome(container) {
                 <div class="card" style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
                         <h3 style="font-size: 1.4rem; margin-bottom: 1rem; font-family: 'Playfair Display', serif; color: var(--primary);">
-                            ${lang === 'as' ? 'অৰাকল আপোনাৰ অপেক্ষাত' : 'The Oracle Awaits'}
+                            The Oracle Awaits
                         </h3>
                         <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
-                            ${lang === 'as' ? 'অসমৰ প্ৰাচীন সাধুকথা অন্বেষণ কৰিবলৈ আমাৰ এআই-চালিত অৰাকলৰ সহায় লওক। তেজীমলা, বুধিয়ক শিয়াল বা অৰণ্যৰ ৰহস্যময় জীৱবোৰৰ বিষয়ে সোধক।' : 'Consult our AI-powered Oracle to delve deep into the ancient stories. Ask about Tejimola, the witty Phikori, or the mystic creatures of the forest.'}
+                            Consult our AI-powered Oracle to delve deep into ancient stories, analyze morals, or request bilingual explanations of Assamese folk traditions.
                         </p>
                     </div>
-                    <button class="btn-primary" onclick="window.location.hash='#chat'" style="margin-top: 1.5rem; align-self: flex-start;">
-                        ${lang === 'as' ? 'অৰাকলৰ পৰামৰ্শ লওক' : 'Consult the Oracle'}
+                    <button class="btn-primary" style="margin-top: 1.5rem; width: 100%;" onclick="window.location.hash='#chat'">
+                        Enter Sanctuary &rarr;
                     </button>
                 </div>
+                
                 <div class="card" style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
                         <h3 style="font-size: 1.4rem; margin-bottom: 1rem; font-family: 'Playfair Display', serif; color: var(--primary);">
-                            ${lang === 'as' ? 'প্ৰকল্পৰ বিষয়ে' : 'About the Project'}
+                            Lore Web
                         </h3>
                         <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
-                            ${lang === 'as' ? 'লৰীব্ৰীজ হৈছে এআই ব্যৱহাৰ কৰি অসমৰ সংবেদনশীল মৌখিক পৰম্পৰা, সাধুকথা আৰু পূৰ্বপুৰুষৰ জ্ঞান সংৰক্ষণ কৰাৰ বাবে উৎসৰ্গিত এক ডিজিটেল আশ্ৰয়স্থল।' : 'LoreBridge is a digital sanctuary dedicated to preserving the fragile oral traditions, folktales, and ancestral wisdom of Assam using modern AI.'}
+                            Navigate the interconnected web of motifs, characters, and cultural archetypes across Assam's folklore collections.
                         </p>
                     </div>
-                    <button class="btn-primary" onclick="window.location.hash='#about'" style="margin-top: 1.5rem; align-self: flex-start;">
-                        ${lang === 'as' ? 'আমাৰ কাহিনী জানক' : 'Learn Our Story'}
+                    <button class="btn-primary" style="margin-top: 1.5rem; width: 100%;" onclick="window.location.hash='#graph'">
+                        Explore Web &rarr;
                     </button>
                 </div>
             </div>
@@ -71,23 +70,25 @@ async function renderHome(container) {
     `;
 
     try {
-        const [ftRes, prRes] = await Promise.all([
+        const [folktalesRes, proverbsRes] = await Promise.all([
             fetch('/folktales.json'),
             fetch('/proverbs.json')
         ]);
-        const ftData = await ftRes.json();
-        const prData = await prRes.json();
         
-        const folktales = ftData.entries;
-        const proverbs = prData.entries;
+        const folktalesData = await folktalesRes.json();
+        const proverbsData = await proverbsRes.json();
         
+        const folktales = folktalesData.entries || [];
+        const proverbs = proverbsData.entries || [];
+        
+        if (folktales.length === 0 || proverbs.length === 0) return;
+
         const randomFolktale = folktales[Math.floor(Math.random() * folktales.length)];
         const randomProverb = proverbs[Math.floor(Math.random() * proverbs.length)];
         
-        // Extract Unique Themes
         const themeCounts = {};
-        [...folktales, ...proverbs].forEach(item => {
-            const itemThemes = item.themes || item.theme || [];
+        folktales.forEach(f => {
+            const itemThemes = f.themes || [];
             itemThemes.forEach(t => {
                 const key = t.toLowerCase().trim();
                 themeCounts[key] = (themeCounts[key] || 0) + 1;
@@ -98,59 +99,46 @@ async function renderHome(container) {
             .sort((a, b) => b[1] - a[1])
             .slice(0, 8)
             .map(t => t[0]);
- 
+
         const themeIcons = {
             'magic': '✨', 'animals': '🐅', 'stepmother': '👩‍👧', 'justice': '⚖️',
             'nature': '🌿', 'family': '👨‍👩‍👧', 'love': '❤️', 'humor': '😂', 'survival': '🔥',
             'greed': '💰', 'friendship': '🤝'
         };
 
-        const themeTranslations = {
-            'magic': 'যাদুকৰী', 'animals': 'পশু-পক্ষী', 'stepmother': 'মাহী আই', 'justice': 'ন্যায়',
-            'nature': 'প্ৰকৃতি', 'family': 'পৰিয়াল', 'love': 'প্ৰেম', 'humor': 'কৌতুক', 'survival': 'জীৱন সংগ্ৰাম',
-            'greed': 'লোভ', 'friendship': 'বন্ধুত্ব'
-        };
+        const taleTitle = lang === 'as' ? (randomFolktale.title_as || randomFolktale.title) : (randomFolktale.title_en || randomFolktale.title.replace(/\s*\(.*?\)/, ''));
+        const taleSummary = lang === 'as' ? (randomFolktale.summary_as || randomFolktale.summary) : (randomFolktale.summary_en || randomFolktale.summary);
+        
+        const proverbPrimary = lang === 'as' ? randomProverb.proverb : randomProverb.translation;
+        const proverbSecondary = lang === 'as' ? randomProverb.translation : randomProverb.proverb;
 
-        function parseTitle(titleStr, language) {
-            const match = titleStr.match(/^([^(]+)\s*(?:\(([^)]+)\))?$/);
-            if (match) {
-                const enTitle = match[1].trim();
-                const asTitle = match[2] ? match[2].trim() : "";
-                if (language === 'as' && asTitle) {
-                    return asTitle;
-                }
-                return enTitle;
-            }
-            return titleStr;
-        }
- 
         const widgetsContainer = document.getElementById('home-widgets');
         if (widgetsContainer) {
             widgetsContainer.innerHTML = `
                 <div class="card" style="flex: 1; min-width: 300px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(230, 200, 106, 0.3);">
                     <h3 style="color: var(--primary); font-size: 1.2rem; margin-bottom: 1rem;">
-                        ${lang === 'as' ? '📖 যাদৃচ্ছিক সাধু' : '📖 Random Tale'}
+                        📖 Random Tale
                     </h3>
                     <h4 style="font-size: 1.3rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif;">
-                        ${parseTitle(randomFolktale.title, lang)}
+                        ${taleTitle}
                     </h4>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">${randomFolktale.summary.substring(0, 150)}...</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">${taleSummary.substring(0, 150)}...</p>
                     <button class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;" onclick="window.location.hash='#folktales'">
-                        ${lang === 'as' ? 'সাধুকথা অন্বেষণ কৰক' : 'Explore Tales'}
+                        Explore Tales
                     </button>
                 </div>
                 
                 <div class="card" style="flex: 1; min-width: 300px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(230, 200, 106, 0.3);">
                     <h3 style="color: var(--primary); font-size: 1.2rem; margin-bottom: 1rem;">
-                        ${lang === 'as' ? '💡 দৈনিক প্ৰজ্ঞা' : '💡 Daily Wisdom'}
+                        💡 Daily Wisdom
                     </h3>
-                    <h4 style="font-size: 1.4rem; font-family: 'Outfit', sans-serif; margin-bottom: 0.5rem; color: var(--text); font-weight: 500;">
-                        ${randomProverb.proverb}
+                    <h4 style="font-size: 1.35rem; font-family: 'Playfair Display', serif; margin-bottom: 0.4rem; color: var(--text); font-weight: 500;">
+                        ${proverbPrimary}
                     </h4>
-                    <p style="color: var(--primary); font-weight: bold; font-size: 0.95rem; margin-bottom: 0.5rem;">${randomProverb.meaning}</p>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">${randomProverb.translation}</p>
+                    <p style="color: var(--primary); font-weight: 500; font-size: 0.95rem; margin-bottom: 0.4rem;">${proverbSecondary}</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">${randomProverb.meaning}</p>
                     <button class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;" onclick="window.location.hash='#proverbs'">
-                        ${lang === 'as' ? 'ফকৰা-যোজনা অন্বেষণ কৰক' : 'Discover Proverbs'}
+                        Discover Proverbs
                     </button>
                 </div>
             `;
@@ -158,21 +146,18 @@ async function renderHome(container) {
             const themeHTML = `
                 <div style="width: 100%; margin-top: 3rem; text-align: center;">
                     <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; color: var(--primary);">
-                        ${lang === 'as' ? 'বিষয় অনুসৰি অন্বেষণ কৰক' : 'Explore by Theme'}
+                        Explore by Theme
                     </h3>
                     <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-                        ${lang === 'as' ? 'অসমীয়া লোক-সংস্কৃতি গঢ়ি তোলা মটিফবোৰৰ গভীৰতালৈ যাওক' : 'Dive into the motifs that shape Assamese lore'}
+                        Dive into the motifs that shape Assamese lore
                     </p>
                     <div class="theme-explorer-grid">
-                        ${topThemes.map(t => {
-                            const themeLabel = lang === 'as' ? (themeTranslations[t] || t) : t;
-                            return `
-                                <div class="theme-explore-card" onclick="window.location.hash='#folktales'; setTimeout(() => { const btn = Array.from(document.querySelectorAll('.filter-chip')).find(el => el.innerText.toLowerCase() === '${t}' || el.innerText === '${themeLabel}'); if(btn) btn.click(); }, 300);">
-                                    <span class="theme-explore-icon">${themeIcons[t] || '🔖'}</span>
-                                    <span class="theme-explore-label" style="text-transform: capitalize;">${themeLabel}</span>
-                                </div>
-                            `;
-                        }).join('')}
+                        ${topThemes.map(t => `
+                            <div class="theme-explore-card" onclick="window.location.hash='#folktales'; setTimeout(() => { const btn = Array.from(document.querySelectorAll('.filter-chip')).find(el => el.innerText.toLowerCase() === '${t}'); if(btn) btn.click(); }, 300);">
+                                <span class="theme-explore-icon">${themeIcons[t] || '🔖'}</span>
+                                <span class="theme-explore-label" style="text-transform: capitalize;">${t}</span>
+                            </div>
+                        `).join('')}
                     </div>
                 </div>
             `;
@@ -215,11 +200,10 @@ function formatDate(dateStr) {
 async function renderFolktales(container) {
     const lang = window.currentLanguage || 'en';
 
-    const pageTitle = lang === 'as' ? "অসমীয়া সাধুকথা" : "Assamese Folktales";
-    const pageSubtitle = lang === 'as' ? 
-        "অসমৰ চহকী মৌখিক পৰম্পৰা আৰু প্ৰজন্মৰ পিছত প্ৰজন্ম ধৰি চলি অহা যাদুকৰী সাধুবোৰ অন্বেষণ কৰক।" :
-        "Explore the rich oral traditions and magical stories passed down through generations in Assam.";
-    const loadingText = lang === 'as' ? "প্ৰাচীন সাধুবোৰ অন্বেষণ কৰা হৈছে..." : "Unearthing ancient manuscripts...";
+    // UI Headings & Labels always remain clean and consistent in English
+    const pageTitle = "Assamese Folktales";
+    const pageSubtitle = "Explore the rich oral traditions and magical stories passed down through generations in Assam.";
+    const loadingText = "Unearthing ancient manuscripts...";
 
     container.innerHTML = `
         <h1 class="page-title">${pageTitle}</h1>
@@ -249,10 +233,10 @@ async function renderFolktales(container) {
         // Render sidebar with filters
         let sidebarHtml = `
             <aside class="filter-sidebar">
-                <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">${lang === 'as' ? 'ফিল্টাৰ কৰক' : 'Filter by Tag'}</h4>
+                <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">Filter by Tag</h4>
                 <div class="filter-options">
-                    <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'folktale')">${lang === 'as' ? 'আটাইবোৰ' : 'All Stories'}</button>
-                    <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'folktale')" style="border-color: #ff4b4b; color: #ff4b4b;">${lang === 'as' ? 'মোৰ প্ৰিয়' : 'My Favorites'}</button>
+                    <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'folktale')">All Stories</button>
+                    <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'folktale')" style="border-color: #ff4b4b; color: #ff4b4b;">My Favorites</button>
                     ${uniqueTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'folktale')">${tag}</button>`).join('')}
                 </div>
             </aside>
@@ -266,16 +250,18 @@ async function renderFolktales(container) {
                 <div class="card-grid-container" id="folktale-grid">
         `;
         
-        function parseTitle(titleStr, language) {
-            const match = titleStr.match(/^([^(]+)\s*(?:\(([^)]+)\))?$/);
-            if (match) {
-                const enTitle = match[1].trim();
-                const asTitle = match[2] ? match[2].trim() : "";
-                if (language === 'as' && asTitle) {
-                    return `${asTitle} (${enTitle})`;
-                }
+        function parseCleanTitle(f, language) {
+            if (language === 'as') {
+                if (f.title_as) return `${f.title_as} (${f.title_en || f.title.replace(/\s*\(.*?\)/, '')})`;
+                const match = (f.title || '').match(/^([^(]+)\s*(?:\(([^)]+)\))?$/);
+                if (match && match[2]) return `${match[2].trim()} (${match[1].trim()})`;
+                return f.title;
+            } else {
+                if (f.title_en) return f.title_en;
+                const match = (f.title || '').match(/^([^(]+)\s*(?:\(([^)]+)\))?$/);
+                if (match) return match[1].trim();
+                return f.title;
             }
-            return titleStr;
         }
         
         folktales.forEach(f => {
@@ -285,7 +271,11 @@ async function renderFolktales(container) {
             
             // Build data-tags string
             const cardTags = [roots, ...themes].map(t => t.toLowerCase()).join('|');
-            const cardTitle = parseTitle(f.title, lang);
+            const cardTitle = parseCleanTitle(f, lang);
+            
+            // Select content based on active language mode
+            const storySummary = (lang === 'as' && (f.summary_as || f.assamese)) ? (f.summary_as || f.assamese) : (f.summary_en || f.summary);
+            const storyMoral = (lang === 'as' && f.moral_as) ? f.moral_as : (f.moral_en || f.moral);
             
             html += `
                 <div class="card folktale-card" data-tags="${cardTags.replace(/"/g, '&quot;')}" data-id="${f.id}">
@@ -293,7 +283,7 @@ async function renderFolktales(container) {
                         <h4>${cardTitle}</h4>
                         <div style="display:flex; gap:0.5rem; align-items:center;">
                             <span id="view-count-${f.id}" style="font-size:0.8rem; color:var(--text-muted); cursor:help;" title="Views">👁️ ${window.getViewCount ? window.getViewCount(f.id) : 0}</span>
-                            <button class="btn-icon" style="width: 32px; height: 32px; font-size: 0.9rem;" onclick="window.shareStory(this, '${f.title.replace(/'/g, "\\'")}', '${f.summary.replace(/'/g, "\\'")}')" title="Share">📤</button>
+                            <button class="btn-icon" style="width: 32px; height: 32px; font-size: 0.9rem;" onclick="window.shareStory(this, '${(f.title_en || f.title).replace(/'/g, "\\'")}', '${storySummary.replace(/'/g, "\\'")}')" title="Share">📤</button>
                             <button class="btn-icon fav-btn" style="width: 32px; height: 32px; font-size: 0.9rem;" onclick="window.toggleFavorite(this, '${f.id}')" title="Favorite">
                                 ${window.isFavorite && window.isFavorite(f.id) ? '❤️' : '🤍'}
                             </button>
@@ -309,7 +299,7 @@ async function renderFolktales(container) {
                     
                     <div class="card-section">
                         <h5>Summary</h5>
-                        <p>${f.summary}</p>
+                        <p>${storySummary}</p>
                     </div>
                     
                     <button class="expand-btn" onclick="
@@ -325,7 +315,7 @@ async function renderFolktales(container) {
                         <div>
                             <div class="card-section" style="margin-top: 1rem;">
                                 <h5>Moral</h5>
-                                <p style="color: var(--primary); font-weight: 400;">${f.moral}</p>
+                                <p style="color: var(--primary); font-weight: 400;">${storyMoral}</p>
                             </div>
                             <div class="card-section">
                                 <h5>Characters</h5>
@@ -333,7 +323,7 @@ async function renderFolktales(container) {
                             </div>
                              <div class="card-section">
                                 <h5>Cultural Significance</h5>
-                                <p>${f.cultural_significance}</p>
+                                <p>${f.cultural_significance || 'A cherished folktale from Assamese oral heritage.'}</p>
                             </div>
                             <div class="card-section" style="margin-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem;">
                                 <h5>Source Confidence</h5>
@@ -429,11 +419,10 @@ function formatDate(dateStr) {
 async function renderProverbs(container) {
     const lang = window.currentLanguage || 'en';
 
-    const pageTitle = lang === 'as' ? "ফকৰা-যোজনা" : "Assamese Proverbs";
-    const pageSubtitle = lang === 'as' ? 
-        "অসমীয়া সমাজত ব্যৱহৃত প্ৰাচীন বুৰঞ্জী আৰু পূৰ্বপুৰুষৰ জ্ঞান অন্বেষণ কৰক।" :
-        "Discover the ancestral wisdom and cultural idioms of Assam.";
-    const loadingText = lang === 'as' ? "পূৰ্বপুৰুষৰ জ্ঞান অন্বেষণ কৰা হৈছে..." : "Unearthing ancestral wisdom...";
+    // UI Headings & Labels always remain clean and consistent in English
+    const pageTitle = "Assamese Proverbs";
+    const pageSubtitle = "Discover the ancestral wisdom and cultural idioms of Assam.";
+    const loadingText = "Unearthing ancestral wisdom...";
 
     container.innerHTML = `
         <h1 class="page-title">${pageTitle}</h1>
@@ -462,10 +451,10 @@ async function renderProverbs(container) {
 
         let sidebarHtml = `
             <aside class="filter-sidebar">
-                <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">${lang === 'as' ? 'ফিল্টাৰ কৰক' : 'Filter by Tag'}</h4>
+                <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">Filter by Tag</h4>
                 <div class="filter-options">
-                    <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'proverb')">${lang === 'as' ? 'আটাইবোৰ' : 'All Proverbs'}</button>
-                    <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'proverb')" style="border-color: #ff4b4b; color: #ff4b4b;">${lang === 'as' ? 'মোৰ প্ৰিয়' : 'My Favorites'}</button>
+                    <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'proverb')">All Proverbs</button>
+                    <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'proverb')" style="border-color: #ff4b4b; color: #ff4b4b;">My Favorites</button>
                     ${uniqueTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'proverb')">${tag}</button>`).join('')}
                 </div>
             </aside>
@@ -484,6 +473,8 @@ async function renderProverbs(container) {
             const themes = p.theme ? p.theme : [];
             const cardTags = [roots, ...themes].map(t => t.toLowerCase()).join('|');
             
+            // In Assamese mode, headline is Assamese script with English subtitle
+            // In English mode, headline is English translation with Assamese subtitle
             const primaryHeader = lang === 'as' ? p.proverb : p.translation;
             const secondaryHeader = lang === 'as' ? p.translation : p.proverb;
             
@@ -491,10 +482,10 @@ async function renderProverbs(container) {
                 <div class="card proverb-card" data-tags="${cardTags.replace(/"/g, '&quot;')}" data-id="${p.id}">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
                         <div style="flex:1;">
-                            <h4 style="font-size: 1.5rem; color: var(--text); margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; line-height: 1.35;">
+                            <h4 style="font-size: 1.45rem; color: var(--text); margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; line-height: 1.35;">
                                 ${primaryHeader}
                             </h4>
-                            <p style="color: var(--primary); font-weight: 500; font-size: 1.1rem; margin-bottom: 0; font-family: 'Outfit', sans-serif;">${secondaryHeader}</p>
+                            <p style="color: var(--primary); font-weight: 500; font-size: 1.05rem; margin-bottom: 0; font-family: 'Outfit', sans-serif;">${secondaryHeader}</p>
                         </div>
                         <div style="display:flex; gap:0.5rem; align-items:center;">
                             <span id="view-count-${p.id}" style="font-size:0.8rem; color:var(--text-muted); cursor:help;" title="Views">👁️ ${window.getViewCount ? window.getViewCount(p.id) : 0}</span>
@@ -531,7 +522,7 @@ async function renderProverbs(container) {
                             </div>
                              <div class="card-section" style="margin-top: auto; padding-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1);">
                                 <h5>Cultural Context</h5>
-                                <p style="font-size: 0.85rem; color: var(--text-muted);">${p.cultural_context}</p>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">${p.cultural_context || 'Used in traditional Assamese discourse to impart ancestral wisdom.'}</p>
                             </div>
                             <div class="card-section" style="margin-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem;">
                                 <h5>Source Confidence</h5>
@@ -724,39 +715,31 @@ async function renderChat(container) {
     }
 
     const lang = window.currentLanguage || 'en';
-    const pageTitle = lang === 'as' ? "অৰাকল" : "The Oracle";
-    const pageSubtitle = lang === 'as' ? 
-        "পূৰ্বপুৰুষৰ জ্ঞান অন্বেষণ কৰক। অৰাকলে পুৰণি পুথিসমূহ অধ্যয়ন কৰিছে আৰু কাহিনীসমূহ জানে।" : 
-        "Seek the wisdom of the ancients. The Oracle has read the old texts and knows the tales.";
-    const bannerLabel = lang === 'as' ? "বিষয়বস্তু" : "Conversing about";
-    const clearBtnLabel = lang === 'as' ? "প্ৰসংগ মচিব" : "Clear Context";
-    const botTitle = lang === 'as' ? "অৰাকল" : "The Oracle";
+    const pageTitle = "The Oracle";
+    const pageSubtitle = "Seek the wisdom of the ancients. The Oracle has read the old texts and knows the tales.";
+    const bannerLabel = "Conversing about";
+    const clearBtnLabel = "Clear Context";
+    const botTitle = "The Oracle";
     
     let greetingText = "";
     if (storyTitle) {
-        greetingText = lang === 'as' ? 
-            `মই মোৰ মনটো <strong>"${storyTitle}"</strong> ৰ ওপৰত কেন্দ্ৰীভূত কৰিছোঁ। তলৰ এটা ব্যাখ্যাৰ ধৰণ বাছনি কৰক বা এই সম্পৰ্কে মোক যিকোনো কথা সোধক।` : 
-            `I have focused my thoughts on <strong>"${storyTitle}"</strong>. Select an explanation mode below or ask me anything about it.`;
+        greetingText = `I have focused my thoughts on <strong>"${storyTitle}"</strong>. Select an explanation mode below or ask me anything about it.`;
     } else {
-        greetingText = lang === 'as' ? 
-            "নমস্কাৰ, হে যাত্ৰী। আজি আপুনি অসমৰ কোনটো সাধুকথাৰ ৰহস্য উন্মোচন কৰিব বিচাৰে?" : 
-            "Greetings, traveler. What tale of Assam do you wish to uncover today?";
+        greetingText = "Greetings, traveler. What tale or proverb of Assam do you wish to uncover today?";
     }
 
-    const placeholderText = storyTitle ? 
-        (lang === 'as' ? `"${storyTitle}" ৰ বিষয়ে সোধক...` : `Ask about "${storyTitle}"...`) : 
-        (lang === 'as' ? 'উদাহৰণস্বৰূপ: তেজীমলাৰ বিষয়ে কওক...' : 'E.g., Tell me about Tejimola...');
-    const sendButtonText = lang === 'as' ? "অন্বেষণ" : "Seek";
+    const placeholderText = storyTitle ? `Ask about "${storyTitle}"...` : 'E.g., Tell me about Tejimola...';
+    const sendButtonText = "Seek";
 
-    const chip1 = lang === 'as' ? "✨ সহজভাৱে কওক" : "✨ Explain Simply";
-    const chip2 = lang === 'as' ? "🧒 শিশুৰ উপযোগী ব্যাখ্যা" : "🧒 Explain for Children";
-    const chip3 = lang === 'as' ? "🎋 সাংস্কৃতিক প্ৰসংগ" : "🎋 Explain Culturally";
-    const chip4 = lang === 'as' ? "🕰️ ঐতিহাসিক পটভূমি" : "🕰️ Explain Historically";
-    const chip5 = lang === 'as' ? "🔄 আন কাহিনীৰে তুলনা" : "🔄 Compare with Another Story";
+    const chip1 = "✨ Explain Simply";
+    const chip2 = "🧒 Explain for Children";
+    const chip3 = "🎋 Explain Culturally";
+    const chip4 = "🕰️ Explain Historically";
+    const chip5 = "🔄 Compare with Another Story";
 
-    const suggest1 = lang === 'as' ? "তেজীমলাৰ কাহিনী কওক" : "Tell me the story of Tejimola";
-    const suggest2 = lang === 'as' ? "পৰিশ্ৰমৰ বিষয়ে ফকৰা-যোজনা কওক" : "Give me a proverb about hard work";
-    const suggest3 = lang === 'as' ? "বুঢ়ী আইৰ সাধুৰ নৈতিক শিক্ষা কি?" : "What is the moral of Burhi Aair Sadhu?";
+    const suggest1 = "Tell me the story of Tejimola";
+    const suggest2 = "Give me a proverb about hard work";
+    const suggest3 = "What is the moral of Burhi Aair Sadhu?";
 
     container.innerHTML = `
         <h1 class="page-title">${pageTitle}</h1>
@@ -1099,62 +1082,38 @@ async function renderChat(container) {
 
 // === about.js ===
 function renderAbout(container) {
-    const lang = window.currentLanguage || 'en';
-
-    const pageTitle = lang === 'as' ? "প্ৰকল্পৰ বিষয়ে" : "About the Project";
-    const pageSubtitle = lang === 'as' ? "লৰীব্ৰীজ — ব্ৰহ্মপুত্ৰ উপত্যকাৰ মৌখিক পৰম্পৰাৰ সংৰক্ষণ" : "LoreBridge — Preserving the Oral Traditions of the Brahmaputra Valley";
+    const pageTitle = "About the Project";
+    const pageSubtitle = "LoreBridge — Preserving the Oral Traditions of the Brahmaputra Valley";
     
-    const header1 = lang === 'as' ? "🎋 অসমীয়া লোক-সংস্কৃতিৰ গুৰুত্ব কিয়" : "🎋 Why Assamese Folklore Matters";
-    const text1 = lang === 'as' ? 
-        "মহাবাহু ব্ৰহ্মপুত্ৰৰ পাৰত গঢ়ি উঠা অসমীয়া লোক-সংস্কৃতি পৃথিৱীৰ ভিতৰতে অন্যতম চহকী আৰু বৈচিত্ৰ্যপূৰ্ণ মৌখিক পৰম্পৰা। প্ৰজন্মৰ পিছত প্ৰজন্ম ধৰি সাধুকথা, ফকৰা-যোজনা আৰু পৰম্পৰাগত জ্ঞান মুখে মুখে চলি আহিছে। এই সাধুবোৰ কেৱল মনোঞ্জনৰ সমল নহয়; এইবোৰ হৈছে অসমীয়া জাতিৰ সাংস্কৃতিক পৰিচয় আৰু সামূহিক প্ৰজ্ঞাৰ প্ৰতিফলন।" : 
-        "Assam, nestled along the banks of the mighty Brahmaputra River, has one of the world's most rich and diverse oral traditions. For generations, traditional stories, ethical codes, and ecological wisdom have been passed down by mouth. These tales are not merely children's entertainment; they represent the cultural DNA, identity, and collective wisdom of the Assamese people, passing vital ancestral insights to the new generations.";
+    const header1 = "🎋 Why Assamese Folklore Matters";
+    const text1 = "Assam, nestled along the banks of the mighty Brahmaputra River, has one of the world's most rich and diverse oral traditions. For generations, traditional stories, ethical codes, and ecological wisdom have been passed down by mouth. These tales are not merely children's entertainment; they represent the cultural DNA, identity, and collective wisdom of the Assamese people, passing vital ancestral insights to new generations.";
 
-    const header2 = lang === 'as' ? "⚠️ বিলুপ্তিৰ সংকট: পৰম্পৰা হেৰাই যোৱাৰ ভয়" : "⚠️ The Looming Risk: The Loss";
-    const text2 = lang === 'as' ? 
-        "ইউনেস্কোৰ মতে, সমগ্ৰ বিশ্বতে প্ৰতি দুমাহত এটা ভাষাৰ মৃত্যু ঘটে। ভাষাৰ মৃত্যুৰ সৈতে তাৰ মৌখিক ইতিহাস আৰু লোক-কথাও বিলুপ্ত হৈ যায়। অসমৰ বহু সাধুকথা কেৱল আমাৰ বয়োজ্যেষ্ঠসকলৰ স্মৃতিত বা কোনো দুৰ্লভ পুথিতহে সংৰক্ষিত হৈ আছে। আধুনিকীকৰণৰ ফলত আমাৰ ঐতিহ্য হেৰাই যোৱাৰ তীব্ৰ শংকা দেখা দিছে।" : 
-        "UNESCO estimates that globally, one language dies every two weeks. When a language is lost, its oral history and folklore fade with it. In Assam, many stories exist only in the memories of elders or in rare, out-of-print books. With rapid modernization and changing lifestyle patterns, these tales are at risk of being lost forever as the old keepers of our oral traditions pass away.";
+    const header2 = "⚠️ The Looming Risk: Endangered Oral Traditions";
+    const text2 = "UNESCO estimates that globally, one language dies every two weeks. When a language is lost, its oral history and folklore fade with it. In Assam, many stories exist only in the memories of elders or in rare, out-of-print books. With rapid modernization and changing lifestyle patterns, these tales are at risk of being lost forever as the old keepers of our oral traditions pass away.";
 
-    const header3 = lang === 'as' ? "🔮 আমাৰ সমাধান: এআই-চালিত ডিজিটেল সংৰক্ষণাগাৰ" : "🔮 Our Solution: The AI-Powered Digital Sanctuary";
-    const text3 = lang === 'as' ? 
-        "লৰীব্ৰীজে এক সৰ্বাংগীন আৰু সক্ৰিয় ডিজিটেল সংৰক্ষণাগাৰ গঢ়ি তুলি এই সংকট সমাধান কৰাৰ প্ৰয়াস কৰিছে। সাধুবোৰ কেৱল স্থিৰ ফাইলত আৱদ্ধ কৰি ৰখাৰ সলনি আমি তলত দিয়া ধৰণে সজীৱ কৰি তুলিছোঁ:" : 
-        "LoreBridge addresses this urgent crisis by building a comprehensive, interactive digital archive. Rather than keeping these stories locked away in static, dry PDF archives, we bring them to life through:";
+    const header3 = "🔮 Our Solution: The AI-Powered Digital Sanctuary";
+    const text3 = "LoreBridge addresses this urgent crisis by building a comprehensive, interactive digital archive. Rather than keeping these stories locked away in static, dry PDF archives, we bring them to life through:";
 
-    const li3_1 = lang === 'as' ? 
-        "<strong>অৰাকল এআই চ্যাটবট:</strong> অসমীয়া লোক-সংস্কৃতিৰ ওপৰত প্ৰশিক্ষণ প্ৰাপ্ত এক চ্যাটবট যাৰ সৈতে ব্যৱহাৰকাৰীয়ে সাধুৰ নৈতিক শিক্ষা, পৰম্পৰা বা বিভিন্ন ব্যাখ্যাৰ বিষয়ে কথা পাতিব পাৰে।" : 
-        "<strong>The Oracle AI Chatbot:</strong> A context-aware guide trained on Assamese folklore that users can converse with to analyze morals, customs, or request multiple explanation modes.";
-    const li3_2 = lang === 'as' ? 
-        "<strong>লোৰ ৱেব:</strong> চৰিত্ৰ, বিষয় আৰু ফকৰা-যোজনাৰ এক সংলগ্ন নেটৱৰ্ক যিয়ে সাংস্কৃতিক প্ৰণালীসমূহ প্ৰকাশ কৰে।" : 
-        "<strong>Lore Web:</strong> An interactive, graphical web mapping the interconnected network of characters, themes, and proverbs to reveal cultural patterns.";
-    const li3_3 = lang === 'as' ? 
-        "<strong>উদ্যোগী স্বীকৃতি আৰু অংশীদাৰিত্ব:</strong> অসমৰ ব্যৱহাৰকাৰীসকলক নিজৰ সাধুসমূহ দাখিল কৰাৰ সুবিধা প্ৰদান কৰা হৈছে।" : 
-        "<strong>Community Recognition & Sharing:</strong> A system allowing users across Assam to submit their own stories, highlighting local village and district contributions.";
+    const li3_1 = "<strong>The Oracle AI Chatbot:</strong> A context-aware guide trained on Assamese folklore that users can converse with to analyze morals, customs, or request multiple explanation modes.";
+    const li3_2 = "<strong>Lore Web:</strong> An interactive, graphical web mapping the interconnected network of characters, themes, and proverbs to reveal cultural patterns.";
+    const li3_3 = "<strong>Community Recognition & Sharing:</strong> A system allowing users across Assam to submit their own stories, highlighting local village and district contributions.";
 
-    const header4 = lang === 'as' ? "✨ সৃষ্টিকৰ্তাৰ ব্যক্তিগত লক্ষ্য" : "✨ Creator's Personal Mission";
-    const text4 = lang === 'as' ? 
-        "গুৱাহাটীত ডাঙৰ-দীঘল হোৱা হেতুকে মই সৰুৰে পৰা আইতাৰ মুখত লক্ষ্মীনাথ বেজবৰুৱাৰ 'বুঢ়ী আইৰ সাধু' শুনিছিলোঁ। আমাৰ প্ৰজন্মই ক্ৰমান্বয়ে এই যাদুকৰী সাধুবোৰৰ পৰা আঁতৰি যোৱা দেখি মই এক দায়িত্ব অনুভৱ কৰিলোঁ। লৰীব্ৰীজৰ জৰিয়তে পৰম্পৰাগত অসমীয়া সংস্কৃতি আৰু আধুনিক কম্পিউটাৰ বিজ্ঞানৰ মাজত এক সেতু গঢ়ি তোলাটোৱেই মোৰ লক্ষ্য।" : 
-        "As a student growing up in Guwahati, I spent my childhood listening to my grandmother's retellings of the classic stories from <em>Burhi Aair Sadhu</em>. Seeing that my peers were gradually losing touch with these magical narratives, I felt a deep responsibility to act. My personal mission with LoreBridge is to build a bridge between traditional Assamese heritage and modern computer science, using AI to present the stories of our ancestors in a medium that resonates with the digital generation.";
+    const header4 = "✨ Creator's Personal Mission";
+    const text4 = "As a student growing up in Guwahati, I spent my childhood listening to my grandmother's retellings of the classic stories from <em>Burhi Aair Sadhu</em>. Seeing that my peers were gradually losing touch with these magical narratives, I felt a deep responsibility to act. My personal mission with LoreBridge is to build a bridge between traditional Assamese heritage and modern computer science, using AI to present the stories of our ancestors in a medium that resonates with the digital generation.";
 
-    const header5 = lang === 'as' ? "⚙️ কাৰিকৰী গাঁথনি" : "⚙️ Technical Architecture";
-    const text5 = lang === 'as' ? 
-        "লৰীব্ৰীজ এক আধুনিক আৰু শক্তিশালী প্ৰযুক্তি সজ্জাৰে নিৰ্মিত যাৰ দ্বাৰা চেমেণ্টিক কুৱেৰী বিশ্লেষণ কৰা হয়:" : 
-        "LoreBridge is built using a modern, scalable technology stack configured for semantic query understanding and retrieval:";
+    const header5 = "⚙️ Technical Architecture";
+    const text5 = "LoreBridge is built using a modern, scalable technology stack configured for semantic query understanding and retrieval:";
 
-    const tech1 = lang === 'as' ? "FastAPI চাৰ্ভাৰ" : "Backend Server";
-    const tech1_desc = lang === 'as' ? 
-        "পাইথন FastAPI চাৰ্ভাৰ যিয়ে অনুসন্ধান প্ৰণালী আৰু এপিআইসমূহ চলায়।" : 
-        "Python FastAPI powering search pipelines, similarity scoring, and API endpoints.";
-    const tech2 = lang === 'as' ? "RAG আৰু ভেক্টৰ অনুসন্ধান" : "RAG & Vector Search";
-    const tech2_desc = lang === 'as' ? 
-        "Pinecone ভেক্টৰ ডাটাবেচ আৰু চেমেণ্টিক এম্বেডিং ব্যৱহাৰ কৰি RAG প্ৰণালী।" : 
-        "Retrieval-Augmented Generation (RAG) using Pinecone vector database and semantic embeddings.";
-    const tech3 = lang === 'as' ? "জেনারেটিভ এলএলএম" : "Generative LLM";
-    const tech3_desc = lang === 'as' ? 
-        "জেমিনি এলএলএম যিয়ে প্ৰসংগ-সংবেদনশীল লোক-সংস্কৃতিৰ বিশ্লেষণ প্ৰদান কৰে।" : 
-        "Gemini LLM integrating story payloads to generate context-aware, structured folklore analyses.";
+    const tech1 = "Backend Server";
+    const tech1_desc = "Python FastAPI powering search pipelines, similarity scoring, and API endpoints.";
+    const tech2 = "RAG & Vector Search";
+    const tech2_desc = "Retrieval-Augmented Generation (RAG) using Pinecone vector database and semantic embeddings.";
+    const tech3 = "Generative LLM";
+    const tech3_desc = "Gemini LLM integrating story payloads to generate context-aware, structured folklore analyses.";
 
-    const creator_role = lang === 'as' ? "প্ৰকল্প সৃষ্টিকৰ্তা আৰু ডেভেলপাৰ" : "Project Creator & Developer";
-    const creator_school = lang === 'as' ? "দ্বাদশ শ্ৰেণী • দিল্লী পাব্লিক স্কুল, গুৱাহাটী, অসম" : "Class 12 Student • Delhi Public School, Guwahati, Assam";
-    const creator_initiative = lang === 'as' ? "সাংস্কৃতিক প্ৰযুক্তি সংৰক্ষণ পদক্ষেপ" : "Cultural Technology Preservation Initiative";
+    const creator_role = "Project Creator & Developer";
+    const creator_school = "Class 12 Student • Delhi Public School, Guwahati, Assam";
+    const creator_initiative = "Cultural Technology Preservation Initiative";
 
     container.innerHTML = `
         <h1 class="page-title">${pageTitle}</h1>
@@ -1168,92 +1127,106 @@ function renderAbout(container) {
         <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.5rem; text-align: left; padding: 0 1rem;">
             
             <!-- Row 1: Why It Matters & The Problem -->
-            <div class="about-grid-2col" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <div class="card about-section-card" style="border-top: 3px solid var(--primary); padding-top: 1.5rem;">
-                    <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 0.75rem; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 0.5rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;" class="about-grid-2col">
+                <div class="card">
+                    <h3 style="font-family: 'Playfair Display', serif; color: var(--primary); margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem;">
                         ${header1}
                     </h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted);">
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin: 0;">
                         ${text1}
                     </p>
                 </div>
-
-                <div class="card about-section-card" style="border-top: 3px solid var(--primary); padding-top: 1.5rem;">
-                    <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 0.75rem; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 0.5rem;">
+                <div class="card">
+                    <h3 style="font-family: 'Playfair Display', serif; color: var(--primary); margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem;">
                         ${header2}
                     </h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted);">
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin: 0;">
                         ${text2}
                     </p>
                 </div>
             </div>
 
             <!-- Row 2: Our Solution -->
-            <div class="card about-section-card" style="border-left: 3px solid var(--primary); padding-left: 2rem; background: rgba(230, 200, 106, 0.02);">
-                <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 0.75rem; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 0.5rem;">
+            <div class="card">
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--primary); margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem;">
                     ${header3}
                 </h3>
-                <p style="font-size: 1rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1rem;">
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
                     ${text3}
                 </p>
-                <ul style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; padding-left: 1.5rem; margin-bottom: 0;">
-                    <li style="margin-bottom: 0.5rem;">${li3_1}</li>
-                    <li style="margin-bottom: 0.5rem;">${li3_2}</li>
-                    <li>${li3_3}</li>
-                </ul>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div style="background: rgba(0,0,0,0.2); border-left: 3px solid var(--primary); padding: 0.8rem 1.2rem; border-radius: 0 8px 8px 0;">
+                        <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.6;">
+                            ${li3_1}
+                        </p>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.2); border-left: 3px solid var(--primary); padding: 0.8rem 1.2rem; border-radius: 0 8px 8px 0;">
+                        <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.6;">
+                            ${li3_2}
+                        </p>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.2); border-left: 3px solid var(--primary); padding: 0.8rem 1.2rem; border-radius: 0 8px 8px 0;">
+                        <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.6;">
+                            ${li3_3}
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Row 3: Personal Mission -->
-            <div class="card about-section-card" style="border-left: 3px solid var(--primary); padding-left: 2rem;">
-                <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 0.75rem; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 0.5rem;">
+            <!-- Row 3: Creator Mission Statement -->
+            <div class="card" style="border: 1px solid var(--primary); background: radial-gradient(circle at top right, rgba(230, 200, 106, 0.05) 0%, var(--surface) 100%);">
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--primary); margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem;">
                     ${header4}
                 </h3>
-                <p style="font-size: 1rem; line-height: 1.7; color: var(--text-muted);">
-                    ${text4}
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 1.5rem; font-style: italic;">
+                    "${text4}"
                 </p>
+                <div style="display: flex; align-items: center; gap: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1.2rem;">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: #000; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; flex-shrink: 0; box-shadow: 0 0 10px var(--primary-glow);">
+                        DD
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--text);">Devansh Deka</h4>
+                        <p style="margin: 0.2rem 0 0 0; font-size: 0.85rem; color: var(--primary);">${creator_role}</p>
+                        <p style="margin: 0.1rem 0 0 0; font-size: 0.8rem; color: var(--text-muted);">${creator_school}</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Row 4: Technical Approach -->
-            <div class="card about-section-card" style="border-top: 3px solid var(--primary); padding-top: 1.5rem; background: rgba(0, 0, 0, 0.2);">
-                <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 0.75rem; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 0.5rem;">
+            <!-- Row 4: Technical Architecture -->
+            <div class="card">
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--primary); margin-top: 0; margin-bottom: 1rem; font-size: 1.4rem;">
                     ${header5}
                 </h3>
-                <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 1rem;">
+                <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
                     ${text5}
                 </p>
-                <div class="about-grid-3col" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.2rem; font-size: 0.85rem; color: var(--text-muted);">
-                    <div style="padding: 0.8rem; background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px;">
-                        <strong style="color: var(--primary); display: block; margin-bottom: 0.3rem;">${tech1}</strong>
-                        ${tech1_desc}
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;" class="about-grid-3col">
+                    <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--border); padding: 1rem; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+                        <h4 style="margin: 0 0 0.4rem 0; font-size: 0.95rem; color: var(--primary); font-family: 'Outfit', sans-serif;">${tech1}</h4>
+                        <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">${tech1_desc}</p>
                     </div>
-                    <div style="padding: 0.8rem; background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px;">
-                        <strong style="color: var(--primary); display: block; margin-bottom: 0.3rem;">${tech2}</strong>
-                        ${tech2_desc}
+                    <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--border); padding: 1rem; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🌲</span>
+                        <h4 style="margin: 0 0 0.4rem 0; font-size: 0.95rem; color: var(--primary); font-family: 'Outfit', sans-serif;">${tech2}</h4>
+                        <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">${tech2_desc}</p>
                     </div>
-                    <div style="padding: 0.8rem; background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px;">
-                        <strong style="color: var(--primary); display: block; margin-bottom: 0.3rem;">${tech3}</strong>
-                        ${tech3_desc}
+                    <div style="background: rgba(0,0,0,0.2); border: 1px solid var(--border); padding: 1rem; border-radius: 8px; text-align: center;">
+                        <span style="font-size: 1.5rem; display: block; margin-bottom: 0.5rem;">🔮</span>
+                        <h4 style="margin: 0 0 0.4rem 0; font-size: 0.95rem; color: var(--primary); font-family: 'Outfit', sans-serif;">${tech3}</h4>
+                        <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">${tech3_desc}</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Decorative Assamese Motif Divider -->
-            <svg viewBox="0 0 200 20" width="200" height="20" style="margin: 1.5rem auto; display: block; stroke: var(--primary); fill: none; stroke-width: 1.5; stroke-linecap: round; opacity: 0.5;">
-                <path d="M 10 10 L 30 10 M 170 10 L 190 10 M 30 10 L 40 0 L 50 10 L 40 20 Z M 50 10 L 60 0 L 70 10 L 60 20 Z M 70 10 L 90 10 M 110 10 L 130 10 M 130 10 L 140 0 L 150 10 L 140 20 Z M 150 10 L 160 0 L 170 10 L 160 20 Z M 90 10 L 100 0 L 110 10 L 100 20 Z" />
-            </svg>
-
-            <!-- Creator Card -->
-            <div class="institution-card" style="max-width: 500px; margin: 0 auto; background: var(--surface); border: 1px solid var(--primary); border-radius: 16px; padding: 2.5rem 2rem; text-align: center; position: relative; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
-                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">🏯</div>
-                <h4 style="margin: 0.5rem 0; color: var(--primary); font-family: 'Playfair Display', serif; font-size: 1.5rem; letter-spacing: 1px;">Devansh Deka</h4>
-                <p style="color: var(--text); font-size: 1rem; margin-bottom: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px;">${creator_role}</p>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.6;">
-                    ${creator_school}
+            <!-- Footer Quote / Disclaimer -->
+            <div style="text-align: center; margin-top: 1rem; padding: 1rem; border-top: 1px dashed rgba(255,255,255,0.1);">
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0; font-style: italic;">
+                    "Dedicated to the preservation of Assam's rich oral legacy — where ancient tales find digital permanence."
                 </p>
-                <div style="border-top: 1px solid var(--border); padding-top: 1.2rem; font-size: 0.8rem; color: var(--primary); letter-spacing: 2px; text-transform: uppercase;">
-                    ${creator_initiative}
-                </div>
             </div>
+            
         </div>
     `;
 }
@@ -2868,21 +2841,25 @@ route();
 
 window.currentLanguage = localStorage.getItem('lorebridge_lang') || 'en';
 
+window.updateLangButtonUI = function() {
+    const langBtn = document.getElementById('lang-toggle');
+    if (langBtn) {
+        const isEn = window.currentLanguage === 'en';
+        langBtn.innerText = isEn ? 'অ' : 'A';
+        langBtn.title = isEn ? 'Switch to Assamese Content (অ)' : 'Switch to English Content (A)';
+        langBtn.setAttribute('aria-label', isEn ? 'Switch to Assamese Content' : 'Switch to English Content');
+    }
+};
+
 window.toggleLanguage = function() {
     window.currentLanguage = window.currentLanguage === 'en' ? 'as' : 'en';
     localStorage.setItem('lorebridge_lang', window.currentLanguage);
-    const langBtn = document.getElementById('lang-toggle');
-    if (langBtn) {
-        langBtn.innerText = window.currentLanguage === 'en' ? 'EN' : 'অসমীয়া';
-    }
+    window.updateLangButtonUI();
     route();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const langBtn = document.getElementById('lang-toggle');
-    if (langBtn) {
-        langBtn.innerText = window.currentLanguage === 'en' ? 'EN' : 'অসমীয়া';
-    }
+    window.updateLangButtonUI();
 });
 
 

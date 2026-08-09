@@ -34,39 +34,31 @@ export async function renderChat(container) {
     }
 
     const lang = window.currentLanguage || 'en';
-    const pageTitle = lang === 'as' ? "অৰাকল" : "The Oracle";
-    const pageSubtitle = lang === 'as' ? 
-        "পূৰ্বপুৰুষৰ জ্ঞান অন্বেষণ কৰক। অৰাকলে পুৰণি পুথিসমূহ অধ্যয়ন কৰিছে আৰু কাহিনীসমূহ জানে।" : 
-        "Seek the wisdom of the ancients. The Oracle has read the old texts and knows the tales.";
-    const bannerLabel = lang === 'as' ? "বিষয়বস্তু" : "Conversing about";
-    const clearBtnLabel = lang === 'as' ? "প্ৰসংগ মচিব" : "Clear Context";
-    const botTitle = lang === 'as' ? "অৰাকল" : "The Oracle";
+    const pageTitle = "The Oracle";
+    const pageSubtitle = "Seek the wisdom of the ancients. The Oracle has read the old texts and knows the tales.";
+    const bannerLabel = "Conversing about";
+    const clearBtnLabel = "Clear Context";
+    const botTitle = "The Oracle";
     
     let greetingText = "";
     if (storyTitle) {
-        greetingText = lang === 'as' ? 
-            `মই মোৰ মনটো <strong>"${storyTitle}"</strong> ৰ ওপৰত কেন্দ্ৰীভূত কৰিছোঁ। তলৰ এটা ব্যাখ্যাৰ ধৰণ বাছনি কৰক বা এই সম্পৰ্কে মোক যিকোনো কথা সোধক।` : 
-            `I have focused my thoughts on <strong>"${storyTitle}"</strong>. Select an explanation mode below or ask me anything about it.`;
+        greetingText = `I have focused my thoughts on <strong>"${storyTitle}"</strong>. Select an explanation mode below or ask me anything about it.`;
     } else {
-        greetingText = lang === 'as' ? 
-            "নমস্কাৰ, হে যাত্ৰী। আজি আপুনি অসমৰ কোনটো সাধুকথাৰ ৰহস্য উন্মোচন কৰিব বিচাৰে?" : 
-            "Greetings, traveler. What tale of Assam do you wish to uncover today?";
+        greetingText = "Greetings, traveler. What tale or proverb of Assam do you wish to uncover today?";
     }
 
-    const placeholderText = storyTitle ? 
-        (lang === 'as' ? `"${storyTitle}" ৰ বিষয়ে সোধক...` : `Ask about "${storyTitle}"...`) : 
-        (lang === 'as' ? 'উদাহৰণস্বৰূপ: তেজীমলাৰ বিষয়ে কওক...' : 'E.g., Tell me about Tejimola...');
-    const sendButtonText = lang === 'as' ? "অন্বেষণ" : "Seek";
+    const placeholderText = storyTitle ? `Ask about "${storyTitle}"...` : 'E.g., Tell me about Tejimola...';
+    const sendButtonText = "Seek";
 
-    const chip1 = lang === 'as' ? "✨ সহজভাৱে কওক" : "✨ Explain Simply";
-    const chip2 = lang === 'as' ? "🧒 শিশুৰ উপযোগী ব্যাখ্যা" : "🧒 Explain for Children";
-    const chip3 = lang === 'as' ? "🎋 সাংস্কৃতিক প্ৰসংগ" : "🎋 Explain Culturally";
-    const chip4 = lang === 'as' ? "🕰️ ঐতিহাসিক পটভূমি" : "🕰️ Explain Historically";
-    const chip5 = lang === 'as' ? "🔄 আন কাহিনীৰে তুলনা" : "🔄 Compare with Another Story";
+    const chip1 = "✨ Explain Simply";
+    const chip2 = "🧒 Explain for Children";
+    const chip3 = "🎋 Explain Culturally";
+    const chip4 = "🕰️ Explain Historically";
+    const chip5 = "🔄 Compare with Another Story";
 
-    const suggest1 = lang === 'as' ? "তেজীমলাৰ কাহিনী কওক" : "Tell me the story of Tejimola";
-    const suggest2 = lang === 'as' ? "পৰিশ্ৰমৰ বিষয়ে ফকৰা-যোজনা কওক" : "Give me a proverb about hard work";
-    const suggest3 = lang === 'as' ? "বুঢ়ী আইৰ সাধুৰ নৈতিক শিক্ষা কি?" : "What is the moral of Burhi Aair Sadhu?";
+    const suggest1 = "Tell me the story of Tejimola";
+    const suggest2 = "Give me a proverb about hard work";
+    const suggest3 = "What is the moral of Burhi Aair Sadhu?";
 
     container.innerHTML = `
         <h1 class="page-title">${pageTitle}</h1>

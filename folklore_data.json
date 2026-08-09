@@ -4,7 +4,7 @@
       "id": "ft_001",
       "type": "folktale",
       "title": "Tejimola",
-      "assamese": "তেজীমলা",
+      "assamese": "তেজীমলা এগৰাকী নিস্পাপ আৰু মৰমীয়াল কন্যা। তাইৰ দেউতাক সদাগৰ, ব্যৱসায়ৰ বাবে বিদেশলৈ যোৱাৰ সময়ত মাহীমাকে তেজীমলাক ঢেকীত খুন্দি নিষ্ঠুৰভাৱে হত্যা কৰি পুতি পেলায়। সেই ঠাইতে লাও গছ, টেঙা গছ আৰু শেষত পানীত পদুম ফুল হৈ তেজীমলাই নিজৰ দুখৰ গীত গায়। শেষত দেউতাক উভতি আহি পদুম ফুলটো ছিঙিব খোজোঁতে তেজীমলাই পুনৰ জীৱন পাই মাহীমাকৰ কু-কৰ্ম প্ৰকাশ কৰে।",
       "english": "A young, innocent girl named Tejimola is left in the care of her wicked stepmother while her father goes away on a trading voyage. The stepmother cruelly crushes her under a pestle (Dheki) while she is husking rice and buries her in the garden. From her remains, magical plants sprout—a bottle gourd, a pomelo, and a lotus—each singing a sorrowful song when approached. When her father returns and attempts to pluck a lotus, the flower transforms back into Tejimola, revealing the stepmother's cruelty.",
       "meaning": "The triumph of innocence and truth over cruelty. Nature bears witness to hidden crimes.",
       "moral": "Truth cannot be buried forever; good ultimately prevails over evil.",
@@ -24,13 +24,17 @@
         "date_submitted": "2026-07-01",
         "approved": true
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Tejimola",
+      "title_as": "তেজীমলা",
+      "moral_en": "Truth cannot be buried forever; good ultimately prevails over evil.",
+      "moral_as": "সত্যক কেতিয়াও লুকুৱাই ৰাখিব নোৱাৰি; অসত্য আৰু অন্যায়ৰ ওপৰত সদায়েই সত্য আৰু ধৰ্মৰ জয় হয়।"
     },
     {
       "id": "ft_002",
       "type": "folktale",
       "title": "Kukuri Kona",
-      "assamese": "কুকুৰীকণা",
+      "assamese": "এজন কুকুৰীকণা (ৰাতি নেদেখা) জোঁৱায়ে শহুৰৰ ঘৰলৈ গৈ নিজৰ এই দুৰ্বলতা ঢাকিবলৈ চেষ্টা কৰে। ৰাতি আন্ধাৰত খোজ কাঢ়িবলৈ গৈ সি ছাগলীৰ লগত যুঁজ লগায়, কলহ ভাঙি পেলায় আৰু নানা ধৰণৰ হাঁহি উঠা কাণ্ড কৰে। শেষত সকলোৰে আগত তাৰ কুকুৰীকণা স্বভাৱ প্ৰকাশ পায়।",
       "english": "A comical tale about a son-in-law who suffers from night blindness (Kukuri Kona). He tries desperately to hide his affliction from his in-laws when he visits them. His attempts to navigate the house at night lead to a series of hilarious blunders, including wrestling with a goat, breaking pots, and making a fool of himself until the truth is finally revealed.",
       "meaning": "A warning against false pride and the lengths people go to hide their flaws.",
       "moral": "Hiding the truth leads to greater embarrassment.",
@@ -43,13 +47,17 @@
           "pride"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Kukuri Kona",
+      "title_as": "কুকুৰীকণা",
+      "moral_en": "Hiding the truth leads to greater embarrassment.",
+      "moral_as": "মিছা অহংকাৰ বা দুৰ্বলতা লুকুৱাবলৈ কৰা অপচেষ্টাই শেষত হাঁহিয়াতৰ পাত্ৰহে কৰে।"
     },
     {
       "id": "ft_003",
       "type": "folktale",
       "title": "Tula aru Teja",
-      "assamese": "তুলা আৰু তেজা",
+      "assamese": "তুলা আৰু তেজা দুগৰাকী সতীয়া ভনীয়েক। মাহীমাকে তেজাক সকলো কঠিন বন-কৰ্ম কৰিবলৈ বাধ্য কৰাইছিল আৰু নিজৰ জীয়েক তুলাক মৰমত ৰাখিছিল। কিন্তু প্ৰকৃতি আৰু জীৱ-জন্তুৰ আশীৰ্বাদত তেজাই ৰজাৰ দৃষ্টি আকৰ্ষণ কৰি ৰাণী হয়। ঈৰ্ষাত মাহীমাকে তেজাক ছলনা কৰিবলৈ চেষ্টা কৰে যদিও শেষত ন্যায়ৰ জয় হয়।",
       "english": "Tula and Teja are step-sisters. Teja's mother passes away, and her cruel stepmother makes her do all the hard chores, while treating Tula like a princess. Despite the hardship, Teja receives magical help from animals. Eventually, the King discovers Teja's beauty and marries her. The jealous stepmother tries to replace Teja with Tula through dark magic, but the King discovers the trick, punishes the wicked, and reunites with Teja.",
       "meaning": "A classic Cinderella archetype focusing on divine justice.",
       "moral": "Virtue and kindness are rewarded, while jealousy and wickedness are punished.",
@@ -62,13 +70,17 @@
           "justice"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Tula and Teja",
+      "title_as": "তুলা আৰু তেজা",
+      "moral_en": "Virtue and kindness are rewarded, while jealousy and wickedness are punished.",
+      "moral_as": "ধৈৰ্য্য আৰু সজ চৰিত্ৰৰ সদায় পুৰস্কাৰ মিলে, কিন্তু ঈৰ্ষা আৰু অহংকাৰৰ পতন অনিবাৰ্য।"
     },
     {
       "id": "ft_004",
       "type": "folktale",
       "title": "Champawati",
-      "assamese": "চম্পাৱতী",
+      "assamese": "মাহীমাকে চম্পাৱতীক এজন অজগৰ সাপৰ লগত বিয়া দিয়ে। কিন্তু আচলতে সেই সাপটো আছিল শাপগ্ৰস্ত এগৰাকী দেৱকুমাৰ। ৰাতি সি মানুহৰ ৰূপ লয় আৰু চম্পাৱতীৰ সৈতে সুখেৰে থাকে। লোভত পৰি মাহীমাকে নিজৰ জীয়েককো এনেদৰে সাপৰ লগত বিয়া দিবলৈ গৈ চৰম বিপদ মাতি আনে।",
       "english": "Champawati is forced by her jealous stepmother to marry a python. To everyone's surprise, the python is actually a handsome divine prince cursed to live in a snake's skin. The prince sheds his skin at night. When the stepmother tries to replicate this success for her own daughter by finding a real python, it ends in tragedy.",
       "meaning": "Greed and blind imitation without understanding lead to disastrous consequences.",
       "moral": "Do not covet what belongs to others through blind imitation.",
@@ -81,7 +93,11 @@
           "jealousy"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Champawati",
+      "title_as": "চম্পাৱতী",
+      "moral_en": "Do not covet what belongs to others through blind imitation.",
+      "moral_as": "আনৰ ভাগ্যলৈ অন্ধ অনুকৰণ আৰু লোভ কৰিলে নিজৰেই সৰ্বনাশ হয়।"
     },
     {
       "id": "pr_001",
@@ -106,7 +122,10 @@
         "date_submitted": "2026-07-05",
         "approved": true
       },
-      "confidence": "community"
+      "confidence": "community",
+      "title_en": "The Crane and the Fishes",
+      "title_as": "অধিক মাছত বগলী কণা",
+      "meaning_en": "When faced with an overwhelming number of choices or opportunities, one often becomes confused and fails to make any decision at all."
     },
     {
       "id": "pr_002",
@@ -124,7 +143,10 @@
           "caution"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Sign of a Thief",
+      "title_as": "অতি ভক্তি চোৰৰ লক্ষণ",
+      "meaning_en": "Excessive flattery, subservience, or sudden overly polite behavior often hides malicious intent or an ulterior motive."
     },
     {
       "id": "pr_003",
@@ -142,7 +164,10 @@
           "fate"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Lightning Without Clouds",
+      "title_as": "বিনা মেঘে বজ্ৰপাত",
+      "meaning_en": "A sudden, unexpected disaster or tragic event that occurs without any prior warning or indication."
     },
     {
       "id": "pr_004",
@@ -161,7 +186,10 @@
           "hard work"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Power of the Public",
+      "title_as": "ৰাইজে নখ জোকাৰিলে নৈ বয়",
+      "meaning_en": "If the community or a large group of people work together, their combined small efforts can achieve massive results, just like drops of water forming a river."
     },
     {
       "id": "pr_005",
@@ -179,7 +207,10 @@
           "retribution"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Dog and the Stick",
+      "title_as": "যেনে কুকুৰ তেনে টাঙোন",
+      "meaning_en": "A harsh measure must be applied to deal with a harsh or unruly person. It means getting what one deserves based on their behavior."
     },
     {
       "id": "pr_006",
@@ -197,7 +228,10 @@
           "observation"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Worth of a Seedling",
+      "title_as": "যি মূলা বাঢ়ে তাৰ দুপাততে চিন",
+      "meaning_en": "Just as a healthy plant shows signs of its potential early on, a child's future greatness or character can be seen in their early childhood behavior."
     },
     {
       "id": "pr_007",
@@ -215,14 +249,17 @@
           "diligence"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Effort Brings Wealth",
+      "title_as": "পুৰুষৰ পৰিশ্ৰম, লক্ষ্মীৰ কৃপা",
+      "meaning_en": "Prosperity and success are not merely handed out; they are earned through diligent effort, hard work, and persistence."
     },
     {
       "id": "ft_005",
       "type": "folktale",
       "title": "Bandor Aru Xiyal",
-      "assamese": "বান্দৰ আৰু শিয়াল",
-      "english": "The Monkey and the Fox. A cunning fox tries to outsmart a monkey to steal his food, but the agile and clever monkey ultimately turns the trick around, leaving the greedy fox empty-handed and humiliated.",
+      "assamese": "এজন ধূৰ্ত শিয়াল আৰু চতুৰ বান্দৰে লগ লাগি গুড়ৰ পিঠা ভাগ কৰিবলৈ লয়। দুয়োৰে মাজত কোনে কাক চতুৰালিৰে ঠগিব পাৰে তাৰ প্ৰতিযোগিতা হয়। শেষত বান্দৰে গছত উঠি নিজৰ বুদ্ধিমত্তা প্ৰদৰ্শন কৰে।",
+      "english": "A witty story about the uneasy friendship between a clever monkey and a cunning fox. They try to outwit each other in dividing a cake of sugarcane jaggery (gur). The monkey climbs a tree to eat his share, while the fox uses trickery on the ground, teaching a lesson in clever negotiations.",
       "meaning": "Intelligence and agility can outmaneuver cunning and greed.",
       "moral": "Do not underestimate others; greed leads to your own downfall.",
       "metadata": {
@@ -234,14 +271,18 @@
           "wit"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Monkey and the Fox",
+      "title_as": "বান্দৰ আৰু শিয়াল",
+      "moral_en": "Do not underestimate others; greed undermines genuine friendship.",
+      "moral_as": "চতুৰালি আৰু অহংকাৰে বন্ধুত্ব নষ্ট কৰে; কাকো দুৰ্বল বুলি ভবা অনুচিত।"
     },
     {
       "id": "ft_006",
       "type": "folktale",
       "title": "The Kite's Daughter",
-      "assamese": "চিলনীৰ জীয়েক",
-      "english": "A childless potter and his wife adopt a baby girl dropped by a kite. The girl, Chiloneer Jiyek, grows into a beautiful woman and marries a wealthy merchant. However, her jealous co-wives torment her relentlessly and try to eliminate her. Through the magical intervention and fierce love of her biological kite mother, she is saved, and her wicked co-wives are exposed and punished.",
+      "assamese": "এজনী চিলনী পখীয়ে এজনী অনাথ মানৱ কন্যাক নিজৰ সন্তানৰ দৰে প্ৰতিপালন কৰে। ডাঙৰ হৈ ছোৱালীজনী এগৰাকী সদাগৰৰ পত্নী হয়। কিন্তু সতিনীসকলৰ অত্যাচাৰৰ পৰা ৰক্ষা কৰিবলৈ চিলনী মাক উৰি আহি তাইক ৰক্ষা কৰে।",
+      "english": "A kite bird raises an abandoned human baby girl as her own daughter with deep affection. As the girl grows into a beautiful maiden, a merchant falls in love with her and marries her. When the merchant's other wives torment her, the mother kite arrives from the sky to protect and rescue her beloved child.",
       "meaning": "A magical tale of a virtuous adopted child overcoming the jealousy of co-wives through the enduring love of her kite mother.",
       "moral": "A mother's love, no matter how unconventional, never fades; jealousy ultimately destroys those who harbor it.",
       "metadata": {
@@ -253,7 +294,11 @@
           "justice"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Kite's Daughter",
+      "title_as": "চিলনীৰ জীয়েক",
+      "moral_en": "A mother's love transcends species and physical boundaries.",
+      "moral_as": "মাতৃস্নেহ সকলো প্ৰাকৃতিক সীমা আৰু জাতিৰ উৰ্দ্ধত।"
     },
     {
       "id": "pr_008",
@@ -272,7 +317,10 @@
           "wisdom"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Elephant's Tusks",
+      "title_as": "হাতীৰ দাঁত ওলালে সোমাব নোৱাৰে",
+      "meaning_en": "Once words are spoken or an action is committed, it cannot be undone. It symbolizes the permanence of speech and the strictness of a true commitment."
     },
     {
       "id": "pr_009",
@@ -290,14 +338,17 @@
           "action vs words"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Biting Dog",
+      "title_as": "ভৌকা কুকুৰে নাকাঁমোৰে",
+      "meaning_en": "People who make the most noise or issue the loudest threats rarely take action. True danger usually comes quietly."
     },
     {
       "id": "ft_007",
       "type": "folktale",
       "title": "The Clever Fox and the Foolish Tiger",
-      "assamese": "শিয়াল আৰু বাঘ",
-      "english": "A cunning fox manages to outwit a fierce but foolish tiger who wanted to eat him. The fox convinces the tiger that the reflection in the well is another rival tiger. The tiger jumps in and gets stuck, while the fox escapes. A classic tale of brain over brawn.",
+      "assamese": "এখন অৰণ্যত এজন সৰু শিয়ালে এজন ভয়ংকৰ বাঘৰ মুখামুখি হয়। কিন্তু ভয় নাখাই শিয়ালে নিজৰ উপস্থিত বুদ্ধি ব্যৱহাৰ কৰি বাঘক পতিয়ন নিয়ায় যে সিহে অৰণ্যৰ ৰজা, আৰু বাঘক ভয় খুৱাই পলাই যাবলৈ বাধ্য কৰে।",
+      "english": "A classic folklore tale where a small, defenseless fox encounters a ferocious, hungry tiger. Using presence of mind, the fox convinces the tiger that he is the chosen protector of the jungle whose roar shakes the mountains, tricking the tiger into fleeing in terror.",
       "meaning": "Intelligence and wit can overcome brute physical strength.",
       "moral": "Brain is better than brawn; think before you act.",
       "metadata": {
@@ -309,14 +360,18 @@
           "animals"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Clever Fox and the Foolish Tiger",
+      "title_as": "শিয়াল আৰু বাঘ",
+      "moral_en": "Brain is better than brawn; intelligence can overcome sheer physical power.",
+      "moral_as": "শাৰীৰিক বলতকৈ বুদ্ধি আৰু উপস্থিত প্ৰজ্ঞা সদায় শক্তিশালী।"
     },
     {
       "id": "ft_008",
       "type": "folktale",
       "title": "Panesoi",
-      "assamese": "পানেচৈ",
-      "english": "The tragic story of Panesoi, a beautiful girl who was transformed into a water lily by the curse of a river goddess. Her lover searches for her relentlessly, and ultimately their pure love breaks the curse, reuniting them.",
+      "assamese": "পানেচৈ এগৰাকী ত্যাগী আৰু সতী নাৰী। জীৱনৰ বহু ঘাত-প্ৰতিঘাত আৰু বিচ্ছেদ সহ্য কৰিও তাই নিজৰ সততা আৰু পৱিত্ৰতাৰে সকলো সংকট পাৰ কৰি সমাজত মৰ্যাদা লাভ কৰে।",
+      "english": "Panesoi is a virtuous girl who faces trials and separation from her beloved. Through endurance, pure devotion, and moral integrity, she overcomes deep sorrow and regains her rightful place in family and society.",
       "meaning": "A romantic and tragic myth explaining the origin of the water lily and the power of enduring love.",
       "moral": "True love and devotion can overcome even divine curses.",
       "metadata": {
@@ -328,7 +383,11 @@
           "nature"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Panesoi",
+      "title_as": "পানেচৈ",
+      "moral_en": "True love and devotion can overcome even the harshest of adversities.",
+      "moral_as": "ধৈৰ্য্য আৰু নিঃস্বাৰ্থ প্ৰেমে সকলো দুখ-কষ্টক জয় কৰিব পাৰে।"
     },
     {
       "id": "pr_010",
@@ -347,7 +406,10 @@
           "power"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Public is King",
+      "title_as": "ৰাইজেই ৰজা",
+      "meaning_en": "In any society, the collective will and power of the people are supreme, surpassing even the authority of a ruler."
     },
     {
       "id": "pr_011",
@@ -365,14 +427,17 @@
           "hypocrisy"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Excessive Devotion",
+      "title_as": "অতি ভক্তি চোৰৰ লক্ষণ",
+      "meaning_en": "When someone acts excessively humble or overly devout, it often hides a deceitful or malicious intent. True goodness is natural, not exaggerated."
     },
     {
       "id": "ft_009",
       "type": "folktale",
       "title": "Phulkonwar and Monikonwar",
-      "assamese": "ফুলকোঁৱৰ আৰু মণিকোঁৱৰ",
-      "english": "An epic Assamese ballad telling the story of two princely friends, Phulkonwar and Monikonwar. Their adventures involve magical wooden horses, rescuing princesses, and fighting demons. Monikonwar is eventually swallowed by a river deity, leading to Phulkonwar's heroic quest to save him.",
+      "assamese": "ফুলকোঁৱৰ আৰু মণিকোঁৱৰ—দুজন সাহসী ৰাজকুমাৰৰ কালজয়ী কাহিনী। তেওঁলোকে প্ৰজাৰ কল্যাণ আৰু হেৰুওৱা ৰাজ্যৰ গৌৰৱ উদ্ধাৰৰ বাবে নানা বিপদসংকুল অভিযানত অৱতীৰ্ণ হয়।",
+      "english": "The legendary tale of two brave prince brothers who embark on perilous quests across mystical rivers and uncharted kingdoms to protect their people and restore their ancestral lineage.",
       "meaning": "A heroic tale of friendship, bravery, and magical quests.",
       "moral": "True friendship demands sacrifice and unyielding bravery in the face of danger.",
       "metadata": {
@@ -384,14 +449,18 @@
           "bravery"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Phulkonwar and Monikonwar",
+      "title_as": "ফুলকোঁৱৰ আৰু মণিকোঁৱৰ",
+      "moral_en": "True friendship demands sacrifice, courage, and unwavering loyalty.",
+      "moral_as": "ভাতৃত্ববোধ, ত্যাগ আৰু সাহসিকতাই সমাজৰ কল্যাণ সাধন কৰে।"
     },
     {
       "id": "ft_010",
       "type": "folktale",
       "title": "The Elephant-Apple Princess",
-      "assamese": "ঔ-কুঁৱৰী",
-      "english": "A magical tale about a princess born inside an Ou-Tenga (elephant-apple). A prince discovers the fruit, and at night, the beautiful Ou-Kuwori emerges from it to do household chores. The prince eventually catches her, breaks the shell, and marries her, overcoming various magical obstacles.",
+      "assamese": "এগৰাকী ৰাণীয়ে এটি ঔ-টেঙা জন্ম দিয়ে। সকলোৱে উপহাস কৰে যদিও সেই ঔ-টেঙাটোৰ ভিতৰতে আছিল এগৰাকী অনুপম ৰূপৱতী ৰাজকুমাৰী। কোঁৱৰে গোপনে ঔ-টেঙাৰ বাকলি পুৰি পেলাই কুঁৱৰীক চিৰদিনৰ বাবে মানৱ ৰূপত উদ্ধাৰ কৰে।",
+      "english": "A queen gives birth to an elephant-apple (Ou-tenga). Mocked by the kingdom, the discarded fruit actually shelters a radiant celestial princess inside, who emerges when unobserved. When the prince secretly burns the fruit shell, the princess remains in her true, glorious human form.",
       "meaning": "A whimsical story of hidden beauty and magical transformations.",
       "moral": "True beauty and value are often hidden beneath hard exteriors.",
       "metadata": {
@@ -403,14 +472,18 @@
           "hidden beauty"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Elephant-Apple Princess",
+      "title_as": "ঔ-কুঁৱৰী",
+      "moral_en": "True beauty and value are often hidden beneath unpretentious exteriors.",
+      "moral_as": "বাহ্যিক ৰূপ চাই কাৰো গুণ বা মূল্য বিচাৰ কৰিব নালাগে।"
     },
     {
       "id": "ft_011",
       "type": "folktale",
       "title": "The Frog Prince",
-      "assamese": "ভেকুলী কোঁৱৰ",
-      "english": "A childless couple is blessed with a son who is born as a frog. Despite his appearance, the frog prince is incredibly intelligent and magically skilled. He undertakes difficult tasks for the king, eventually winning the princess's hand in marriage and transforming into a handsome prince.",
+      "assamese": "এহাল নিঃসন্তান বুঢ়া-বুঢ়ীয়ে এটি ভেকুলীক সন্তানৰূপে লালন-পালন কৰে। ভেকুলীয়ে নিজৰ অদম্য সাহস আৰু গুণৰ দ্বাৰা ৰাজকুমাৰীক বিয়া কৰায় আৰু শেষত শাপমুক্ত হৈ সুন্দৰ কোঁৱৰৰ ৰূপ লয়।",
+      "english": "An old barren couple adopts a little frog as their son. The frog proves remarkably intelligent, wins a princess's hand through sheer perseverance, and eventually transforms into a magnificent prince when true devotion breaks his spell.",
       "meaning": "A classic transformation tale emphasizing inner worth over outward appearance.",
       "moral": "Do not judge someone by their appearance; true worth lies within.",
       "metadata": {
@@ -422,7 +495,11 @@
           "tasks"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Frog Prince",
+      "title_as": "ভেকুলী কোঁৱৰ",
+      "moral_en": "Do not judge someone by their appearance; inner purity and character define greatness.",
+      "moral_as": "বাহ্যিক চেহেৰাই মানুহৰ প্ৰকৃত পৰিচয় নহয়; গুণ আৰু নিষ্ঠাহে মানুহৰ শ্ৰেষ্ঠত্ব।"
     },
     {
       "id": "pr_012",
@@ -440,7 +517,10 @@
           "hypocrisy"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Empty Boasts",
+      "title_as": "খোজত খৰ নাই, মুখত গৰগৰণি",
+      "meaning_en": "Refers to someone who talks a lot and makes grand claims but takes no action or lacks the ability to back up their words."
     },
     {
       "id": "pr_013",
@@ -458,14 +538,17 @@
           "poverty"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Pride and Poverty",
+      "title_as": "কৰি খাব নাজানে, মাগি খাবলৈ লাজ",
+      "meaning_en": "Describes a person who lacks the skills or willingness to work for a living, yet has too much false pride to ask for help."
     },
     {
       "id": "ft_012",
       "type": "folktale",
       "title": "The Tiger and the Crab",
-      "assamese": "বাঘ আৰু কেঁকোৰা",
-      "english": "A hungry tiger captures a crab at the edge of a pond. The clever crab challenges the tiger to a strength duel, saying it can hold onto the tiger's neck. The tiger agrees. The crab grips the tiger's neck tightly with its powerful claws, causing the tiger immense pain and forcing it to beg for mercy and flee.",
+      "assamese": "এজন অহংকাৰী বাঘে নদীৰ পাৰত এটি সৰু কেঁকোৰাক জোকাবলৈ গৈছিল। কিন্তু কেঁকোৰাই নিজৰ ডাঙৰ আঙুলিৰে বাঘৰ নাকত এনেদৰে চেপি ধৰিলে যে বাঘে ক্ষমা খুজিবলৈ বাধ্য হ'ল।",
+      "english": "A greedy tiger attempts to bully a crab at the riverbank. With calm composure and razor-sharp claws, the small crab pinches the tiger's nose so tightly that the beast pleads for mercy and promises never to torment river creatures again.",
       "meaning": "Using quick thinking and natural defense mechanisms to overpower a physically superior predator.",
       "moral": "Intelligence and resourcefulness can defeat sheer physical strength.",
       "metadata": {
@@ -476,14 +559,18 @@
           "animals"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Tiger and the Crab",
+      "title_as": "বাঘ আৰু কেঁকোৰা",
+      "moral_en": "Intelligence and resourcefulness can disarm even the most menacing predators.",
+      "moral_as": "বুদ্ধি আৰু সাহসেৰে সৰু জীৱয়ো ডাঙৰ শক্তিক পৰাস্ত কৰিব পাৰে।"
     },
     {
       "id": "ft_013",
       "type": "folktale",
       "title": "The Sly Fox",
-      "assamese": "শিয়ালৰ বুদ্ধি",
-      "english": "A cunning fox accidentally falls into a deep well. When a thirsty goat walks by and asks about the water, the fox deceitfully praises the water as the best in the forest, convincing the goat to jump in. The fox then climbs onto the goat's back and horns to leap out, leaving the gullible goat trapped.",
+      "assamese": "এজন শিয়াল অন্ধকাৰত এটা গভীৰ নাদত পৰে। পাছত এটা ছাগলী পানী খাবলৈ আহোঁতে শিয়ালে নাদৰ পানীৰ ভুৱা প্ৰশংসা কৰি ছাগলীটোক নামি আহিবলৈ কয় আৰু তাৰ পিঠিত উঠি ওপৰলৈ ওলাই যায়।",
+      "english": "The sly fox falls into a deep well while wandering at night. When a thirsty goat approaches, the fox praises the refreshing water and invites the goat down, using the goat's back as a stepping stone to leap out to safety.",
       "meaning": "A warning about how selfish people use trickery to exploit the innocence and greed of others.",
       "moral": "Look before you leap; do not blindly trust the words of those in trouble.",
       "metadata": {
@@ -495,14 +582,18 @@
           "survival"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Sly Fox",
+      "title_as": "শিয়ালৰ বুদ্ধি",
+      "moral_en": "Look before you leap; do not blindly trust flattering words.",
+      "moral_as": "ভাবি-চিন্তি কাম কৰা উচিত; অচিনাকিৰ মিঠা কথাত ভোল যাব নালাগে।"
     },
     {
       "id": "ft_014",
       "type": "folktale",
       "title": "Kanchanee",
-      "assamese": "কাঞ্চনী",
-      "english": "Kanchanee is a sweet, virtuous girl who is tormented by her wicked stepmother and stepsister. Despite her hardships, she receives magical aid from a bird and forest spirits. Her patience and purity eventually lead to her marrying a royal prince, while her cruel family is brought to justice.",
+      "assamese": "কাঞ্চনী নামৰ এগৰাকী সৰল গাঁৱলীয়া ছোৱালীয়ে নিজৰ সততা আৰু দয়ালু মনৰ বাবে বহু কষ্টৰ অন্তত সুন্দৰ জীৱন আৰু সন্মান লাভ কৰে।",
+      "english": "A golden-hearted village maiden named Kanchanee endures harsh tests from destiny, remaining truthful and kind to the needy, until fortune smiles upon her with joy and eternal prosperity.",
       "meaning": "The ultimate vindication of patience, kindness, and moral integrity over domestic cruelty.",
       "moral": "Virtue and patience always find their reward; cruelty leads to ruin.",
       "metadata": {
@@ -514,14 +605,18 @@
           "justice"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Kanchanee",
+      "title_as": "কাঞ্চনী",
+      "moral_en": "Virtue and patience always find their rightful reward.",
+      "moral_as": "সজ আচৰণ আৰু পৰোপকাৰী মনৰ সদায় শুভ ফল পোৱা যায়।"
     },
     {
       "id": "ft_015",
       "type": "folktale",
       "title": "The Old Couple and the Jackals",
-      "assamese": "বুঢ়া-বুঢ়ী আৰু শিয়াল",
-      "english": "An old farmer and his wife are troubled by a pack of jackals raiding their sugarcane crop. They devise a plan where the old man plays dead and the wife invites the jackals to carry him away. Once the jackals gather, the old man leaps up with a stick, teaching the pests a painful lesson.",
+      "assamese": "এহাল বুঢ়া-বুঢ়ীয়ে নিজৰ খেতিডৰা আৰু ঘৰ-বাৰী শিয়ালৰ উৎপাতৰ পৰা ৰক্ষা কৰিবলৈ কৌশল খটুৱাই শিয়ালৰ জাকটোক উচিত শিক্ষা দিয়ে।",
+      "english": "An elderly couple uses clever domestic stratagems to outsmart a pack of thieving jackals trying to raid their kitchen garden and sugarcane fields.",
       "meaning": "Using strategic deception and cooperation to overcome persistent problems that cannot be solved by direct force.",
       "moral": "Clever strategies and joint effort can resolve persistent troubles.",
       "metadata": {
@@ -533,14 +628,18 @@
           "animals"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Old Couple and the Jackals",
+      "title_as": "বুঢ়া-বুঢ়ী আৰু শিয়াল",
+      "moral_en": "Clever strategies and joint effort can protect one from persistent nuisances.",
+      "moral_as": "একতা আৰু উপস্থিত কৌশল থাকিলে ডাঙৰ সংকটৰ পৰাও নিস্তাৰ পোৱা যায়।"
     },
     {
       "id": "ft_016",
       "type": "folktale",
       "title": "The Raven and the Sparrow",
-      "assamese": "কাউৰী আৰু ঘৰচিৰিকা",
-      "english": "A greedy raven bets a sparrow that it can eat her eggs. The sparrow agrees on the condition that the raven first wash its dirty beak. The raven seeks water, but the river demands a pot, the potter demands clay, and so forth. By the time the raven returns, the eggs have hatched and the sparrow has escaped.",
+      "assamese": "এটা কাউৰীয়ে এজনী সৰু ঘৰচিৰিকাৰ কণী খাবলৈ খোজে। ঘৰচিৰিকাই কাউৰীক কয় যে সাগৰৰ পানীত ঠোঁট ধুই আহিব লাগিব। কাউৰীয়ে পানী বিচাৰি নদী, মাটি, কুমাৰৰ ওচৰলৈ গৈ গৈ অৱশেষত নিজৰ উদ্দেশ্য পাহৰি পৰে।",
+      "english": "A raven challenges a little sparrow to a contest to eat her eggs. The sparrow cleverly insists that the raven must wash his beak in the river first, initiating an amusing chain of tasks that exhausts the greedy bird.",
       "meaning": "Using elaborate steps and rules to delay and defeat an aggressive and unfair oppressor.",
       "moral": "Strategic delay and quick thinking can prevent disaster.",
       "metadata": {
@@ -551,14 +650,18 @@
           "delaying tactics"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Raven and the Sparrow",
+      "title_as": "কাউৰী আৰু ঘৰচিৰিকা",
+      "moral_en": "Strategic delay and quick thinking can prevent grave harm.",
+      "moral_as": "উপস্থিত বুদ্ধি আৰু সময়োচিত পদক্ষেপে আসন্ন বিপদৰ পৰা ৰক্ষা কৰে।"
     },
     {
       "id": "ft_017",
       "type": "folktale",
       "title": "The Fortune Teller",
-      "assamese": "গণক",
-      "english": "A fraudulent astrologer pretends to know the future and tell fortunes. When the king's treasure is stolen, the astrologer accidentally guesses the correct location of the gold due to a series of hilarious coincidences and luck, convincing everyone of his mystical powers.",
+      "assamese": "এজন ভুৱা গণকে কাকতালীয়ভাৱে কেইটামান ভৱিষ্যদ্বাণী সঁচা কৰি ৰাজ্যজুৰি খ্যাতি লাভ কৰে। কিন্তু শেষত ৰজাৰ কঠিন পৰীক্ষাত পৰি নিজৰ সত্য স্বীকাৰ কৰিবলৈ বাধ্য হয়।",
+      "english": "A pretended astrologer stumbles upon coincidences that build his fame, until a perilous royal challenge forces him to rely on humble honesty.",
       "meaning": "A satirical look at how luck and circumstance can elevate fraudulent people, warning against blind superstition.",
       "moral": "Luck may bring temporary success, but honesty is the true path.",
       "metadata": {
@@ -570,14 +673,18 @@
           "humor"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Fortune Teller",
+      "title_as": "গণক",
+      "moral_en": "Luck may bring temporary success, but honesty alone endures.",
+      "moral_as": "ভাগ্য বা ছলনাক লৈ চিৰদিন চলিব নোৱাৰি; সততাইহে স্থায়ী মৰ্যাদা দিয়ে।"
     },
     {
       "id": "ft_018",
       "type": "folktale",
       "title": "Gongatoup (The Globe Fish)",
-      "assamese": "গঙ্গাটোপ",
-      "english": "Gongatoup is a small globe fish who thinks too highly of himself. He inflates his body to a massive size to intimidate the other fish and brag about his greatness. However, he inflates himself beyond his natural limit and bursts.",
+      "assamese": "গঙ্গাটোপ নামৰ মাছটোৱে নিজৰ ফুলা শৰীৰটো লৈ নদীৰ আন সৰু মাছবোৰক অহংকাৰ দেখুৱাইছিল। কিন্তু বানপানী অহাত সি বিপদত পৰে আৰু উপলব্ধি কৰে যে অহংকাৰৰ ফল সদায় বেয়া।",
+      "english": "A puffed-up globe fish acts haughty towards the quiet creatures of the river, only to realize that arrogance leaves one isolated and helpless when the monsoons flood the waters.",
       "meaning": "A cautionary tale about the dangers of extreme arrogance and representing oneself as larger than life.",
       "moral": "Pride goes before a fall; do not inflate your worth beyond reality.",
       "metadata": {
@@ -589,7 +696,11 @@
           "humility"
         ]
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Gongatoup (The Globe Fish)",
+      "title_as": "গঙ্গাটোপ",
+      "moral_en": "Pride goes before a fall; do not look down on humble neighbours.",
+      "moral_as": "অহংকাৰীৰ পতন অনিবাৰ্য; কাকো সৰু বুলি তুচ্ছ-তাচ্ছিল্য কৰিব নালাগে।"
     },
     {
       "id": "pr_014",
@@ -607,7 +718,10 @@
           "nature"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Dog's Tail",
+      "title_as": "কুকুৰৰ নেজ ডালশিলিখা কৰিব নোৱাৰি",
+      "meaning_en": "It is extremely difficult to change someone's core personality, inherent flaws, or long-standing bad habits."
     },
     {
       "id": "pr_015",
@@ -625,7 +739,10 @@
           "effort"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Washing Seeds in Mud",
+      "title_as": "বোকা মাটি গুটি ধোৱা",
+      "meaning_en": "Engaging in an activity that is completely futile, counterproductive, or undoes its own progress."
     },
     {
       "id": "pr_016",
@@ -643,7 +760,10 @@
           "confusion"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Mustard Flowers in the Eyes",
+      "title_as": "চকুত সৰিয়হ ফুল দেখা",
+      "meaning_en": "Finding oneself in a state of utter daze, shock, helplessness, or confusion when faced with sudden trouble."
     },
     {
       "id": "pr_017",
@@ -661,7 +781,10 @@
           "behavior"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Making a Palm Tree out of a Sesame Seed",
+      "title_as": "তিলকে তাল কৰা",
+      "meaning_en": "Blowing a minor, trivial incident completely out of proportion and creating unnecessary drama."
     },
     {
       "id": "pr_018",
@@ -679,7 +802,10 @@
           "wisdom"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Late Umbrella after Rain",
+      "title_as": "চোৰ গ’লে বুদ্ধি, বৰষুণ গ’লে ছাতি",
+      "meaning_en": "Receiving advice, solutions, or resources when the crisis is already over and the damage is done."
     },
     {
       "id": "pr_019",
@@ -697,7 +823,10 @@
           "greatness"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Value of a Dead Elephant",
+      "title_as": "মৰা হাতীৰো লাখ টকা দাম",
+      "meaning_en": "Even when a person of great stature, power, or value suffers a downfall or passes away, their legacy and worth remain highly respected."
     },
     {
       "id": "pr_020",
@@ -715,7 +844,10 @@
           "life"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Flowing River",
+      "title_as": "নদীৰ পানী ঘাটেন ঘাটেন বয়",
+      "meaning_en": "Life is dynamic and constantly changing; one must adapt to different environments and times."
     },
     {
       "id": "pr_021",
@@ -733,7 +865,10 @@
           "pride"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Celebrating with Borrowed Cakes",
+      "title_as": "লোকৰ পিঠাৰে বিহু পতা",
+      "meaning_en": "Trying to show off, throw a celebration, or gain prestige entirely at someone else's expense or effort."
     },
     {
       "id": "pr_022",
@@ -751,7 +886,10 @@
           "wisdom"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Ear and the Head",
+      "title_as": "কাণ টানিলে মূৰ আহে",
+      "meaning_en": "By tackling the main root or key instigator of a problem, all the subsequent issues get resolved automatically."
     },
     {
       "id": "pr_023",
@@ -769,7 +907,10 @@
           "foolishness"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Trap of the Mosquito",
+      "title_as": "হাতি উটি যাওঁতে মহে ফন্দি পাতে",
+      "meaning_en": "Weak or insignificant people trying to exploit situations or trap others when even the strongest and most capable are failing."
     },
     {
       "id": "pr_024",
@@ -787,7 +928,10 @@
           "independence"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "One's Own Hand is Jagannath",
+      "title_as": "নিজ হাত জগন্নাথ",
+      "meaning_en": "Relying on one's own efforts and hard work is the most reliable way to achieve success and happiness."
     },
     {
       "id": "pr_025",
@@ -805,7 +949,10 @@
           "humility"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Pride of Lanka",
+      "title_as": "অতি দৰ্পে হত লংকা",
+      "meaning_en": "Being overly proud, conceited, or arrogant will eventually lead to your own absolute ruin."
     },
     {
       "id": "pr_026",
@@ -823,7 +970,10 @@
           "ruin"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The Lazy Man's Gate",
+      "title_as": "আলাহৰ ঘৰৰ নঙলা",
+      "meaning_en": "Used to describe a state of complete disorganization, neglect, and lack of maintenance due to laziness."
     },
     {
       "id": "pr_027",
@@ -841,7 +991,10 @@
           "empathy"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Applying Lime to a Wound",
+      "title_as": "কটা ঘাত চুন দিয়া",
+      "meaning_en": "To deliberately aggravate someone's existing pain or misery by adding insults, mockery, or fresh trouble."
     },
     {
       "id": "pr_028",
@@ -859,7 +1012,10 @@
           "reality"
         ]
       },
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Catching a Shadow",
+      "title_as": "চিলনীৰ পিঠিত ছাঁ ছাটি মৰা",
+      "meaning_en": "Chasing after impossible, temporary, or imaginary goals that have no real substance or chance of success."
     }
   ]
 }

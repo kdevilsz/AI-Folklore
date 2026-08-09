@@ -23,7 +23,13 @@
         "date_submitted": "2026-07-01",
         "approved": true
       },
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Tejimola",
+      "title_as": "তেজীমলা",
+      "summary_en": "A young, innocent girl named Tejimola is left in the care of her wicked stepmother while her father goes away on a trading voyage. The stepmother cruelly crushes her under a pestle (Dheki) while she is husking rice and buries her in the garden. From her remains, magical plants sprout—a bottle gourd, a pomelo, and a lotus—each singing a sorrowful song when approached. When her father returns and attempts to pluck a lotus, the flower transforms back into Tejimola, revealing the stepmother's cruelty.",
+      "summary_as": "তেজীমলা এগৰাকী নিস্পাপ আৰু মৰমীয়াল কন্যা। তাইৰ দেউতাক সদাগৰ, ব্যৱসায়ৰ বাবে বিদেশলৈ যোৱাৰ সময়ত মাহীমাকে তেজীমলাক ঢেকীত খুন্দি নিষ্ঠুৰভাৱে হত্যা কৰি পুতি পেলায়। সেই ঠাইতে লাও গছ, টেঙা গছ আৰু শেষত পানীত পদুম ফুল হৈ তেজীমলাই নিজৰ দুখৰ গীত গায়। শেষত দেউতাক উভতি আহি পদুম ফুলটো ছিঙিব খোজোঁতে তেজীমলাই পুনৰ জীৱন পাই মাহীমাকৰ কু-কৰ্ম প্ৰকাশ কৰে।",
+      "moral_en": "Truth cannot be buried forever; good ultimately prevails over evil.",
+      "moral_as": "সত্যক কেতিয়াও লুকুৱাই ৰাখিব নোৱাৰি; অসত্য আৰু অন্যায়ৰ ওপৰত সদায়েই সত্য আৰু ধৰ্মৰ জয় হয়।"
     },
     {
       "id": "ft_002",
@@ -42,7 +48,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Kukuri Kona",
+      "title_as": "কুকুৰীকণা",
+      "summary_en": "A comical tale about a son-in-law who suffers from night blindness (Kukuri Kona). He tries desperately to hide his affliction from his in-laws when he visits them. His attempts to navigate the house at night lead to a series of hilarious blunders, including wrestling with a goat, breaking pots, and making a fool of himself until the truth is finally revealed.",
+      "summary_as": "এজন কুকুৰীকণা (ৰাতি নেদেখা) জোঁৱায়ে শহুৰৰ ঘৰলৈ গৈ নিজৰ এই দুৰ্বলতা ঢাকিবলৈ চেষ্টা কৰে। ৰাতি আন্ধাৰত খোজ কাঢ়িবলৈ গৈ সি ছাগলীৰ লগত যুঁজ লগায়, কলহ ভাঙি পেলায় আৰু নানা ধৰণৰ হাঁহি উঠা কাণ্ড কৰে। শেষত সকলোৰে আগত তাৰ কুকুৰীকণা স্বভাৱ প্ৰকাশ পায়।",
+      "moral_en": "Hiding the truth leads to greater embarrassment.",
+      "moral_as": "মিছা অহংকাৰ বা দুৰ্বলতা লুকুৱাবলৈ কৰা অপচেষ্টাই শেষত হাঁহিয়াতৰ পাত্ৰহে কৰে।"
     },
     {
       "id": "ft_003",
@@ -61,7 +73,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Tula and Teja",
+      "title_as": "তুলা আৰু তেজা",
+      "summary_en": "Tula and Teja are step-sisters. Teja's mother passes away, and her cruel stepmother makes her do all the hard chores, while treating Tula like a princess. Despite the hardship, Teja receives magical help from animals. Eventually, the King discovers Teja's beauty and marries her. The jealous stepmother tries to replace Teja with Tula through dark magic, but the King discovers the trick, punishes the wicked, and reunites with Teja.",
+      "summary_as": "তুলা আৰু তেজা দুগৰাকী সতীয়া ভনীয়েক। মাহীমাকে তেজাক সকলো কঠিন বন-কৰ্ম কৰিবলৈ বাধ্য কৰাইছিল আৰু নিজৰ জীয়েক তুলাক মৰমত ৰাখিছিল। কিন্তু প্ৰকৃতি আৰু জীৱ-জন্তুৰ আশীৰ্বাদত তেজাই ৰজাৰ দৃষ্টি আকৰ্ষণ কৰি ৰাণী হয়। ঈৰ্ষাত মাহীমাকে তেজাক ছলনা কৰিবলৈ চেষ্টা কৰে যদিও শেষত ন্যায়ৰ জয় হয়।",
+      "moral_en": "Virtue and kindness are rewarded, while jealousy and wickedness are punished.",
+      "moral_as": "ধৈৰ্য্য আৰু সজ চৰিত্ৰৰ সদায় পুৰস্কাৰ মিলে, কিন্তু ঈৰ্ষা আৰু অহংকাৰৰ পতন অনিবাৰ্য।"
     },
     {
       "id": "ft_004",
@@ -80,7 +98,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Champawati",
+      "title_as": "চম্পাৱতী",
+      "summary_en": "Champawati is forced by her jealous stepmother to marry a python. To everyone's surprise, the python is actually a handsome divine prince cursed to live in a snake's skin. The prince sheds his skin at night. When the stepmother tries to replicate this success for her own daughter by finding a real python, it ends in tragedy.",
+      "summary_as": "মাহীমাকে চম্পাৱতীক এজন অজগৰ সাপৰ লগত বিয়া দিয়ে। কিন্তু আচলতে সেই সাপটো আছিল শাপগ্ৰস্ত এগৰাকী দেৱকুমাৰ। ৰাতি সি মানুহৰ ৰূপ লয় আৰু চম্পাৱতীৰ সৈতে সুখেৰে থাকে। লোভত পৰি মাহীমাকে নিজৰ জীয়েককো এনেদৰে সাপৰ লগত বিয়া দিবলৈ গৈ চৰম বিপদ মাতি আনে।",
+      "moral_en": "Do not covet what belongs to others through blind imitation.",
+      "moral_as": "আনৰ ভাগ্যলৈ অন্ধ অনুকৰণ আৰু লোভ কৰিলে নিজৰেই সৰ্বনাশ হয়।"
     },
     {
       "id": "ft_005",
@@ -99,7 +123,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Monkey and the Fox",
+      "title_as": "বান্দৰ আৰু শিয়াল",
+      "summary_en": "A witty story about the uneasy friendship between a clever monkey and a cunning fox. They try to outwit each other in dividing a cake of sugarcane jaggery (gur). The monkey climbs a tree to eat his share, while the fox uses trickery on the ground, teaching a lesson in clever negotiations.",
+      "summary_as": "এজন ধূৰ্ত শিয়াল আৰু চতুৰ বান্দৰে লগ লাগি গুড়ৰ পিঠা ভাগ কৰিবলৈ লয়। দুয়োৰে মাজত কোনে কাক চতুৰালিৰে ঠগিব পাৰে তাৰ প্ৰতিযোগিতা হয়। শেষত বান্দৰে গছত উঠি নিজৰ বুদ্ধিমত্তা প্ৰদৰ্শন কৰে।",
+      "moral_en": "Do not underestimate others; greed undermines genuine friendship.",
+      "moral_as": "চতুৰালি আৰু অহংকাৰে বন্ধুত্ব নষ্ট কৰে; কাকো দুৰ্বল বুলি ভবা অনুচিত।"
     },
     {
       "id": "ft_006",
@@ -118,7 +148,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Kite's Daughter",
+      "title_as": "চিলনীৰ জীয়েক",
+      "summary_en": "A kite bird raises an abandoned human baby girl as her own daughter with deep affection. As the girl grows into a beautiful maiden, a merchant falls in love with her and marries her. When the merchant's other wives torment her, the mother kite arrives from the sky to protect and rescue her beloved child.",
+      "summary_as": "এজনী চিলনী পখীয়ে এজনী অনাথ মানৱ কন্যাক নিজৰ সন্তানৰ দৰে প্ৰতিপালন কৰে। ডাঙৰ হৈ ছোৱালীজনী এগৰাকী সদাগৰৰ পত্নী হয়। কিন্তু সতিনীসকলৰ অত্যাচাৰৰ পৰা ৰক্ষা কৰিবলৈ চিলনী মাক উৰি আহি তাইক ৰক্ষা কৰে।",
+      "moral_en": "A mother's love transcends species and physical boundaries.",
+      "moral_as": "মাতৃস্নেহ সকলো প্ৰাকৃতিক সীমা আৰু জাতিৰ উৰ্দ্ধত।"
     },
     {
       "id": "ft_007",
@@ -137,7 +173,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Clever Fox and the Foolish Tiger",
+      "title_as": "শিয়াল আৰু বাঘ",
+      "summary_en": "A classic folklore tale where a small, defenseless fox encounters a ferocious, hungry tiger. Using presence of mind, the fox convinces the tiger that he is the chosen protector of the jungle whose roar shakes the mountains, tricking the tiger into fleeing in terror.",
+      "summary_as": "এখন অৰণ্যত এজন সৰু শিয়ালে এজন ভয়ংকৰ বাঘৰ মুখামুখি হয়। কিন্তু ভয় নাখাই শিয়ালে নিজৰ উপস্থিত বুদ্ধি ব্যৱহাৰ কৰি বাঘক পতিয়ন নিয়ায় যে সিহে অৰণ্যৰ ৰজা, আৰু বাঘক ভয় খুৱাই পলাই যাবলৈ বাধ্য কৰে।",
+      "moral_en": "Brain is better than brawn; intelligence can overcome sheer physical power.",
+      "moral_as": "শাৰীৰিক বলতকৈ বুদ্ধি আৰু উপস্থিত প্ৰজ্ঞা সদায় শক্তিশালী।"
     },
     {
       "id": "ft_008",
@@ -156,7 +198,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Assamese Mythology",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Panesoi",
+      "title_as": "পানেচৈ",
+      "summary_en": "Panesoi is a virtuous girl who faces trials and separation from her beloved. Through endurance, pure devotion, and moral integrity, she overcomes deep sorrow and regains her rightful place in family and society.",
+      "summary_as": "পানেচৈ এগৰাকী ত্যাগী আৰু সতী নাৰী। জীৱনৰ বহু ঘাত-প্ৰতিঘাত আৰু বিচ্ছেদ সহ্য কৰিও তাই নিজৰ সততা আৰু পৱিত্ৰতাৰে সকলো সংকট পাৰ কৰি সমাজত মৰ্যাদা লাভ কৰে।",
+      "moral_en": "True love and devotion can overcome even the harshest of adversities.",
+      "moral_as": "ধৈৰ্য্য আৰু নিঃস্বাৰ্থ প্ৰেমে সকলো দুখ-কষ্টক জয় কৰিব পাৰে।"
     },
     {
       "id": "ft_009",
@@ -175,7 +223,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Assamese Ballads (Geet)",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Phulkonwar and Monikonwar",
+      "title_as": "ফুলকোঁৱৰ আৰু মণিকোঁৱৰ",
+      "summary_en": "The legendary tale of two brave prince brothers who embark on perilous quests across mystical rivers and uncharted kingdoms to protect their people and restore their ancestral lineage.",
+      "summary_as": "ফুলকোঁৱৰ আৰু মণিকোঁৱৰ—দুজন সাহসী ৰাজকুমাৰৰ কালজয়ী কাহিনী। তেওঁলোকে প্ৰজাৰ কল্যাণ আৰু হেৰুওৱা ৰাজ্যৰ গৌৰৱ উদ্ধাৰৰ বাবে নানা বিপদসংকুল অভিযানত অৱতীৰ্ণ হয়।",
+      "moral_en": "True friendship demands sacrifice, courage, and unwavering loyalty.",
+      "moral_as": "ভাতৃত্ববোধ, ত্যাগ আৰু সাহসিকতাই সমাজৰ কল্যাণ সাধন কৰে।"
     },
     {
       "id": "ft_010",
@@ -194,7 +248,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Elephant-Apple Princess",
+      "title_as": "ঔ-কুঁৱৰী",
+      "summary_en": "A queen gives birth to an elephant-apple (Ou-tenga). Mocked by the kingdom, the discarded fruit actually shelters a radiant celestial princess inside, who emerges when unobserved. When the prince secretly burns the fruit shell, the princess remains in her true, glorious human form.",
+      "summary_as": "এগৰাকী ৰাণীয়ে এটি ঔ-টেঙা জন্ম দিয়ে। সকলোৱে উপহাস কৰে যদিও সেই ঔ-টেঙাটোৰ ভিতৰতে আছিল এগৰাকী অনুপম ৰূপৱতী ৰাজকুমাৰী। কোঁৱৰে গোপনে ঔ-টেঙাৰ বাকলি পুৰি পেলাই কুঁৱৰীক চিৰদিনৰ বাবে মানৱ ৰূপত উদ্ধাৰ কৰে।",
+      "moral_en": "True beauty and value are often hidden beneath unpretentious exteriors.",
+      "moral_as": "বাহ্যিক ৰূপ চাই কাৰো গুণ বা মূল্য বিচাৰ কৰিব নালাগে।"
     },
     {
       "id": "ft_011",
@@ -213,7 +273,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Frog Prince",
+      "title_as": "ভেকুলী কোঁৱৰ",
+      "summary_en": "An old barren couple adopts a little frog as their son. The frog proves remarkably intelligent, wins a princess's hand through sheer perseverance, and eventually transforms into a magnificent prince when true devotion breaks his spell.",
+      "summary_as": "এহাল নিঃসন্তান বুঢ়া-বুঢ়ীয়ে এটি ভেকুলীক সন্তানৰূপে লালন-পালন কৰে। ভেকুলীয়ে নিজৰ অদম্য সাহস আৰু গুণৰ দ্বাৰা ৰাজকুমাৰীক বিয়া কৰায় আৰু শেষত শাপমুক্ত হৈ সুন্দৰ কোঁৱৰৰ ৰূপ লয়।",
+      "moral_en": "Do not judge someone by their appearance; inner purity and character define greatness.",
+      "moral_as": "বাহ্যিক চেহেৰাই মানুহৰ প্ৰকৃত পৰিচয় নহয়; গুণ আৰু নিষ্ঠাহে মানুহৰ শ্ৰেষ্ঠত্ব।"
     },
     {
       "id": "ft_012",
@@ -231,7 +297,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Tiger and the Crab",
+      "title_as": "বাঘ আৰু কেঁকোৰা",
+      "summary_en": "A greedy tiger attempts to bully a crab at the riverbank. With calm composure and razor-sharp claws, the small crab pinches the tiger's nose so tightly that the beast pleads for mercy and promises never to torment river creatures again.",
+      "summary_as": "এজন অহংকাৰী বাঘে নদীৰ পাৰত এটি সৰু কেঁকোৰাক জোকাবলৈ গৈছিল। কিন্তু কেঁকোৰাই নিজৰ ডাঙৰ আঙুলিৰে বাঘৰ নাকত এনেদৰে চেপি ধৰিলে যে বাঘে ক্ষমা খুজিবলৈ বাধ্য হ'ল।",
+      "moral_en": "Intelligence and resourcefulness can disarm even the most menacing predators.",
+      "moral_as": "বুদ্ধি আৰু সাহসেৰে সৰু জীৱয়ো ডাঙৰ শক্তিক পৰাস্ত কৰিব পাৰে।"
     },
     {
       "id": "ft_013",
@@ -250,7 +322,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Sly Fox",
+      "title_as": "শিয়ালৰ বুদ্ধি",
+      "summary_en": "The sly fox falls into a deep well while wandering at night. When a thirsty goat approaches, the fox praises the refreshing water and invites the goat down, using the goat's back as a stepping stone to leap out to safety.",
+      "summary_as": "এজন শিয়াল অন্ধকাৰত এটা গভীৰ নাদত পৰে। পাছত এটা ছাগলী পানী খাবলৈ আহোঁতে শিয়ালে নাদৰ পানীৰ ভুৱা প্ৰশংসা কৰি ছাগলীটোক নামি আহিবলৈ কয় আৰু তাৰ পিঠিত উঠি ওপৰলৈ ওলাই যায়।",
+      "moral_en": "Look before you leap; do not blindly trust flattering words.",
+      "moral_as": "ভাবি-চিন্তি কাম কৰা উচিত; অচিনাকিৰ মিঠা কথাত ভোল যাব নালাগে।"
     },
     {
       "id": "ft_014",
@@ -269,7 +347,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Kanchanee",
+      "title_as": "কাঞ্চনী",
+      "summary_en": "A golden-hearted village maiden named Kanchanee endures harsh tests from destiny, remaining truthful and kind to the needy, until fortune smiles upon her with joy and eternal prosperity.",
+      "summary_as": "কাঞ্চনী নামৰ এগৰাকী সৰল গাঁৱলীয়া ছোৱালীয়ে নিজৰ সততা আৰু দয়ালু মনৰ বাবে বহু কষ্টৰ অন্তত সুন্দৰ জীৱন আৰু সন্মান লাভ কৰে।",
+      "moral_en": "Virtue and patience always find their rightful reward.",
+      "moral_as": "সজ আচৰণ আৰু পৰোপকাৰী মনৰ সদায় শুভ ফল পোৱা যায়।"
     },
     {
       "id": "ft_015",
@@ -288,7 +372,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Old Couple and the Jackals",
+      "title_as": "বুঢ়া-বুঢ়ী আৰু শিয়াল",
+      "summary_en": "An elderly couple uses clever domestic stratagems to outsmart a pack of thieving jackals trying to raid their kitchen garden and sugarcane fields.",
+      "summary_as": "এহাল বুঢ়া-বুঢ়ীয়ে নিজৰ খেতিডৰা আৰু ঘৰ-বাৰী শিয়ালৰ উৎপাতৰ পৰা ৰক্ষা কৰিবলৈ কৌশল খটুৱাই শিয়ালৰ জাকটোক উচিত শিক্ষা দিয়ে।",
+      "moral_en": "Clever strategies and joint effort can protect one from persistent nuisances.",
+      "moral_as": "একতা আৰু উপস্থিত কৌশল থাকিলে ডাঙৰ সংকটৰ পৰাও নিস্তাৰ পোৱা যায়।"
     },
     {
       "id": "ft_016",
@@ -306,7 +396,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Raven and the Sparrow",
+      "title_as": "কাউৰী আৰু ঘৰচিৰিকা",
+      "summary_en": "A raven challenges a little sparrow to a contest to eat her eggs. The sparrow cleverly insists that the raven must wash his beak in the river first, initiating an amusing chain of tasks that exhausts the greedy bird.",
+      "summary_as": "এটা কাউৰীয়ে এজনী সৰু ঘৰচিৰিকাৰ কণী খাবলৈ খোজে। ঘৰচিৰিকাই কাউৰীক কয় যে সাগৰৰ পানীত ঠোঁট ধুই আহিব লাগিব। কাউৰীয়ে পানী বিচাৰি নদী, মাটি, কুমাৰৰ ওচৰলৈ গৈ গৈ অৱশেষত নিজৰ উদ্দেশ্য পাহৰি পৰে।",
+      "moral_en": "Strategic delay and quick thinking can prevent grave harm.",
+      "moral_as": "উপস্থিত বুদ্ধি আৰু সময়োচিত পদক্ষেপে আসন্ন বিপদৰ পৰা ৰক্ষা কৰে।"
     },
     {
       "id": "ft_017",
@@ -325,7 +421,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "The Fortune Teller",
+      "title_as": "গণক",
+      "summary_en": "A pretended astrologer stumbles upon coincidences that build his fame, until a perilous royal challenge forces him to rely on humble honesty.",
+      "summary_as": "এজন ভুৱা গণকে কাকতালীয়ভাৱে কেইটামান ভৱিষ্যদ্বাণী সঁচা কৰি ৰাজ্যজুৰি খ্যাতি লাভ কৰে। কিন্তু শেষত ৰজাৰ কঠিন পৰীক্ষাত পৰি নিজৰ সত্য স্বীকাৰ কৰিবলৈ বাধ্য হয়।",
+      "moral_en": "Luck may bring temporary success, but honesty alone endures.",
+      "moral_as": "ভাগ্য বা ছলনাক লৈ চিৰদিন চলিব নোৱাৰি; সততাইহে স্থায়ী মৰ্যাদা দিয়ে।"
     },
     {
       "id": "ft_018",
@@ -344,7 +446,13 @@
       "cultural_significance": "A fundamental Assamese folktale passed down through oral tradition.",
       "source": "Burhi Aair Sadhu",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Gongatoup (The Globe Fish)",
+      "title_as": "গঙ্গাটোপ",
+      "summary_en": "A puffed-up globe fish acts haughty towards the quiet creatures of the river, only to realize that arrogance leaves one isolated and helpless when the monsoons flood the waters.",
+      "summary_as": "গঙ্গাটোপ নামৰ মাছটোৱে নিজৰ ফুলা শৰীৰটো লৈ নদীৰ আন সৰু মাছবোৰক অহংকাৰ দেখুৱাইছিল। কিন্তু বানপানী অহাত সি বিপদত পৰে আৰু উপলব্ধি কৰে যে অহংকাৰৰ ফল সদায় বেয়া।",
+      "moral_en": "Pride goes before a fall; do not look down on humble neighbours.",
+      "moral_as": "অহংকাৰীৰ পতন অনিবাৰ্য; কাকো সৰু বুলি তুচ্ছ-তাচ্ছিল্য কৰিব নালাগে।"
     }
   ]
 }

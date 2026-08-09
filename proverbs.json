@@ -19,7 +19,11 @@
         "date_submitted": "2026-07-05",
         "approved": true
       },
-      "confidence": "community"
+      "confidence": "community",
+      "title_en": "A crane goes blind when there are too many fishes.",
+      "title_as": "অধিক মাছত বগলী কণা",
+      "english": "A crane goes blind when there are too many fishes.",
+      "assamese": "অধিক মাছত বগলী কণা"
     },
     {
       "id": "pr_002",
@@ -34,7 +38,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "P.R. Gurdon Collection / Oral Tradition",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Too much devotion is a sign of a thief.",
+      "title_as": "অতি ভক্তি চোৰৰ লক্ষণ",
+      "english": "Too much devotion is a sign of a thief.",
+      "assamese": "অতি ভক্তি চোৰৰ লক্ষণ"
     },
     {
       "id": "pr_003",
@@ -49,7 +57,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "P.R. Gurdon Collection / Oral Tradition",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "Lightning without clouds.",
+      "title_as": "বিনা মেঘে বজ্ৰপাত",
+      "english": "Lightning without clouds.",
+      "assamese": "বিনা মেঘে বজ্ৰপাত"
     },
     {
       "id": "pr_004",
@@ -65,7 +77,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "If the public shakes their nails, a river flows.",
+      "title_as": "ৰাইজে নখ জোকাৰিলে নৈ বয়",
+      "english": "If the public shakes their nails, a river flows.",
+      "assamese": "ৰাইজে নখ জোকাৰিলে নৈ বয়"
     },
     {
       "id": "pr_005",
@@ -80,7 +96,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "As the dog, so the stick.",
+      "title_as": "যেনে কুকুৰ তেনে টাঙোন",
+      "english": "As the dog, so the stick.",
+      "assamese": "যেনে কুকুৰ তেনে টাঙোন"
     },
     {
       "id": "pr_006",
@@ -95,7 +115,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The radish that will grow is known by its first two leaves.",
+      "title_as": "যি মূলা বাঢ়ে তাৰ দুপাততে চিন",
+      "english": "The radish that will grow is known by its first two leaves.",
+      "assamese": "যি মূলা বাঢ়ে তাৰ দুপাততে চিন"
     },
     {
       "id": "pr_007",
@@ -110,7 +134,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "P.R. Gurdon Collection / Oral Tradition",
       "contributor": null,
-      "confidence": "published"
+      "confidence": "published",
+      "title_en": "A man's hard work brings the grace of Lakshmi (Goddess of Wealth).",
+      "title_as": "পুৰুষৰ পৰিশ্ৰম, লক্ষ্মীৰ কৃপা",
+      "english": "A man's hard work brings the grace of Lakshmi (Goddess of Wealth).",
+      "assamese": "পুৰুষৰ পৰিশ্ৰম, লক্ষ্মীৰ কৃপা"
     },
     {
       "id": "pr_008",
@@ -126,7 +154,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "An elephant's tusks, once out, cannot go back in.",
+      "title_as": "হাতীৰ দাঁত ওলালে সোমাব নোৱাৰে",
+      "english": "An elephant's tusks, once out, cannot go back in.",
+      "assamese": "হাতীৰ দাঁত ওলালে সোমাব নোৱাৰে"
     },
     {
       "id": "pr_009",
@@ -141,7 +173,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "A barking dog does not bite.",
+      "title_as": "ভৌকা কুকুৰে নাকাঁমোৰে",
+      "english": "A barking dog does not bite.",
+      "assamese": "ভৌকা কুকুৰে নাকাঁমোৰে"
     },
     {
       "id": "pr_010",
@@ -157,7 +193,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "The public is the king.",
+      "title_as": "ৰাইজেই ৰজা",
+      "english": "The public is the king.",
+      "assamese": "ৰাইজেই ৰজা"
     },
     {
       "id": "pr_011",
@@ -172,7 +212,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Too much devotion is the sign of a thief.",
+      "title_as": "অতি ভক্তি চোৰৰ লক্ষণ",
+      "english": "Too much devotion is the sign of a thief.",
+      "assamese": "অতি ভক্তি চোৰৰ লক্ষণ"
     },
     {
       "id": "pr_012",
@@ -187,7 +231,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "No swiftness in steps, but thunder in the mouth.",
+      "title_as": "খোজত খৰ নাই, মুখত গৰগৰণি",
+      "english": "No swiftness in steps, but thunder in the mouth.",
+      "assamese": "খোজত খৰ নাই, মুখত গৰগৰণি"
     },
     {
       "id": "pr_013",
@@ -202,7 +250,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Does not know how to earn, but is ashamed to beg.",
+      "title_as": "কৰি খাব নাজানে, মাগি খাবলৈ লাজ",
+      "english": "Does not know how to earn, but is ashamed to beg.",
+      "assamese": "কৰি খাব নাজানে, মাগি খাবলৈ লাজ"
     },
     {
       "id": "pr_014",
@@ -217,7 +269,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Kukuror nej dalsilikha koribo nuwari | A dog's tail can never be straightened.",
+      "title_as": "কুকুৰৰ নেজ ডালশিলিখা কৰিব নোৱাৰি",
+      "english": "Kukuror nej dalsilikha koribo nuwari | A dog's tail can never be straightened.",
+      "assamese": "কুকুৰৰ নেজ ডালশিলিখা কৰিব নোৱাৰি"
     },
     {
       "id": "pr_015",
@@ -232,7 +288,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Boka mati guti dhowa | Washing seeds in muddy soil.",
+      "title_as": "বোকা মাটি গুটি ধোৱা",
+      "english": "Boka mati guti dhowa | Washing seeds in muddy soil.",
+      "assamese": "বোকা মাটি গুটি ধোৱা"
     },
     {
       "id": "pr_016",
@@ -247,7 +307,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Chokut xoriyoh phul dekha | Seeing mustard flowers in one's eyes.",
+      "title_as": "চকুত সৰিয়হ ফুল দেখা",
+      "english": "Chokut xoriyoh phul dekha | Seeing mustard flowers in one's eyes.",
+      "assamese": "চকুত সৰিয়হ ফুল দেখা"
     },
     {
       "id": "pr_017",
@@ -262,7 +326,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Tiloke tal kora | Making a palm tree out of a sesame seed.",
+      "title_as": "তিলকে তাল কৰা",
+      "english": "Tiloke tal kora | Making a palm tree out of a sesame seed.",
+      "assamese": "তিলকে তাল কৰা"
     },
     {
       "id": "pr_018",
@@ -277,7 +345,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Chor gole buddhi, boroxun gole chati | Wit after the thief has left, an umbrella after the rain has stopped.",
+      "title_as": "চোৰ গ’লে বুদ্ধি, বৰষুণ গ’লে ছাতি",
+      "english": "Chor gole buddhi, boroxun gole chati | Wit after the thief has left, an umbrella after the rain has stopped.",
+      "assamese": "চোৰ গ’লে বুদ্ধি, বৰষুণ গ’লে ছাতি"
     },
     {
       "id": "pr_019",
@@ -292,7 +364,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Mora hatoro lakh toka dam | Even a dead elephant is worth a hundred thousand rupees.",
+      "title_as": "মৰা হাতীৰো লাখ টকা দাম",
+      "english": "Mora hatoro lakh toka dam | Even a dead elephant is worth a hundred thousand rupees.",
+      "assamese": "মৰা হাতীৰো লাখ টকা দাম"
     },
     {
       "id": "pr_020",
@@ -307,7 +383,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Nodor pani ghaten ghaten boy | River water flows through many banks.",
+      "title_as": "নদীৰ পানী ঘাটেন ঘাটেন বয়",
+      "english": "Nodor pani ghaten ghaten boy | River water flows through many banks.",
+      "assamese": "নদীৰ পানী ঘাটেন ঘাটেন বয়"
     },
     {
       "id": "pr_021",
@@ -322,7 +402,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Lokor pithare bihu pota | Celebrating Bihu with others' rice cakes.",
+      "title_as": "লোকৰ পিঠাৰে বিহু পতা",
+      "english": "Lokor pithare bihu pota | Celebrating Bihu with others' rice cakes.",
+      "assamese": "লোকৰ পিঠাৰে বিহু পতা"
     },
     {
       "id": "pr_022",
@@ -337,7 +421,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Kan tanile mur ahe | Pull the ears, and the head will follow.",
+      "title_as": "কাণ টানিলে মূৰ আহে",
+      "english": "Kan tanile mur ahe | Pull the ears, and the head will follow.",
+      "assamese": "কাণ টানিলে মূৰ আহে"
     },
     {
       "id": "pr_023",
@@ -352,7 +440,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Hati uti jaote mohe phondi pate | When an elephant is swept away, the mosquito plans a trap.",
+      "title_as": "হাতি উটি যাওঁতে মহে ফন্দি পাতে",
+      "english": "Hati uti jaote mohe phondi pate | When an elephant is swept away, the mosquito plans a trap.",
+      "assamese": "হাতি উটি যাওঁতে মহে ফন্দি পাতে"
     },
     {
       "id": "pr_024",
@@ -367,7 +459,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Nij hat jagannath | One's own hand is Lord Jagannath.",
+      "title_as": "নিজ হাত জগন্নাথ",
+      "english": "Nij hat jagannath | One's own hand is Lord Jagannath.",
+      "assamese": "নিজ হাত জগন্নাথ"
     },
     {
       "id": "pr_025",
@@ -382,7 +478,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Oti dorpe hoto lonka | Excessive pride led to the destruction of Lanka.",
+      "title_as": "অতি দৰ্পে হত লংকা",
+      "english": "Oti dorpe hoto lonka | Excessive pride led to the destruction of Lanka.",
+      "assamese": "অতি দৰ্পে হত লংকা"
     },
     {
       "id": "pr_026",
@@ -397,7 +497,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Alahor ghoror nongola | The gate of a lazy man's house.",
+      "title_as": "আলাহৰ ঘৰৰ নঙলা",
+      "english": "Alahor ghoror nongola | The gate of a lazy man's house.",
+      "assamese": "আলাহৰ ঘৰৰ নঙলা"
     },
     {
       "id": "pr_027",
@@ -412,7 +516,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Kota ghat chun diya | Applying lime to a cut wound.",
+      "title_as": "কটা ঘাত চুন দিয়া",
+      "english": "Kota ghat chun diya | Applying lime to a cut wound.",
+      "assamese": "কটা ঘাত চুন দিয়া"
     },
     {
       "id": "pr_028",
@@ -427,7 +535,11 @@
       "cultural_context": "Used in traditional Assamese discourse to impart ancestral wisdom.",
       "source": "Oral Tradition",
       "contributor": null,
-      "confidence": "interview"
+      "confidence": "interview",
+      "title_en": "Chilonir pithit sa sati mora | Trying to catch the shadow of a flying kite.",
+      "title_as": "চিলনীৰ পিঠিত ছাঁ ছাটি মৰা",
+      "english": "Chilonir pithit sa sati mora | Trying to catch the shadow of a flying kite.",
+      "assamese": "চিলনীৰ পিঠিত ছাঁ ছাটি মৰা"
     }
   ]
 }

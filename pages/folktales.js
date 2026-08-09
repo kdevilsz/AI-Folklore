@@ -28,11 +28,10 @@ function formatDate(dateStr) {
 export async function renderFolktales(container) {
     const lang = window.currentLanguage || 'en';
 
-    const pageTitle = lang === 'as' ? "অসমীয়া সাধুকথা" : "Assamese Folktales";
-    const pageSubtitle = lang === 'as' ? 
-        "অসমৰ চহকী মৌখিক পৰম্পৰা আৰু প্ৰজন্মৰ পিছত প্ৰজন্ম ধৰি চলি অহা যাদুকৰী সাধুবোৰ অন্বেষণ কৰক।" :
-        "Explore the rich oral traditions and magical stories passed down through generations in Assam.";
-    const loadingText = lang === 'as' ? "প্ৰাচীন সাধুবোৰ অন্বেষণ কৰা হৈছে..." : "Unearthing ancient manuscripts...";
+    // UI Headings & Labels always remain clean and consistent in English
+    const pageTitle = "Assamese Folktales";
+    const pageSubtitle = "Explore the rich oral traditions and magical stories passed down through generations in Assam.";
+    const loadingText = "Unearthing ancient manuscripts...";
 
     container.innerHTML = `
         <h1 class="page-title">${pageTitle}</h1>
@@ -62,10 +61,10 @@ export async function renderFolktales(container) {
         // Render sidebar with filters
         let sidebarHtml = `
             <aside class="filter-sidebar">
-                <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">${lang === 'as' ? 'ফিল্টাৰ কৰক' : 'Filter by Tag'}</h4>
+                <h4 style="color: var(--primary); font-family: 'Playfair Display', serif; margin-top:0;">Filter by Tag</h4>
                 <div class="filter-options">
-                    <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'folktale')">${lang === 'as' ? 'আটাইবোৰ' : 'All Stories'}</button>
-                    <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'folktale')" style="border-color: #ff4b4b; color: #ff4b4b;">${lang === 'as' ? 'মোৰ প্ৰিয়' : 'My Favorites'}</button>
+                    <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'folktale')">All Stories</button>
+                    <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'folktale')" style="border-color: #ff4b4b; color: #ff4b4b;">My Favorites</button>
                     ${uniqueTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'folktale')">${tag}</button>`).join('')}
                 </div>
             </aside>
@@ -79,16 +78,18 @@ export async function renderFolktales(container) {
                 <div class="card-grid-container" id="folktale-grid">
         `;
         
-        function parseTitle(titleStr, language) {
-            const match = titleStr.match(/^([^(]+)\s*(?:\(([^)]+)\))?$/);
-            if (match) {
-                const enTitle = match[1].trim();
-                const asTitle = match[2] ? match[2].trim() : "";
-                if (language === 'as' && asTitle) {
-                    return `${asTitle} (${enTitle})`;
-                }
+        function parseCleanTitle(f, language) {
+            if (language === 'as') {
+                if (f.title_as) return `${f.title_as} (${f.title_en || f.title.replace(/\s*\(.*?\)/, '')})`;
+                const match = (f.title || '').match(/^([^(]+)\s*(?:\(([^)]+)\))?$/);
+                if (match && match[2]) return `${match[2].trim()} (${match[1].trim()})`;
+                return f.title;
+            } else {
+                if (f.title_en) return f.title_en;
+                const match = (f.title || '').match(/^([^(]+)\s*(?:\(([^)]+)\))?$/);
+                if (match) return match[1].trim();
+                return f.title;
             }
-            return titleStr;
         }
         
         folktales.forEach(f => {
@@ -98,7 +99,11 @@ export async function renderFolktales(container) {
             
             // Build data-tags string
             const cardTags = [roots, ...themes].map(t => t.toLowerCase()).join('|');
-            const cardTitle = parseTitle(f.title, lang);
+            const cardTitle = parseCleanTitle(f, lang);
+            
+            // Select content based on active language mode
+            const storySummary = (lang === 'as' && (f.summary_as || f.assamese)) ? (f.summary_as || f.assamese) : (f.summary_en || f.summary);
+            const storyMoral = (lang === 'as' && f.moral_as) ? f.moral_as : (f.moral_en || f.moral);
             
             html += `
                 <div class="card folktale-card" data-tags="${cardTags.replace(/"/g, '&quot;')}" data-id="${f.id}">
@@ -106,7 +111,7 @@ export async function renderFolktales(container) {
                         <h4>${cardTitle}</h4>
                         <div style="display:flex; gap:0.5rem; align-items:center;">
                             <span id="view-count-${f.id}" style="font-size:0.8rem; color:var(--text-muted); cursor:help;" title="Views">👁️ ${window.getViewCount ? window.getViewCount(f.id) : 0}</span>
-                            <button class="btn-icon" style="width: 32px; height: 32px; font-size: 0.9rem;" onclick="window.shareStory(this, '${f.title.replace(/'/g, "\\'")}', '${f.summary.replace(/'/g, "\\'")}')" title="Share">📤</button>
+                            <button class="btn-icon" style="width: 32px; height: 32px; font-size: 0.9rem;" onclick="window.shareStory(this, '${(f.title_en || f.title).replace(/'/g, "\\'")}', '${storySummary.replace(/'/g, "\\'")}')" title="Share">📤</button>
                             <button class="btn-icon fav-btn" style="width: 32px; height: 32px; font-size: 0.9rem;" onclick="window.toggleFavorite(this, '${f.id}')" title="Favorite">
                                 ${window.isFavorite && window.isFavorite(f.id) ? '❤️' : '🤍'}
                             </button>
@@ -122,7 +127,7 @@ export async function renderFolktales(container) {
                     
                     <div class="card-section">
                         <h5>Summary</h5>
-                        <p>${f.summary}</p>
+                        <p>${storySummary}</p>
                     </div>
                     
                     <button class="expand-btn" onclick="
@@ -138,7 +143,7 @@ export async function renderFolktales(container) {
                         <div>
                             <div class="card-section" style="margin-top: 1rem;">
                                 <h5>Moral</h5>
-                                <p style="color: var(--primary); font-weight: 400;">${f.moral}</p>
+                                <p style="color: var(--primary); font-weight: 400;">${storyMoral}</p>
                             </div>
                             <div class="card-section">
                                 <h5>Characters</h5>
@@ -146,7 +151,7 @@ export async function renderFolktales(container) {
                             </div>
                              <div class="card-section">
                                 <h5>Cultural Significance</h5>
-                                <p>${f.cultural_significance}</p>
+                                <p>${f.cultural_significance || 'A cherished folktale from Assamese oral heritage.'}</p>
                             </div>
                             <div class="card-section" style="margin-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem;">
                                 <h5>Source Confidence</h5>

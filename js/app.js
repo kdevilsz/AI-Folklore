@@ -174,21 +174,25 @@ route();
 
 window.currentLanguage = localStorage.getItem('lorebridge_lang') || 'en';
 
+window.updateLangButtonUI = function() {
+    const langBtn = document.getElementById('lang-toggle');
+    if (langBtn) {
+        const isEn = window.currentLanguage === 'en';
+        langBtn.innerText = isEn ? 'অ' : 'A';
+        langBtn.title = isEn ? 'Switch to Assamese Content (অ)' : 'Switch to English Content (A)';
+        langBtn.setAttribute('aria-label', isEn ? 'Switch to Assamese Content' : 'Switch to English Content');
+    }
+};
+
 window.toggleLanguage = function() {
     window.currentLanguage = window.currentLanguage === 'en' ? 'as' : 'en';
     localStorage.setItem('lorebridge_lang', window.currentLanguage);
-    const langBtn = document.getElementById('lang-toggle');
-    if (langBtn) {
-        langBtn.innerText = window.currentLanguage === 'en' ? 'EN' : 'অসমীয়া';
-    }
+    window.updateLangButtonUI();
     route();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const langBtn = document.getElementById('lang-toggle');
-    if (langBtn) {
-        langBtn.innerText = window.currentLanguage === 'en' ? 'EN' : 'অসমীয়া';
-    }
+    window.updateLangButtonUI();
 });
 
 
