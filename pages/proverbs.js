@@ -109,8 +109,6 @@ export async function renderProverbs(container) {
                         ${themes.map(t => `<span class="badge">${t}</span>`).join('')}
                     </div>
                     
-                    <div class="audio-player-container" data-type="proverb" data-id="${p.id}"></div>
-                    
                     <button class="expand-btn" onclick="
                         const el = document.getElementById('details-${p.id}'); 
                         const isOpening = !el.classList.contains('open');
@@ -176,10 +174,6 @@ export async function renderProverbs(container) {
         
         html += `</div></div>`;
         container.innerHTML = html;
-        
-        if (window.initAudioPlayers) {
-            window.initAudioPlayers(container);
-        }
         
     } catch (e) {
         container.innerHTML = `

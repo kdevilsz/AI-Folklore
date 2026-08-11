@@ -123,8 +123,6 @@ export async function renderFolktales(container) {
                         ${themes.map(t => `<span class="badge" style="border-color: rgba(255,255,255,0.2); color: var(--text-muted);">${t}</span>`).join('')}
                     </div>
                     
-                    <div class="audio-player-container" data-type="folktale" data-id="${f.id}"></div>
-                    
                     <div class="card-section">
                         <h5>Summary</h5>
                         <p>${storySummary}</p>
@@ -199,10 +197,6 @@ export async function renderFolktales(container) {
         
         html += `</div></div>`;
         container.innerHTML = html;
-        
-        if (window.initAudioPlayers) {
-            window.initAudioPlayers(container);
-        }
         
     } catch (e) {
         container.innerHTML = `

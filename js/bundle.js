@@ -295,8 +295,6 @@ async function renderFolktales(container) {
                         ${themes.map(t => `<span class="badge" style="border-color: rgba(255,255,255,0.2); color: var(--text-muted);">${t}</span>`).join('')}
                     </div>
                     
-                    <div class="audio-player-container" data-type="folktale" data-id="${f.id}"></div>
-                    
                     <div class="card-section">
                         <h5>Summary</h5>
                         <p>${storySummary}</p>
@@ -371,10 +369,6 @@ async function renderFolktales(container) {
         
         html += `</div></div>`;
         container.innerHTML = html;
-        
-        if (window.initAudioPlayers) {
-            window.initAudioPlayers(container);
-        }
         
     } catch (e) {
         container.innerHTML = `
@@ -500,8 +494,6 @@ async function renderProverbs(container) {
                         ${themes.map(t => `<span class="badge">${t}</span>`).join('')}
                     </div>
                     
-                    <div class="audio-player-container" data-type="proverb" data-id="${p.id}"></div>
-                    
                     <button class="expand-btn" onclick="
                         const el = document.getElementById('details-${p.id}'); 
                         const isOpening = !el.classList.contains('open');
@@ -567,10 +559,6 @@ async function renderProverbs(container) {
         
         html += `</div></div>`;
         container.innerHTML = html;
-        
-        if (window.initAudioPlayers) {
-            window.initAudioPlayers(container);
-        }
         
     } catch (e) {
         container.innerHTML = `
@@ -2683,10 +2671,6 @@ const folktales = [
 
 // === app.js ===
 function route() {
-    if (window.currentAudio) {
-        window.currentAudio.pause();
-        window.currentAudio = null;
-    }
     const hash = window.location.hash || '#home';
     const baseHash = hash.split('?')[0];
     const app = document.getElementById('app');
@@ -2719,127 +2703,6 @@ function route() {
     else if(baseHash === '#ingest') renderIngest(app);
     else if(baseHash === '#share') renderShare(app);
 }
-
-window.initAudioPlayers = async function(container) {
-    const playerContainers = container.querySelectorAll('.audio-player-container');
-    if (playerContainers.length === 0) return;
-
-    const isMock = window.location.search.includes('mock=true') || window.location.search.includes('test_audio=true');
-    let storage = null;
-
-    if (!isMock) {
-        try {
-            const { initializeApp } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js");
-            const { getStorage } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js");
-            
-            const firebaseConfig = window.firebaseConfig || {
-                projectId: "lorebridge-placeholder",
-                storageBucket: "lorebridge-placeholder.appspot.com"
-            };
-            
-            const app = initializeApp(firebaseConfig);
-            storage = getStorage(app);
-        } catch (err) {
-            console.error("Firebase Storage init error:", err);
-        }
-    }
-
-    playerContainers.forEach(async (playerContainer) => {
-        const type = playerContainer.dataset.type;
-        const id = playerContainer.dataset.id;
-        const path = `audio/${type === 'folktale' ? 'folktales' : 'proverbs'}/${id}.mp3`;
-        let audioUrl = null;
-
-        if (isMock) {
-            // Mock URL for testing UI layout and playback controls
-            audioUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
-        } else if (storage) {
-            try {
-                const { ref, getDownloadURL } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js");
-                const audioRef = ref(storage, path);
-                audioUrl = await getDownloadURL(audioRef);
-            } catch (err) {
-                // If it fails, audioUrl remains null (leads to "Audio coming soon")
-                console.warn(`No audio found for path: ${path}`);
-            }
-        }
-
-        if (audioUrl) {
-            playerContainer.innerHTML = `
-                <div class="custom-audio-player">
-                    <button class="audio-play-btn" title="Play">▶</button>
-                    <input type="range" class="audio-slider" value="0" min="0" max="100">
-                    <span class="audio-time-display">0:00 / 0:00</span>
-                </div>
-            `;
-
-            const audio = new Audio(audioUrl);
-            const playBtn = playerContainer.querySelector('.audio-play-btn');
-            const slider = playerContainer.querySelector('.audio-slider');
-            const timeDisplay = playerContainer.querySelector('.audio-time-display');
-
-            const formatTime = (secs) => {
-                if (isNaN(secs)) return '0:00';
-                const m = Math.floor(secs / 60);
-                const s = Math.floor(secs % 60).toString().padStart(2, '0');
-                return `${m}:${s}`;
-            };
-
-            audio.addEventListener('loadedmetadata', () => {
-                timeDisplay.innerText = `0:00 / ${formatTime(audio.duration)}`;
-                slider.max = Math.floor(audio.duration);
-            });
-
-            if (audio.readyState >= 1) {
-                timeDisplay.innerText = `0:00 / ${formatTime(audio.duration)}`;
-                slider.max = Math.floor(audio.duration);
-            }
-
-            playBtn.addEventListener('click', () => {
-                if (window.currentAudio && window.currentAudio !== audio) {
-                    window.currentAudio.pause();
-                    const otherPlayBtn = window.currentAudio.playBtnRef;
-                    if (otherPlayBtn) otherPlayBtn.innerText = '▶';
-                }
-
-                if (audio.paused) {
-                    audio.play();
-                    playBtn.innerText = '⏸';
-                    window.currentAudio = audio;
-                    audio.playBtnRef = playBtn;
-                } else {
-                    audio.pause();
-                    playBtn.innerText = '▶';
-                    if (window.currentAudio === audio) {
-                        window.currentAudio = null;
-                    }
-                }
-            });
-
-            audio.addEventListener('timeupdate', () => {
-                slider.value = Math.floor(audio.currentTime);
-                timeDisplay.innerText = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
-            });
-
-            slider.addEventListener('input', () => {
-                audio.currentTime = slider.value;
-            });
-
-            audio.addEventListener('ended', () => {
-                playBtn.innerText = '▶';
-                slider.value = 0;
-                timeDisplay.innerText = `0:00 / ${formatTime(audio.duration)}`;
-                if (window.currentAudio === audio) {
-                    window.currentAudio = null;
-                }
-            });
-        } else {
-            playerContainer.innerHTML = `
-                <span class="audio-coming-soon-badge">⚠️ Audio coming soon</span>
-            `;
-        }
-    });
-};
 
 window.addEventListener('hashchange', route);
 route();
