@@ -7,15 +7,26 @@ export function getSupabase() {
     if (supabaseClient) return supabaseClient;
     
     const config = window.LOREBRIDGE_CONFIG || {};
-    const url = config.SUPABASE_URL;
-    const key = config.SUPABASE_ANON_KEY;
+    const url = config.SUPABASE_URL || '';
+    const key = config.SUPABASE_ANON_KEY || '';
 
-    if (window.supabase && url && key && !url.includes("your-project")) {
+    const isValidUrl = typeof url === 'string' && 
+                       (url.startsWith('https://') || url.startsWith('http://')) && 
+                       url.includes('.supabase.co') && 
+                       !url.includes('your-project') &&
+                       !url.includes('paste your');
+
+    const isValidKey = typeof key === 'string' && 
+                       key.length > 20 && 
+                       !key.includes('your-anon-key') &&
+                       !key.includes('paste your');
+
+    if (window.supabase && isValidUrl && isValidKey) {
         try {
             supabaseClient = window.supabase.createClient(url, key);
             console.log("Supabase Client initialized successfully.");
         } catch (err) {
-            console.error("Supabase Client initialization error:", err);
+            console.warn("Supabase Client initialization deferred:", err.message);
         }
     }
     return supabaseClient;
