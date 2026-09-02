@@ -1,7 +1,7 @@
 import os
 import shutil
 
-BASE_DIR = r"c:\Users\Bhaswati Sikdar\Documents\data"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DIST_DIR = os.path.join(BASE_DIR, "dist")
 
 def clean_dist():

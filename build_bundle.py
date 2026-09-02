@@ -1,7 +1,7 @@
 import os
 import re
 
-BASE = r'c:\Users\Bhaswati Sikdar\Documents\data'
+BASE = os.path.dirname(os.path.abspath(__file__))
 pages_dir = os.path.join(BASE, 'pages')
 js_dir = os.path.join(BASE, 'js')
 
