@@ -45,10 +45,60 @@
     <!-- Traditional Assamese Gamosa-inspired Decorative Woven Ribbon -->
     <div class="gamosa-border" aria-hidden="true"></div>
 
-    <div id="search-overlay" class="search-overlay">
-        <span class="search-close" id="search-close">&times;</span>
-        <h2 style="color:var(--primary);">Global Search</h2>
-        <div id="search-results" class="search-results-container"></div>
+    <!-- Global Search Overlay Modal -->
+    <div id="search-overlay" class="search-overlay" role="dialog" aria-modal="true" aria-label="Global Search">
+        <div class="search-overlay-backdrop" id="search-overlay-backdrop"></div>
+        <div class="search-modal-container">
+            <!-- Visible X Close Button in Top-Right -->
+            <button id="search-close" class="search-close-btn" aria-label="Close search (Esc)" title="Close (Esc)">
+                <span aria-hidden="true">&times;</span>
+                <span class="esc-badge">ESC</span>
+            </button>
+
+            <div class="search-modal-header">
+                <div class="search-cultural-kicker">
+                    <span class="motif-glyph">❖</span>
+                    <span>অসমীয়া লোকসাহিত্য সন্ধান &bull; GLOBAL ARCHIVE SEARCH</span>
+                    <span class="motif-glyph">❖</span>
+                </div>
+                <h2 class="search-modal-title">Search Folktales &amp; Proverbs</h2>
+                
+                <!-- Main Focusable & Typeable Input -->
+                <div class="search-input-box">
+                    <span class="search-input-icon" aria-hidden="true">🔍</span>
+                    <input 
+                        type="text" 
+                        id="overlay-search-input" 
+                        class="search-modal-input" 
+                        placeholder="Type to search (e.g. Lachit, Tejimola, rivers, farming, courage)..." 
+                        autocomplete="off" 
+                        spellcheck="false"
+                        aria-label="Search folklore archive"
+                    >
+                    <button type="button" id="search-clear-btn" class="search-clear-btn" style="display:none;" aria-label="Clear search input" title="Clear text">&times;</button>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="search-filter-pills" id="search-filter-pills">
+                    <button type="button" class="search-pill active" data-filter="all">All Lore (<span id="count-all">0</span>)</button>
+                    <button type="button" class="search-pill" data-filter="folktale">📖 Folktales (<span id="count-folktale">0</span>)</button>
+                    <button type="button" class="search-pill" data-filter="historical">⚔️ Historical (<span id="count-historical">0</span>)</button>
+                    <button type="button" class="search-pill" data-filter="community_tale">🌿 Community Tales (<span id="count-community">0</span>)</button>
+                    <button type="button" class="search-pill" data-filter="proverb">🎋 Proverbs (<span id="count-proverb">0</span>)</button>
+                </div>
+            </div>
+
+            <!-- Search Results -->
+            <div id="search-results" class="search-results-container">
+                <div class="search-empty-state">
+                    <p class="search-hint">Start typing above to search 79+ folktales, warrior legends, and traditional proverbs...</p>
+                </div>
+            </div>
+            
+            <div class="search-modal-footer">
+                <span>Click any result to view &bull; Press <kbd>ESC</kbd> or click outside to close</span>
+            </div>
+        </div>
     </div>
 
     <!-- Supabase Authentication Modal -->
@@ -106,6 +156,6 @@
 
     <!-- Client Configuration & Bundled Application Scripts -->
     <script src="js/config.js"></script>
-    <script src="js/bundle.js?v=8"></script>
+    <script src="js/bundle.js?v=9"></script>
 </body>
 </html>

@@ -3173,74 +3173,468 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (!searchInput) return;
+    // Global Search & Archive Discovery
+    const overlayInput = document.getElementById('overlay-search-input');
+    const searchBackdrop = document.getElementById('search-overlay-backdrop');
+    const searchClearBtn = document.getElementById('search-clear-btn');
+    const filterPillsContainer = document.getElementById('search-filter-pills');
 
     let searchData = [];
     let dataLoaded = false;
+    let activeFilter = 'all';
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    function escapeRegex(str) {
+        return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function highlightMatches(text, tokens) {
+        if (!text) return '';
+        const escaped = escapeHtml(text);
+        if (!tokens || tokens.length === 0) return escaped;
+        
+        let result = escaped;
+        tokens.forEach(tok => {
+            if (!tok) return;
+            const re = new RegExp(`(${escapeRegex(tok)})`, 'gi');
+            result = result.replace(re, '<mark class="search-match-highlight">$1</mark>');
+        });
+        return result;
+    }
+
+    async function fetchJsonSafely(url) {
+        try {
+            const res = await fetch(url);
+            if (res.ok) return await res.json();
+        } catch (e) {}
+        try {
+            const relUrl = url.startsWith('/') ? '.' + url : './' + url;
+            const res = await fetch(relUrl);
+            if (res.ok) return await res.json();
+        } catch (e) {}
+        return { entries: [] };
+    }
 
     async function loadSearchData() {
+        if (dataLoaded) return;
         try {
-            const [ftRes, prRes] = await Promise.all([
-                fetch('/folktales.json'),
-                fetch('/proverbs.json')
+            const [ftData, prData] = await Promise.all([
+                fetchJsonSafely('/folktales.json'),
+                fetchJsonSafely('/proverbs.json')
             ]);
-            const ftData = await ftRes.json();
-            const prData = await prRes.json();
-            searchData = [...ftData.entries, ...prData.entries];
+
+            const ftItems = (ftData.entries || []).map(f => {
+                let category = 'folktale';
+                let badgeClass = 'badge-folktale';
+                let badgeText = '📖 Folktale';
+
+                if (f.type === 'historical' || f.type === 'historical/spiritual') {
+                    category = 'historical';
+                    badgeClass = 'badge-historical';
+                    badgeText = '⚔️ Historical';
+                } else if (f.type === 'community_tale') {
+                    category = 'community_tale';
+                    badgeClass = 'badge-community';
+                    badgeText = '🌿 Community Tale';
+                }
+
+                const title = f.title_en || f.title || f.title_as || 'Untitled Tale';
+                const assameseTitle = f.title_as || f.assamese || '';
+                const summary = f.summary_en || f.summary || f.summary_as || f.assamese || '';
+                const moral = f.moral_en || f.moral || f.moral_as || '';
+                const cultural = f.cultural_significance || (f.metadata && f.metadata.roots) || f.source || '';
+                const community = (f.metadata && f.metadata.community) || (f.contributor && f.contributor.district) || '';
+                const era = (f.metadata && f.metadata.era) || '';
+                const themes = Array.isArray(f.themes) ? f.themes : (f.metadata && Array.isArray(f.metadata.themes) ? f.metadata.themes : []);
+                const characters = Array.isArray(f.characters) ? f.characters : [];
+
+                const searchableText = [
+                    title,
+                    assameseTitle,
+                    summary,
+                    moral,
+                    cultural,
+                    community,
+                    era,
+                    themes.join(' '),
+                    characters.join(' '),
+                    f.english || '',
+                    f.assamese || ''
+                ].join(' ').toLowerCase();
+
+                return {
+                    id: f.id,
+                    type: category,
+                    rawType: f.type || 'folktale',
+                    title,
+                    assameseTitle,
+                    summary,
+                    moral,
+                    cultural,
+                    community,
+                    era,
+                    themes,
+                    characters,
+                    badgeClass,
+                    badgeText,
+                    searchableText
+                };
+            });
+
+            const prItems = (prData.entries || []).map(p => {
+                const title = p.translation || p.english || p.title_en || p.proverb || 'Traditional Proverb';
+                const assameseTitle = p.proverb || p.assamese || p.title_as || '';
+                const summary = p.meaning || p.translation || '';
+                const moral = p.cultural_context || '';
+                const cultural = p.source || '';
+                const community = (p.contributor && p.contributor.district) || 'Assam';
+                const era = 'Ancient Oral Wisdom';
+                const themes = Array.isArray(p.theme) ? p.theme : (Array.isArray(p.themes) ? p.themes : []);
+
+                const searchableText = [
+                    title,
+                    assameseTitle,
+                    summary,
+                    moral,
+                    cultural,
+                    community,
+                    era,
+                    themes.join(' '),
+                    p.proverb || '',
+                    p.meaning || '',
+                    p.translation || ''
+                ].join(' ').toLowerCase();
+
+                return {
+                    id: p.id,
+                    type: 'proverb',
+                    rawType: 'proverb',
+                    title,
+                    assameseTitle,
+                    summary,
+                    moral,
+                    cultural,
+                    community,
+                    era,
+                    themes,
+                    characters: [],
+                    badgeClass: 'badge-proverb',
+                    badgeText: '🎋 Proverb',
+                    searchableText
+                };
+            });
+
+            searchData = [...ftItems, ...prItems];
             dataLoaded = true;
+
+            // Update badge counts
+            updateFilterCounts();
+            
+            // If overlay is already active, refresh view
+            if (searchOverlay && searchOverlay.classList.contains('active')) {
+                const currentVal = overlayInput ? overlayInput.value : '';
+                renderSearch(currentVal);
+            }
         } catch (e) {
             console.error("Search data load error", e);
         }
     }
 
-    searchInput.addEventListener('focus', () => {
+    function updateFilterCounts() {
+        const countAll = document.getElementById('count-all');
+        const countFt = document.getElementById('count-folktale');
+        const countHist = document.getElementById('count-historical');
+        const countComm = document.getElementById('count-community');
+        const countPr = document.getElementById('count-proverb');
+
+        if (countAll) countAll.innerText = searchData.length;
+        if (countFt) countFt.innerText = searchData.filter(i => i.type === 'folktale').length;
+        if (countHist) countHist.innerText = searchData.filter(i => i.type === 'historical').length;
+        if (countComm) countComm.innerText = searchData.filter(i => i.type === 'community_tale').length;
+        if (countPr) countPr.innerText = searchData.filter(i => i.type === 'proverb').length;
+    }
+
+    function openSearchOverlay() {
+        if (!searchOverlay) return;
         searchOverlay.classList.add('active');
-        if (!dataLoaded) loadSearchData();
-        renderSearch(searchInput.value);
-    });
+        document.body.style.overflow = 'hidden';
 
-    searchClose.addEventListener('click', () => {
+        if (searchInput && overlayInput && searchInput.value && !overlayInput.value) {
+            overlayInput.value = searchInput.value;
+        }
+
+        if (searchClearBtn && overlayInput) {
+            searchClearBtn.style.display = overlayInput.value ? 'block' : 'none';
+        }
+
+        if (!dataLoaded) {
+            loadSearchData();
+        }
+
+        const query = overlayInput ? overlayInput.value : '';
+        renderSearch(query);
+
+        // Auto-focus the modal input so users can type immediately
+        setTimeout(() => {
+            if (overlayInput) {
+                overlayInput.focus();
+                if (overlayInput.value) overlayInput.select();
+            }
+        }, 50);
+    }
+
+    function closeSearchOverlay() {
+        if (!searchOverlay) return;
         searchOverlay.classList.remove('active');
-        searchInput.value = '';
-        searchResults.innerHTML = '';
+        document.body.style.overflow = '';
+        if (overlayInput) overlayInput.blur();
+    }
+
+    // Global navigation function to jump to story/proverb
+    window.navigateToItem = function(itemId, itemType) {
+        closeSearchOverlay();
+        
+        const isProverb = itemType === 'proverb' || (typeof itemId === 'string' && itemId.startsWith('pr_'));
+        const targetHash = isProverb ? '#proverbs' : '#folktales';
+
+        const executeScrollAndHighlight = () => {
+            let attempts = 0;
+            const maxAttempts = 30; // 30 * 100ms = 3 seconds
+            const interval = setInterval(() => {
+                attempts++;
+                const selector = isProverb 
+                    ? `.proverb-card[data-id="${itemId}"], [data-id="${itemId}"]`
+                    : `.folktale-card[data-id="${itemId}"], [data-id="${itemId}"]`;
+                const el = document.querySelector(selector);
+
+                if (el) {
+                    clearInterval(interval);
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    // Pulse highlight effect
+                    document.querySelectorAll('.search-highlight').forEach(n => n.classList.remove('search-highlight'));
+                    el.classList.add('search-highlight');
+                    setTimeout(() => el.classList.remove('search-highlight'), 3500);
+
+                    // Expand details if available
+                    const detailsEl = document.getElementById(`details-${itemId}`);
+                    if (detailsEl && !detailsEl.classList.contains('open')) {
+                        detailsEl.classList.add('open');
+                        const expandBtn = el.querySelector('.expand-btn');
+                        if (expandBtn) expandBtn.innerText = 'Read Less';
+                        if (window.trackView) window.trackView(itemId);
+                        if (!isProverb && window.loadRelatedStories) window.loadRelatedStories(itemId);
+                    }
+                } else if (attempts >= maxAttempts) {
+                    clearInterval(interval);
+                }
+            }, 100);
+        };
+
+        if (window.location.hash !== targetHash) {
+            window.location.hash = targetHash;
+            setTimeout(executeScrollAndHighlight, 120);
+        } else {
+            executeScrollAndHighlight();
+        }
+    };
+
+    // Close handlers
+    if (searchClose) {
+        searchClose.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            closeSearchOverlay();
+        });
+    }
+
+    if (searchBackdrop) {
+        searchBackdrop.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeSearchOverlay();
+        });
+    }
+
+    // Escape Key Handler (Window level & Input level)
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' || e.keyCode === 27) {
+            if (searchOverlay && searchOverlay.classList.contains('active')) {
+                closeSearchOverlay();
+            }
+        }
     });
 
-    searchInput.addEventListener('input', (e) => {
-        renderSearch(e.target.value);
-    });
+    // Navbar input interactions
+    if (searchInput) {
+        searchInput.addEventListener('focus', openSearchOverlay);
+        searchInput.addEventListener('click', openSearchOverlay);
+        searchInput.addEventListener('input', (e) => {
+            if (overlayInput) overlayInput.value = e.target.value;
+            openSearchOverlay();
+            renderSearch(e.target.value);
+        });
+    }
+
+    // Modal overlay input interactions
+    if (overlayInput) {
+        overlayInput.addEventListener('input', (e) => {
+            const val = e.target.value;
+            if (searchInput) searchInput.value = val;
+            if (searchClearBtn) searchClearBtn.style.display = val ? 'block' : 'none';
+            renderSearch(val);
+        });
+
+        overlayInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const firstResult = searchResults ? searchResults.querySelector('.search-result-item') : null;
+                if (firstResult) {
+                    const id = firstResult.getAttribute('data-id');
+                    const type = firstResult.getAttribute('data-type');
+                    if (id && window.navigateToItem) {
+                        window.navigateToItem(id, type);
+                    }
+                }
+            } else if (e.key === 'Escape') {
+                closeSearchOverlay();
+            }
+        });
+    }
+
+    // Clear button
+    if (searchClearBtn) {
+        searchClearBtn.addEventListener('click', () => {
+            if (overlayInput) overlayInput.value = '';
+            if (searchInput) searchInput.value = '';
+            searchClearBtn.style.display = 'none';
+            renderSearch('');
+            if (overlayInput) overlayInput.focus();
+        });
+    }
+
+    // Category Filter Pills
+    if (filterPillsContainer) {
+        filterPillsContainer.querySelectorAll('.search-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                filterPillsContainer.querySelectorAll('.search-pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                activeFilter = pill.getAttribute('data-filter') || 'all';
+                const query = overlayInput ? overlayInput.value : '';
+                renderSearch(query);
+            });
+        });
+    }
 
     function renderSearch(query) {
-        if (!query.trim()) {
-            searchResults.innerHTML = '<p style="color:var(--text-muted);">Start typing to search tales and proverbs...</p>';
-            return;
-        }
-        const q = query.toLowerCase();
-        const results = searchData.filter(item => {
-            const str = JSON.stringify(item).toLowerCase();
-            return str.includes(q);
-        }).slice(0, 10); // Limit to top 10
+        if (!searchResults) return;
 
-        if (results.length === 0) {
-            searchResults.innerHTML = '<p style="color:var(--text-muted);">No stories or proverbs found matching your query.</p>';
-            return;
+        const trimmed = (query || '').trim();
+        const tokens = trimmed.toLowerCase().split(/\s+/).filter(Boolean);
+
+        // Filter items
+        let items = searchData;
+        if (activeFilter !== 'all') {
+            items = items.filter(item => item.type === activeFilter);
         }
 
-        searchResults.innerHTML = results.map(r => {
-            const isFolktale = !!r.title;
-            const title = isFolktale ? r.title : r.proverb;
-            const sub = isFolktale ? r.summary : r.translation;
-            const link = isFolktale ? '#folktales' : '#proverbs';
-            return `
-                <div class="card" style="cursor:pointer;" onclick="window.location.hash='${link}'; document.getElementById('search-close').click();">
-                    <div style="display:flex; justify-content:space-between;">
-                        <h4 style="margin:0; font-family:'Playfair Display', serif;">${title}</h4>
-                        <span class="badge">${isFolktale ? 'Folktale' : 'Proverb'}</span>
+        if (tokens.length > 0) {
+            items = items.filter(item => tokens.every(tok => item.searchableText.includes(tok)));
+
+            // Sort: prioritize matches in title
+            items.sort((a, b) => {
+                const aTitleMatch = tokens.some(tok => a.title.toLowerCase().includes(tok) || a.assameseTitle.toLowerCase().includes(tok));
+                const bTitleMatch = tokens.some(tok => b.title.toLowerCase().includes(tok) || b.assameseTitle.toLowerCase().includes(tok));
+                if (aTitleMatch && !bTitleMatch) return -1;
+                if (!aTitleMatch && bTitleMatch) return 1;
+                return 0;
+            });
+        }
+
+        // When query is empty, show a curated welcome selection or prompt
+        if (tokens.length === 0) {
+            const featuredItems = items.slice(0, 6);
+            if (featuredItems.length === 0) {
+                searchResults.innerHTML = `
+                    <div class="search-empty-state">
+                        <p class="search-hint">Loading folklore archive...</p>
                     </div>
-                    <p style="margin-top:0.5rem; color:var(--text-muted); font-size:0.9rem;">${sub.substring(0,100)}...</p>
+                `;
+                return;
+            }
+
+            searchResults.innerHTML = `
+                <div style="padding: 0.4rem 0 0.6rem 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(200, 150, 12, 0.15); margin-bottom: 0.75rem;">
+                    <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); font-weight: 600;">✨ Featured Tales &amp; Proverbs</span>
+                    <span style="font-size: 0.75rem; color: var(--text-muted);">${items.length} items in archive</span>
+                </div>
+                ${featuredItems.map(item => renderResultCard(item, [])).join('')}
+            `;
+            return;
+        }
+
+        // When search returns no items
+        if (items.length === 0) {
+            searchResults.innerHTML = `
+                <div class="search-empty-state">
+                    <span style="font-size: 2.2rem; display: block; margin-bottom: 0.6rem;">📜</span>
+                    <h4 style="color: var(--text); margin-bottom: 0.4rem; font-family: 'Playfair Display', serif;">No matching folklore found</h4>
+                    <p class="search-hint">No results matching "<strong>${escapeHtml(trimmed)}</strong>" in ${activeFilter === 'all' ? 'the archive' : activeFilter}. Try searching for words like <em>Lachit, Tejimola, Chilarai, river, flood, courage, or wisdom</em>.</p>
                 </div>
             `;
-        }).join('');
+            return;
+        }
+
+        // Display search results
+        const displayItems = items.slice(0, 25);
+        searchResults.innerHTML = `
+            <div style="padding: 0.3rem 0 0.6rem 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(200, 150, 12, 0.15); margin-bottom: 0.75rem;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); font-weight: 600;">
+                    Found ${items.length} ${items.length === 1 ? 'match' : 'matches'}
+                </span>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Showing top ${displayItems.length}</span>
+            </div>
+            ${displayItems.map(item => renderResultCard(item, tokens)).join('')}
+        `;
     }
+
+    function renderResultCard(item, tokens) {
+        const rawSnippet = item.summary || item.moral || item.cultural || '';
+        const truncated = rawSnippet.length > 150 ? rawSnippet.substring(0, 147) + '...' : rawSnippet;
+
+        return `
+            <div class="search-result-item" data-id="${item.id}" data-type="${item.type}" tabindex="0" role="button" aria-label="Open ${escapeHtml(item.title)}" onclick="window.navigateToItem('${item.id}', '${item.type}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.navigateToItem('${item.id}', '${item.type}');}">
+                <div class="search-item-top">
+                    <h4 class="search-item-title">${highlightMatches(item.title, tokens)}</h4>
+                    <span class="search-item-badge ${item.badgeClass}">${item.badgeText}</span>
+                </div>
+                ${item.assameseTitle && item.assameseTitle !== item.title ? `
+                    <div style="font-size: 0.95rem; color: var(--primary); margin-bottom: 0.35rem; font-weight: 500;">
+                        ${highlightMatches(item.assameseTitle, tokens)}
+                    </div>
+                ` : ''}
+                <p class="search-item-snippet">${highlightMatches(truncated, tokens)}</p>
+                <div class="search-item-tags">
+                    ${item.community ? `<span class="search-item-tag">🌿 ${escapeHtml(item.community)}</span>` : ''}
+                    ${item.era ? `<span class="search-item-tag">⏳ ${escapeHtml(item.era)}</span>` : ''}
+                    ${(item.themes || []).slice(0, 3).map(t => `<span class="search-item-tag">#${escapeHtml(t)}</span>`).join('')}
+                    <span style="margin-left: auto; color: var(--primary); font-size: 0.82rem; font-weight: 600; display: inline-flex; align-items: center; gap: 4px;">
+                        Read Lore <span aria-hidden="true">&rarr;</span>
+                    </span>
+                </div>
+            </div>
+        `;
+    }
+
+    // Pre-load data eagerly so search is instant when clicked
+    loadSearchData();
 });
 
 // Load Related Stories
