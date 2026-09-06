@@ -1,7 +1,7 @@
 [
   {
     "type": "Folktales",
-    "total": 11,
+    "total": 26,
     "missing_fields": [],
     "missing_sources": [],
     "missing_themes": [],
@@ -10,11 +10,28 @@
   },
   {
     "type": "Proverbs",
-    "total": 13,
+    "total": 53,
     "missing_fields": [],
     "missing_sources": [],
     "missing_themes": [],
-    "weak_descriptions": [],
+    "weak_descriptions": [
+      {
+        "id": "pr_015",
+        "words": 14
+      },
+      {
+        "id": "pr_017",
+        "words": 13
+      },
+      {
+        "id": "pr_020",
+        "words": 14
+      },
+      {
+        "id": "pr_025",
+        "words": 14
+      }
+    ],
     "duplicates": [
       "অতি ভক্তি চোৰৰ লক্ষণ"
     ]

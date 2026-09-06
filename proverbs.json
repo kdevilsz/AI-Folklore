@@ -540,6 +540,481 @@
       "title_as": "চিলনীৰ পিঠিত ছাঁ ছাটি মৰা",
       "english": "Chilonir pithit sa sati mora | Trying to catch the shadow of a flying kite.",
       "assamese": "চিলনীৰ পিঠিত ছাঁ ছাটি মৰা"
+    },
+    {
+      "id": "pr_029",
+      "proverb": "লুইতৰ সোঁত উজাই যাব নোৱাৰি",
+      "translation": "One cannot row against the raging current of the mighty Luit.",
+      "meaning": "Nature and the inexorable current of time possess an irresistible power; resisting reality with obstinacy brings only exhaustion and failure.",
+      "theme": [
+        "rivers",
+        "nature",
+        "destiny"
+      ],
+      "cultural_context": "Used in traditional Assamese river discourse to teach acceptance of nature's formidable currents and inevitable life transitions.",
+      "source": "Assamese Folk Tradition / River Lore",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "One cannot row against the raging current of the mighty Luit.",
+      "title_as": "লুইতৰ সোঁত উজাই যাব নোৱাৰি",
+      "english": "One cannot row against the raging current of the mighty Luit.",
+      "assamese": "লুইতৰ সোঁত উজাই যাব নোৱাৰি"
+    },
+    {
+      "id": "pr_030",
+      "proverb": "বাৰিষাৰ নৈ আৰু যৌৱনৰ জোৱাৰ ৰাখিব নোৱাৰি",
+      "translation": "Neither the monsoon surge of a river nor the flood of youth can be dammed.",
+      "meaning": "The swelling waters of a river in monsoon and the spirited passions of youth are overwhelming natural forces that require patient guidance rather than crude suppression.",
+      "theme": [
+        "rivers",
+        "nature",
+        "time"
+      ],
+      "cultural_context": "Derived from rural riverside life, emphasizing that natural vigor must be respected and channeled constructively.",
+      "source": "Assamese Folk Tradition / River Lore",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Neither the monsoon surge of a river nor the flood of youth can be dammed.",
+      "title_as": "বাৰিষাৰ নৈ আৰু যৌৱনৰ জোৱাৰ ৰাখিব নোৱাৰি",
+      "english": "Neither the monsoon surge of a river nor the flood of youth can be dammed.",
+      "assamese": "বাৰিষাৰ নৈ আৰু যৌৱনৰ জোৱাৰ ৰাখিব নোৱাৰি"
+    },
+    {
+      "id": "pr_031",
+      "proverb": "পানী গছকিলেহে পানীৰ তলৰ শিলৰ উমান পোৱা যায়",
+      "translation": "Only by stepping into the river does one feel the stones underneath.",
+      "meaning": "Theoretical speculation from the safety of the riverbank can never replace firsthand experiential knowledge when navigating treacherous situations.",
+      "theme": [
+        "nature",
+        "experience",
+        "wisdom"
+      ],
+      "cultural_context": "Spoken by boatmen and elders across Assam to emphasize practical engagement over arm-chair conjecture.",
+      "source": "Oral Tradition / Folk Wisdom",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Only by stepping into the river does one feel the stones underneath.",
+      "title_as": "পানী গছকিলেহে পানীৰ তলৰ শিলৰ উমান পোৱা যায়",
+      "english": "Only by stepping into the river does one feel the stones underneath.",
+      "assamese": "পানী গছকিলেহে পানীৰ তলৰ শিলৰ উমান পোৱা যায়"
+    },
+    {
+      "id": "pr_032",
+      "proverb": "যি বাঁহ বাঢ়িব তাৰ পাত দুখিলাতেই চিন",
+      "translation": "The bamboo that will grow tall and sturdy is recognized right from its tender first two leaves.",
+      "meaning": "Inherent genius, promising character, and noble potential in a child reveal themselves early on through their conduct and demeanor.",
+      "theme": [
+        "nature",
+        "character",
+        "growth"
+      ],
+      "cultural_context": "Rooted in Assam's bamboo culture, frequently quoted by elders when noticing early virtue in young learners.",
+      "source": "Dakar Bachan / Oral Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "The bamboo that will grow tall and sturdy is recognized right from its tender first two leaves.",
+      "title_as": "যি বাঁহ বাঢ়িব তাৰ পাত দুখিলাতেই চিন",
+      "english": "The bamboo that will grow tall and sturdy is recognized right from its tender first two leaves.",
+      "assamese": "যি বাঁহ বাঢ়িব তাৰ পাত দুখিলাতেই চিন"
+    },
+    {
+      "id": "pr_033",
+      "proverb": "গাছৰ গুৰি কাটি আগত পানী ঢলা",
+      "translation": "Cutting the roots of a tree and watering its top branches.",
+      "meaning": "An absurdly futile and hypocritical action where one destroys the very foundation of an institution or relationship while pretending to nurture its superficial appearances.",
+      "theme": [
+        "nature",
+        "hypocrisy",
+        "folly"
+      ],
+      "cultural_context": "Commonly invoked in village councils to condemn those who undermine communal harmony while offering deceitful public sympathies.",
+      "source": "Assamese Folk Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Cutting the roots of a tree and watering its top branches.",
+      "title_as": "গাছৰ গুৰি কাটি আগত পানী ঢলা",
+      "english": "Cutting the roots of a tree and watering its top branches.",
+      "assamese": "গাছৰ গুৰি কাটি আগত পানী ঢলা"
+    },
+    {
+      "id": "pr_034",
+      "proverb": "নৈৰ পাৰৰ বালি, কেতিয়া খহে ক'ব নোৱাৰি",
+      "translation": "The sandy bank of a turbulent river may crumble at any unpredictable moment.",
+      "meaning": "Worldly wealth, hollow promises, and disloyal friendships are as precarious as the eroding sandbars along the banks of the mighty Brahmaputra.",
+      "theme": [
+        "rivers",
+        "transience",
+        "caution"
+      ],
+      "cultural_context": "Drawn directly from riverine observation of erosion (Gohonia) along the Brahmaputra banks, counseling emotional prudence.",
+      "source": "River Lore / Oral Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "The sandy bank of a turbulent river may crumble at any unpredictable moment.",
+      "title_as": "নৈৰ পাৰৰ বালি, কেতিয়া খহে ক'ব নোৱাৰি",
+      "english": "The sandy bank of a turbulent river may crumble at any unpredictable moment.",
+      "assamese": "নৈৰ পাৰৰ বালি, কেতিয়া খহে ক'ব নোৱাৰি"
+    },
+    {
+      "id": "pr_035",
+      "proverb": "দহৰ পুণ্যত জগত উদ্ধাৰ",
+      "translation": "Through the collective virtue and merit of the community, the entire world is redeemed.",
+      "meaning": "The shared moral integrity and collective spiritual goodwill of a harmonious community possess the strength to dispel widespread suffering and redeem society.",
+      "theme": [
+        "community",
+        "virtue",
+        "unity"
+      ],
+      "cultural_context": "A foundational proverb in Namghar culture celebrating the communal spiritual energy of village gatherings.",
+      "source": "Sattriya Tradition / Oral Wisdom",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Through the collective virtue and merit of the community, the entire world is redeemed.",
+      "title_as": "দহৰ পুণ্যত জগত উদ্ধাৰ",
+      "english": "Through the collective virtue and merit of the community, the entire world is redeemed.",
+      "assamese": "দহৰ পুণ্যত জগত উদ্ধাৰ"
+    },
+    {
+      "id": "pr_036",
+      "proverb": "দহজন মিলিলে হাতীও বান্ধিব পাৰি",
+      "translation": "When ten people unite with one heart, they can bind even a wild elephant.",
+      "meaning": "Impossible and formidable obstacles are easily surmounted when individuals cast aside petty self-interests and unite their physical and mental strength.",
+      "theme": [
+        "community",
+        "unity",
+        "strength"
+      ],
+      "cultural_context": "Referencing ancient Assamese elephant-capturing (Mekheli Kheda) traditions where tight cooperation was essential for survival.",
+      "source": "Assamese Folk Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "When ten people unite with one heart, they can bind even a wild elephant.",
+      "title_as": "দহজন মিলিলে হাতীও বান্ধিব পাৰি",
+      "english": "When ten people unite with one heart, they can bind even a wild elephant.",
+      "assamese": "দহজন মিলিলে হাতীও বান্ধিব পাৰি"
+    },
+    {
+      "id": "pr_037",
+      "proverb": "ৰাইজেই ৰজা, ৰাইজেই ভগৱান",
+      "translation": "The public community is the king, the public community is the Supreme Divine.",
+      "meaning": "Democratic sovereignty and ethical authority in Assamese heritage reside sovereignly in the collective will, judgment, and consensus of the people.",
+      "theme": [
+        "community",
+        "democracy",
+        "society"
+      ],
+      "cultural_context": "Venerated across village assemblies (Raij Mel) and communal institutions across Assam as a reminder of collective governance.",
+      "source": "Assamese Democratic Folk Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "The public community is the king, the public community is the Supreme Divine.",
+      "title_as": "ৰাইজেই ৰজা, ৰাইজেই ভগৱান",
+      "english": "The public community is the king, the public community is the Supreme Divine.",
+      "assamese": "ৰাইজেই ৰজা, ৰাইজেই ভগৱান"
+    },
+    {
+      "id": "pr_038",
+      "proverb": "ঘৰৰ শত্ৰু বিভীষণ, গাওঁৰ শত্ৰু টেঙন",
+      "translation": "An insider betrayer ruins the household, an arrogant mischief-maker fractures the village.",
+      "meaning": "External adversaries rarely succeed in shattering a community unless aided by internal betrayals and arrogant individuals sowing seeds of discord.",
+      "theme": [
+        "community",
+        "loyalty",
+        "harmony"
+      ],
+      "cultural_context": "Used in village mediation to warn against gossip and selfish factionalism that threaten social cohesion.",
+      "source": "Assamese Folk Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "An insider betrayer ruins the household, an arrogant mischief-maker fractures the village.",
+      "title_as": "ঘৰৰ শত্ৰু বিভীষণ, গাওঁৰ শত্ৰু টেঙন",
+      "english": "An insider betrayer ruins the household, an arrogant mischief-maker fractures the village.",
+      "assamese": "ঘৰৰ শত্ৰু বিভীষণ, গাওঁৰ শত্ৰু টেঙন"
+    },
+    {
+      "id": "pr_039",
+      "proverb": "একতাই বল, ভেদেই নাশ",
+      "translation": "Unity is strength, division is total ruin.",
+      "meaning": "Harmonious cohesion empowers any group or civilization against adversity, whereas factional disputes and tribal divisions invite absolute collapse.",
+      "theme": [
+        "community",
+        "unity",
+        "solidarity"
+      ],
+      "cultural_context": "A classic maxims imparted by Assamese elders to younger generations before major community endeavors and festivals.",
+      "source": "Oral Tradition / Folk Wisdom",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Unity is strength, division is total ruin.",
+      "title_as": "একতাই বল, ভেদেই নাশ",
+      "english": "Unity is strength, division is total ruin.",
+      "assamese": "একতাই বল, ভেদেই নাশ"
+    },
+    {
+      "id": "pr_040",
+      "proverb": "লোকে বোলে বোপা, মই বোলোঁ নহয় ৰাইজৰ কৃপা",
+      "translation": "Others may praise my personal prowess, but I say it is all the generous blessing of the community.",
+      "meaning": "A deeply rooted Assamese expression of genuine humility, acknowledging that private triumphs are born from the collective nurturing of one's community.",
+      "theme": [
+        "community",
+        "humility",
+        "gratitude"
+      ],
+      "cultural_context": "Exemplifies the anti-egotistical ethos of Assamese rural culture where all personal honors are dedicated back to the village (Raij).",
+      "source": "Assamese Folk Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Others may praise my personal prowess, but I say it is all the generous blessing of the community.",
+      "title_as": "লোকে বোলে বোপা, মই বোলোঁ নহয় ৰাইজৰ কৃপা",
+      "english": "Others may praise my personal prowess, but I say it is all the generous blessing of the community.",
+      "assamese": "লোকে বোলে বোপা, মই বোলোঁ নহয় ৰাইজৰ কৃপা"
+    },
+    {
+      "id": "pr_041",
+      "proverb": "পুৱাৰ এলেহুৱা, গধূলিৰ ভোকেৰুৱা",
+      "translation": "Sluggish and lazy in the morning, starving and destitute by evening.",
+      "meaning": "Procrastination and indolence during the fertile, productive dawn hours inevitably lead to deprivation, poverty, and sorrow when night falls.",
+      "theme": [
+        "hard work",
+        "diligence",
+        "farming"
+      ],
+      "cultural_context": "Rooted in agrarian rhythms where waking before sunrise to plough the soil determines the household's sustenance.",
+      "source": "Dakar Bachan / Agricultural Lore",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Sluggish and lazy in the morning, starving and destitute by evening.",
+      "title_as": "পুৱাৰ এলেহুৱা, গধূলিৰ ভোকেৰুৱা",
+      "english": "Sluggish and lazy in the morning, starving and destitute by evening.",
+      "assamese": "পুৱাৰ এলেহুৱা, গধূলিৰ ভোকেৰুৱা"
+    },
+    {
+      "id": "pr_042",
+      "proverb": "হাল যাৰ, মাটি তাৰ",
+      "translation": "The land rightfully belongs to the ploughman who turns the soil.",
+      "meaning": "Legitimate dignity and moral ownership belong to the diligent laborer whose honest sweat and hard work make the earth blossom with life.",
+      "theme": [
+        "farming",
+        "justice",
+        "labor"
+      ],
+      "cultural_context": "An ancient peasant motto celebrating the sacred dignity of peasant labour over absentee landlords and exploiters.",
+      "source": "Assamese Agrarian Folk Lore",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "The land rightfully belongs to the ploughman who turns the soil.",
+      "title_as": "হাল যাৰ, মাটি তাৰ",
+      "english": "The land rightfully belongs to the ploughman who turns the soil.",
+      "assamese": "হাল যাৰ, মাটি তাৰ"
+    },
+    {
+      "id": "pr_043",
+      "proverb": "আলি বান্ধিলেহে পানী ৰয়, যত্ন কৰিলেহে কাম হয়",
+      "translation": "Only when dykes are built does water stay in the paddy field; only through focused effort do endeavors succeed.",
+      "meaning": "Just as monsoon water drains away without sturdy earthen mud-bunds in the paddy fields, ambitious dreams dissolve without steady discipline and persistent labor.",
+      "theme": [
+        "farming",
+        "hard work",
+        "discipline"
+      ],
+      "cultural_context": "Directly inspired by traditional wet-rice cultivation (Sali Kheti) in the Brahmaputra alluvial plains.",
+      "source": "Dakar Bachan / Agricultural Lore",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Only when dykes are built does water stay in the paddy field; only through focused effort do endeavors succeed.",
+      "title_as": "আলি বান্ধিলেহে পানী ৰয়, যত্ন কৰিলেহে কাম হয়",
+      "english": "Only when dykes are built does water stay in the paddy field; only through focused effort do endeavors succeed.",
+      "assamese": "আলি বান্ধিলেহে পানী ৰয়, যত্ন কৰিলেহে কাম হয়"
+    },
+    {
+      "id": "pr_044",
+      "proverb": "কপালত নাই গুণ, কি কৰিব সোণ",
+      "translation": "If there is no virtue and diligence in character, of what use is inherited gold?",
+      "meaning": "Material wealth and ancestral fortune vanish rapidly if a person lacks industry, practical competence, and moral discipline in their daily life.",
+      "theme": [
+        "hard work",
+        "character",
+        "wealth"
+      ],
+      "cultural_context": "A classic warning against relying on inherited privilege without developing personal work ethic and capability.",
+      "source": "Oral Tradition / Folk Wisdom",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "If there is no virtue and diligence in character, of what use is inherited gold?",
+      "title_as": "কপালত নাই গুণ, কি কৰিব সোণ",
+      "english": "If there is no virtue and diligence in character, of what use is inherited gold?",
+      "assamese": "কপালত নাই গুণ, কি কৰিব সোণ"
+    },
+    {
+      "id": "pr_045",
+      "proverb": "যিয়ে ৰোৱে ধান, সি পায় মান",
+      "translation": "He who bends his back to transplant paddy earns the enduring respect of society.",
+      "meaning": "Productive agricultural work sustains civilization; therefore, those who labor in the mud to cultivate food deserve higher honor than idle parasites.",
+      "theme": [
+        "farming",
+        "labor",
+        "respect"
+      ],
+      "cultural_context": "Highlighting Assam's profound agrarian reverence where farming is viewed as a sacred calling of sustenance.",
+      "source": "Assamese Agrarian Folk Lore",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "He who bends his back to transplant paddy earns the enduring respect of society.",
+      "title_as": "যিয়ে ৰোৱে ধান, সি পায় মান",
+      "english": "He who bends his back to transplant paddy earns the enduring respect of society.",
+      "assamese": "যিয়ে ৰোৱে ধান, সি পায় মান"
+    },
+    {
+      "id": "pr_046",
+      "proverb": "ঘামে তিতিলেহে সুখৰ ধান ঘৰলৈ আহে",
+      "translation": "Only when one is drenched in honest sweat does the golden harvest of happiness enter the homestead.",
+      "meaning": "True and lasting contentment is not an accident of fate; it is the rightfully earned reward of rigorous physical or intellectual exertion.",
+      "theme": [
+        "hard work",
+        "perseverance",
+        "farming"
+      ],
+      "cultural_context": "Shared by village elders during harvest festivals (Magh Bihu) to remind youth that prosperity demands sacrifice.",
+      "source": "Oral Tradition / Folk Wisdom",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Only when one is drenched in honest sweat does the golden harvest of happiness enter the homestead.",
+      "title_as": "ঘামে তিতিলেহে সুখৰ ধান ঘৰলৈ আহে",
+      "english": "Only when one is drenched in honest sweat does the golden harvest of happiness enter the homestead.",
+      "assamese": "ঘামে তিতিলেহে সুখৰ ধান ঘৰলৈ আহে"
+    },
+    {
+      "id": "pr_047",
+      "proverb": "সময়ত নৰোৱা কঠিয়া, আকালত কান্দিবা সৰ্ব্বহাৰা",
+      "translation": "Neglect to plant paddy saplings in due season, and you will weep destitute during the famine.",
+      "meaning": "Agricultural seasons and life opportunities do not tarry; missing the critical sowing window brings unavoidable poverty and desperate regret.",
+      "theme": [
+        "farming",
+        "time",
+        "foresight"
+      ],
+      "cultural_context": "A central axiom of Dak, the ancient Assamese agricultural sage whose proverbs governed seasonal crop cycles.",
+      "source": "Dakar Bachan / Agricultural Lore",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Neglect to plant paddy saplings in due season, and you will weep destitute during the famine.",
+      "title_as": "সময়ত নৰোৱা কঠিয়া, আকালত কান্দিবা সৰ্ব্বহাৰা",
+      "english": "Neglect to plant paddy saplings in due season, and you will weep destitute during the famine.",
+      "assamese": "সময়ত নৰোৱা কঠিয়া, আকালত কান্দিবা সৰ্ব্বহাৰা"
+    },
+    {
+      "id": "pr_048",
+      "proverb": "বুঢ়াৰ কথা আৰু কেঁহা অমিতাৰ সোৱাদ পিছতহে ওলায়",
+      "translation": "The wisdom of the elders and the subtle flavor of raw papaya reveal their true worth only later.",
+      "meaning": "Elderly counsel may initially taste bitter, restrictive, or unpalatable to young minds, but its protective truth becomes strikingly evident in time.",
+      "theme": [
+        "elders",
+        "wisdom",
+        "guidance"
+      ],
+      "cultural_context": "One of the most widely quoted proverbs across Assam to foster reverence for generational experience.",
+      "source": "Dakar Bachan / Oral Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "The wisdom of the elders and the subtle flavor of raw papaya reveal their true worth only later.",
+      "title_as": "বুঢ়াৰ কথা আৰু কেঁহা অমিতাৰ সোৱাদ পিছতহে ওলায়",
+      "english": "The wisdom of the elders and the subtle flavor of raw papaya reveal their true worth only later.",
+      "assamese": "বুঢ়াৰ কথা আৰু কেঁহা অমিতাৰ সোৱাদ পিছতহে ওলায়"
+    },
+    {
+      "id": "pr_049",
+      "proverb": "ডাঙৰে যি দেখে বহি, ডেকা ল'ৰাই নেদেখে আকাশত উঠি",
+      "translation": "What an elder can perceive while seated, an impetuous youth fails to see even from atop the clouds.",
+      "meaning": "Deep intuitive foresight born of decades of lived experience and hardship penetrates human motives and risks far better than arrogant, inexperienced bravado.",
+      "theme": [
+        "elders",
+        "wisdom",
+        "experience"
+      ],
+      "cultural_context": "An elder's proverb reminding ambitious youngsters to seek counsel before embarking on hazardous ventures.",
+      "source": "Assamese Folk Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "What an elder can perceive while seated, an impetuous youth fails to see even from atop the clouds.",
+      "title_as": "ডাঙৰে যি দেখে বহি, ডেকা ল'ৰাই নেদেখে আকাশত উঠি",
+      "english": "What an elder can perceive while seated, an impetuous youth fails to see even from atop the clouds.",
+      "assamese": "ডাঙৰে যি দেখে বহি, ডেকা ল'ৰাই নেদেখে আকাশত উঠি"
+    },
+    {
+      "id": "pr_050",
+      "proverb": "মুখেৰে মাৰে ধান, হাতেৰে নাই কাম",
+      "translation": "Husking mounds of grain with the mouth, but doing not a shred of work with the hands.",
+      "meaning": "A sharp, witty censure of empty blowhards who endlessly brag about heroic deeds and grand projects but fail to perform any practical labor.",
+      "theme": [
+        "elders",
+        "action",
+        "hypocrisy"
+      ],
+      "cultural_context": "Frequently used by village elders to silence boastful individuals who shirk heavy manual chores during harvest time.",
+      "source": "Oral Tradition / Folk Wit",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Husking mounds of grain with the mouth, but doing not a shred of work with the hands.",
+      "title_as": "মুখেৰে মাৰে ধান, হাতেৰে নাই কাম",
+      "english": "Husking mounds of grain with the mouth, but doing not a shred of work with the hands.",
+      "assamese": "মুখেৰে মাৰে ধান, হাতেৰে নাই কাম"
+    },
+    {
+      "id": "pr_051",
+      "proverb": "অহংকাৰৰ মূৰত ছাই, সততাৰ কোনো ক্ষয় নাই",
+      "translation": "Ashes fall upon the head of vanity, whereas true integrity suffers no decay.",
+      "meaning": "Arrogant pride inevitably collapses in public humiliation and ruin, while honest, humble integrity endures untarnished through the storms of time.",
+      "theme": [
+        "elders",
+        "integrity",
+        "humility"
+      ],
+      "cultural_context": "Reflecting Vaishnavite moral teachings popular in village Namghars emphasizing humility over worldly vanity.",
+      "source": "Sattriya Tradition / Oral Wisdom",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Ashes fall upon the head of vanity, whereas true integrity suffers no decay.",
+      "title_as": "অহংকাৰৰ মূৰত ছাই, সততাৰ কোনো ক্ষয় নাই",
+      "english": "Ashes fall upon the head of vanity, whereas true integrity suffers no decay.",
+      "assamese": "অহংকাৰৰ মূৰত ছাই, সততাৰ কোনো ক্ষয় নাই"
+    },
+    {
+      "id": "pr_052",
+      "proverb": "ভবা কথা নহয় সিদ্ধ, বাটত আছে কণা-কুঁজ",
+      "translation": "Conceived plans rarely unfold smoothly; unforeseen hurdles and erratic wanderers populate every road.",
+      "meaning": "Life seldom conforms strictly to neat theoretical blueprints; pragmatic wisdom demands flexibility and emotional resilience when encountering unexpected obstacles.",
+      "theme": [
+        "elders",
+        "pragmatism",
+        "resilience"
+      ],
+      "cultural_context": "Quoted by experienced travelers and village patriarchs when reassuring those dealing with unforeseen complications.",
+      "source": "Assamese Folk Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "Conceived plans rarely unfold smoothly; unforeseen hurdles and erratic wanderers populate every road.",
+      "title_as": "ভবা কথা নহয় সিদ্ধ, বাটত আছে কণা-কুঁজ",
+      "english": "Conceived plans rarely unfold smoothly; unforeseen hurdles and erratic wanderers populate every road.",
+      "assamese": "ভবা কথা নহয় সিদ্ধ, বাটত আছে কণা-কুঁজ"
+    },
+    {
+      "id": "pr_053",
+      "proverb": "মিঠা কথাত গলে মন, পিছত বুজিবা কাৰণ",
+      "translation": "If your heart melts easily to honeyed flatteries, you will soon suffer the stinging reason why.",
+      "meaning": "Elder sages caution against succumbing naively to smooth talk and exaggerated praise, urging careful discernment to unmask opportunistic deceit.",
+      "theme": [
+        "elders",
+        "caution",
+        "discernment"
+      ],
+      "cultural_context": "A classic piece of elder counseling aimed at protecting youth from deceitful flatterers and cunning strangers.",
+      "source": "Dakar Bachan / Oral Tradition",
+      "contributor": null,
+      "confidence": "published",
+      "title_en": "If your heart melts easily to honeyed flatteries, you will soon suffer the stinging reason why.",
+      "title_as": "মিঠা কথাত গলে মন, পিছত বুজিবা কাৰণ",
+      "english": "If your heart melts easily to honeyed flatteries, you will soon suffer the stinging reason why.",
+      "assamese": "মিঠা কথাত গলে মন, পিছত বুজিবা কাৰণ"
     }
   ]
 }
