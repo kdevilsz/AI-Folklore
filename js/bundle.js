@@ -62,71 +62,113 @@ async function renderHome(container) {
 
     container.innerHTML = `
         <div class="hero-section">
-            <!-- Full-Width Assamese Gamosa Decorative Banner Strip (Real Photo, Cropped to Decorative Border End) -->
-            <div class="hero-gamosa-banner" role="presentation">
-                <img src="assets/images/gamosa-banner.png" alt="Traditional Assamese Gamosa Decorative Woven Border" class="hero-gamosa-img">
-                <div class="gamosa-gold-overlay" aria-hidden="true"></div>
-            </div>
-
-            <!-- Floating Decorative Assamese Elements (Opacity 0.15 Gold) -->
-            <div class="hero-floating-elements" aria-hidden="true">
-                <!-- One-Horned Rhino (Kaziranga Rhino Outline) -->
-                <svg class="floating-elem floating-rhino" viewBox="0 0 160 100" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kaziranga One-Horned Rhino">
-                    <path d="M14 62 C20 54 26 50 36 50 C40 45 46 42 54 42 C64 42 70 38 76 34 C82 30 92 28 104 28 C118 28 126 34 132 38 C138 34 144 32 150 36 C154 39 156 44 154 48 C158 46 160 48 158 52 C154 58 146 62 138 64 C132 70 128 78 128 88 L120 88 C120 80 122 74 118 70 C108 72 96 72 84 72 C80 78 78 84 78 88 L70 88 C70 80 72 74 68 70 C58 70 48 68 40 72 L38 88 L30 88 C30 78 32 72 26 68 C20 68 16 66 14 62 Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M148 34 C150 24 156 16 160 12 C157 20 155 28 153 36 Z" fill="currentColor" stroke-width="1.5"/>
-                    <path d="M128 28 L130 20 L134 26" stroke-width="1.5"/>
-                    <path d="M122 28 L124 22 L127 27" stroke-width="1.5"/>
-                    <path d="M110 32 C106 42 106 56 112 66" stroke-width="1.8" stroke-dasharray="3 3"/>
-                    <path d="M60 44 C56 52 56 60 62 68" stroke-width="1.8" stroke-dasharray="3 3"/>
-                    <path d="M80 34 C86 44 86 58 82 70" stroke-width="1.5" opacity="0.6"/>
-                    <circle cx="138" cy="42" r="1.5" fill="currentColor"/>
-                </svg>
-
-                <!-- Bihu Dhol (Traditional Drum Silhouette) -->
-                <svg class="floating-elem floating-dhol" viewBox="0 0 120 90" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Assamese Bihu Dhol">
-                    <ellipse cx="28" cy="45" rx="14" ry="26" stroke-width="2"/>
-                    <ellipse cx="92" cy="45" rx="14" ry="26" stroke-width="2"/>
-                    <path d="M28 19 C55 14 65 14 92 19 M28 71 C55 76 65 76 92 71" stroke-width="2"/>
-                    <path d="M28 22 L50 74 L70 20 L92 70 M28 68 L50 16 L70 70 L92 20" stroke-width="1.4" opacity="0.75"/>
-                    <ellipse cx="60" cy="45" rx="8" ry="28" stroke-width="1.2" stroke-dasharray="2 3"/>
-                    <path d="M12 78 Q45 68 85 82" stroke-width="2.5" stroke-linecap="round"/>
-                    <circle cx="28" cy="45" r="5" fill="currentColor" opacity="0.3"/>
-                    <circle cx="92" cy="45" r="5" fill="currentColor" opacity="0.3"/>
-                </svg>
-
-                <!-- Floating Sacred Lotus (Padum Phool) -->
-                <svg class="floating-elem floating-lotus lotus-left" viewBox="0 0 80 80" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Assamese Lotus Motif">
-                    <path d="M40 14 C36 26 24 38 12 46 C26 48 36 44 40 54 C44 44 54 48 68 46 C56 38 44 26 40 14 Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"/>
-                    <path d="M40 26 C38 34 32 42 22 48 C30 49 37 47 40 54 C43 47 50 49 58 48 C48 42 42 34 40 26 Z" stroke-width="1.2"/>
-                    <path d="M40 54 L40 68" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M30 62 Q40 58 50 62" stroke-width="1.5"/>
-                </svg>
-
-                <svg class="floating-elem floating-lotus lotus-right" viewBox="0 0 80 80" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Assamese Lotus Motif">
-                    <path d="M40 14 C36 26 24 38 12 46 C26 48 36 44 40 54 C44 44 54 48 68 46 C56 38 44 26 40 14 Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"/>
-                    <path d="M40 26 C38 34 32 42 22 48 C30 49 37 47 40 54 C43 47 50 49 58 48 C48 42 42 34 40 26 Z" stroke-width="1.2"/>
-                    <path d="M40 54 L40 68" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M30 62 Q40 58 50 62" stroke-width="1.5"/>
-                </svg>
-            </div>
-
-            <!-- Real Illustrated Assamese Jappi Hat Photo Centered Above Title -->
-            <div class="hero-jappi-container">
-                <div class="hero-jappi-wrapper">
-                    <img src="assets/images/hero-jappi.png" alt="Authentic Assamese Phulam Jappi Hat" class="hero-jappi-img" width="220" height="220">
-                    <div class="jappi-gold-blend" aria-hidden="true"></div>
+            <!-- Complete Four-Sided Assamese Gamosa Picture Frame -->
+            <div class="hero-gamosa-picture-frame">
+                <!-- Top Edge (Full Width Horizontal Strip) -->
+                <div class="gamosa-frame-edge gamosa-frame-top" role="presentation">
+                    <img src="assets/images/gamosa-banner.png" alt="" class="gamosa-strip-h">
+                    <div class="gamosa-gold-overlay" aria-hidden="true"></div>
                 </div>
-            </div>
 
-            <!-- Hero Center Content -->
-            <div class="hero-center-content">
-                <div class="hero-kicker-badge">
-                    <span class="motif-glyph">❖</span>
-                    <span>অসমৰ লোককথা আৰু ঐতিহ্য &bull; DIGITAL SANCTUARY</span>
-                    <span class="motif-glyph">❖</span>
+                <!-- Bottom Edge (Full Width Horizontal Strip) -->
+                <div class="gamosa-frame-edge gamosa-frame-bottom" role="presentation">
+                    <img src="assets/images/gamosa-banner.png" alt="" class="gamosa-strip-h">
+                    <div class="gamosa-gold-overlay" aria-hidden="true"></div>
                 </div>
-                <h1 class="page-title hero-title">${title}</h1>
-                <p class="page-subtitle hero-subtitle">${subtitle}</p>
+
+                <!-- Left Side (Vertical Strip) -->
+                <div class="gamosa-frame-edge gamosa-frame-left" role="presentation">
+                    <img src="assets/images/gamosa-banner-v.png" alt="" class="gamosa-strip-v">
+                    <div class="gamosa-gold-overlay" aria-hidden="true"></div>
+                </div>
+
+                <!-- Right Side (Vertical Strip) -->
+                <div class="gamosa-frame-edge gamosa-frame-right" role="presentation">
+                    <img src="assets/images/gamosa-banner-v.png" alt="" class="gamosa-strip-v">
+                    <div class="gamosa-gold-overlay" aria-hidden="true"></div>
+                </div>
+
+                <!-- 4 Clean Decorative Corner Elements -->
+                <div class="gamosa-frame-corner gamosa-corner-tl" aria-hidden="true">
+                    <img src="assets/images/gamosa-corner.png" alt="" class="gamosa-corner-img">
+                    <div class="gamosa-gold-overlay"></div>
+                </div>
+                <div class="gamosa-frame-corner gamosa-corner-tr" aria-hidden="true">
+                    <img src="assets/images/gamosa-corner.png" alt="" class="gamosa-corner-img">
+                    <div class="gamosa-gold-overlay"></div>
+                </div>
+                <div class="gamosa-frame-corner gamosa-corner-bl" aria-hidden="true">
+                    <img src="assets/images/gamosa-corner.png" alt="" class="gamosa-corner-img">
+                    <div class="gamosa-gold-overlay"></div>
+                </div>
+                <div class="gamosa-frame-corner gamosa-corner-br" aria-hidden="true">
+                    <img src="assets/images/gamosa-corner.png" alt="" class="gamosa-corner-img">
+                    <div class="gamosa-gold-overlay"></div>
+                </div>
+
+                <!-- Inside Content of Picture Frame -->
+                <div class="hero-frame-inner">
+                    <!-- Floating Decorative Assamese Elements (Opacity 0.15 Gold) -->
+                    <div class="hero-floating-elements" aria-hidden="true">
+                        <!-- One-Horned Rhino (Kaziranga Rhino Outline) -->
+                        <svg class="floating-elem floating-rhino" viewBox="0 0 160 100" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kaziranga One-Horned Rhino">
+                            <path d="M14 62 C20 54 26 50 36 50 C40 45 46 42 54 42 C64 42 70 38 76 34 C82 30 92 28 104 28 C118 28 126 34 132 38 C138 34 144 32 150 36 C154 39 156 44 154 48 C158 46 160 48 158 52 C154 58 146 62 138 64 C132 70 128 78 128 88 L120 88 C120 80 122 74 118 70 C108 72 96 72 84 72 C80 78 78 84 78 88 L70 88 C70 80 72 74 68 70 C58 70 48 68 40 72 L38 88 L30 88 C30 78 32 72 26 68 C20 68 16 66 14 62 Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M148 34 C150 24 156 16 160 12 C157 20 155 28 153 36 Z" fill="currentColor" stroke-width="1.5"/>
+                            <path d="M128 28 L130 20 L134 26" stroke-width="1.5"/>
+                            <path d="M122 28 L124 22 L127 27" stroke-width="1.5"/>
+                            <path d="M110 32 C106 42 106 56 112 66" stroke-width="1.8" stroke-dasharray="3 3"/>
+                            <path d="M60 44 C56 52 56 60 62 68" stroke-width="1.8" stroke-dasharray="3 3"/>
+                            <path d="M80 34 C86 44 86 58 82 70" stroke-width="1.5" opacity="0.6"/>
+                            <circle cx="138" cy="42" r="1.5" fill="currentColor"/>
+                        </svg>
+
+                        <!-- Bihu Dhol (Traditional Drum Silhouette) -->
+                        <svg class="floating-elem floating-dhol" viewBox="0 0 120 90" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Assamese Bihu Dhol">
+                            <ellipse cx="28" cy="45" rx="14" ry="26" stroke-width="2"/>
+                            <ellipse cx="92" cy="45" rx="14" ry="26" stroke-width="2"/>
+                            <path d="M28 19 C55 14 65 14 92 19 M28 71 C55 76 65 76 92 71" stroke-width="2"/>
+                            <path d="M28 22 L50 74 L70 20 L92 70 M28 68 L50 16 L70 70 L92 20" stroke-width="1.4" opacity="0.75"/>
+                            <ellipse cx="60" cy="45" rx="8" ry="28" stroke-width="1.2" stroke-dasharray="2 3"/>
+                            <path d="M12 78 Q45 68 85 82" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="28" cy="45" r="5" fill="currentColor" opacity="0.3"/>
+                            <circle cx="92" cy="45" r="5" fill="currentColor" opacity="0.3"/>
+                        </svg>
+
+                        <!-- Floating Sacred Lotus (Padum Phool) -->
+                        <svg class="floating-elem floating-lotus lotus-left" viewBox="0 0 80 80" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Assamese Lotus Motif">
+                            <path d="M40 14 C36 26 24 38 12 46 C26 48 36 44 40 54 C44 44 54 48 68 46 C56 38 44 26 40 14 Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"/>
+                            <path d="M40 26 C38 34 32 42 22 48 C30 49 37 47 40 54 C43 47 50 49 58 48 C48 42 42 34 40 26 Z" stroke-width="1.2"/>
+                            <path d="M40 54 L40 68" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M30 62 Q40 58 50 62" stroke-width="1.5"/>
+                        </svg>
+
+                        <svg class="floating-elem floating-lotus lotus-right" viewBox="0 0 80 80" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Assamese Lotus Motif">
+                            <path d="M40 14 C36 26 24 38 12 46 C26 48 36 44 40 54 C44 44 54 48 68 46 C56 38 44 26 40 14 Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"/>
+                            <path d="M40 26 C38 34 32 42 22 48 C30 49 37 47 40 54 C43 47 50 49 58 48 C48 42 42 34 40 26 Z" stroke-width="1.2"/>
+                            <path d="M40 54 L40 68" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M30 62 Q40 58 50 62" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+
+                    <!-- Real Illustrated Assamese Jappi Hat Photo Centered Above Title -->
+                    <div class="hero-jappi-container">
+                        <div class="hero-jappi-wrapper">
+                            <img src="assets/images/hero-jappi.png" alt="Authentic Assamese Phulam Jappi Hat" class="hero-jappi-img" width="220" height="220">
+                            <div class="jappi-gold-blend" aria-hidden="true"></div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Center Content -->
+                    <div class="hero-center-content">
+                        <div class="hero-kicker-badge">
+                            <span class="motif-glyph">❖</span>
+                            <span>অসমৰ লোককথা আৰু ঐতিহ্য &bull; DIGITAL SANCTUARY</span>
+                            <span class="motif-glyph">❖</span>
+                        </div>
+                        <h1 class="page-title hero-title">${title}</h1>
+                        <p class="page-subtitle hero-subtitle">${subtitle}</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Full-Width Assamese Geometric Section Divider -->
