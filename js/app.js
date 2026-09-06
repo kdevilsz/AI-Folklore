@@ -163,10 +163,27 @@ window.playAssameseAudio = function(btn, text) {
     window.speechSynthesis.speak(utterance);
 };
 
-// Global Filter Logic for Sidebars
+// Global Filter Logic for Sidebars & Tag Rows
+window.toggleFilterTags = function(btn) {
+    const sidebar = btn.closest('.filter-sidebar');
+    if (!sidebar) return;
+    const isExpanded = sidebar.classList.toggle('filters-expanded');
+    const extraTags = sidebar.querySelectorAll('.filter-tag-extra');
+    extraTags.forEach(el => {
+        el.classList.toggle('show', isExpanded);
+    });
+    btn.innerText = isExpanded ? '− Show Fewer' : `+ More Tags (${extraTags.length})`;
+};
+
 window.filterCards = function(btn, tag, type) {
     const sidebar = btn.closest('.filter-sidebar');
     if (sidebar) {
+        if (btn.classList.contains('filter-tag-extra') && !sidebar.classList.contains('filters-expanded')) {
+            sidebar.classList.add('filters-expanded');
+            sidebar.querySelectorAll('.filter-tag-extra').forEach(el => el.classList.add('show'));
+            const toggleBtn = sidebar.querySelector('.filter-toggle-btn');
+            if (toggleBtn) toggleBtn.innerText = '− Show Fewer';
+        }
         sidebar.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
         btn.classList.add('active');
     }

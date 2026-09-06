@@ -48,15 +48,24 @@ export async function renderProverbs(container) {
         const data = await res.json();
         const proverbs = data.entries;
         
-        // Extract unique tags
-        const tagsSet = new Set();
+        // Extract unique sources and themes
+        const sourceSet = new Set();
+        const themeCounts = {};
         proverbs.forEach(p => {
-            if (p.source) tagsSet.add(p.source);
+            if (p.source) sourceSet.add(p.source);
             if (p.theme) {
-                p.theme.forEach(t => tagsSet.add(t));
+                p.theme.forEach(t => {
+                    themeCounts[t] = (themeCounts[t] || 0) + 1;
+                });
             }
         });
-        const uniqueTags = Array.from(tagsSet).sort();
+        const sortedSources = Array.from(sourceSet).sort();
+        const sortedThemes = Object.keys(themeCounts).sort((a, b) => themeCounts[b] - themeCounts[a]);
+
+        // Primary tags (sources + top themes) wrap naturally into 2-3 rows on desktop
+        const primaryThemes = sortedThemes.slice(0, 14);
+        const extraThemes = sortedThemes.slice(14);
+        const primaryTags = [...sortedSources, ...primaryThemes];
 
         let sidebarHtml = `
             <aside class="filter-sidebar">
@@ -64,7 +73,9 @@ export async function renderProverbs(container) {
                 <div class="filter-options">
                     <button class="filter-chip active" onclick="window.filterCards(this, 'all', 'proverb')">All Proverbs</button>
                     <button class="filter-chip" onclick="window.filterCards(this, 'favorites', 'proverb')" style="border-color: #ff4b4b; color: #ff4b4b;">My Favorites</button>
-                    ${uniqueTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'proverb')">${tag}</button>`).join('')}
+                    ${primaryTags.map(tag => `<button class="filter-chip" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'proverb')">${tag}</button>`).join('')}
+                    ${extraThemes.map(tag => `<button class="filter-chip filter-tag-extra" onclick="window.filterCards(this, '${tag.replace(/'/g, "\\'")}', 'proverb')">${tag}</button>`).join('')}
+                    ${extraThemes.length > 0 ? `<button class="filter-chip filter-toggle-btn" onclick="window.toggleFilterTags(this)" title="Toggle additional themes">+ More Tags (${extraThemes.length})</button>` : ''}
                 </div>
             </aside>
         `;
