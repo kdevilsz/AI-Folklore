@@ -98,7 +98,7 @@ for tag in tags:
 
 # Bottom domain & branding
 draw.rounded_rectangle([x, 480, x + 380, 525], radius=8, fill=(200, 150, 12, 35), outline=(200, 150, 12, 180), width=1)
-draw.text((x + 20, 492), "lorebridge.vercel.app  •  AI Sanctuary", fill=(245, 235, 210), font=font_url)
+draw.text((x + 20, 492), "ai-folklore.vercel.app  •  AI Sanctuary", fill=(245, 235, 210), font=font_url)
 
 # Save image
 out_path = os.path.join("assets", "images", "og-preview.png")
