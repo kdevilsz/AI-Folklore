@@ -1500,17 +1500,20 @@ button { font-family: 'Outfit', sans-serif; }
 .hero-section {
   position: relative;
   text-align: center;
-  padding: 3rem 0 2rem 0;
-  overflow: visible;
+  padding: 2rem 0 1.5rem 0;
+  overflow-x: clip;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Floating Decorative Assamese Elements (Subtle Gold Opacity 0.15) */
 .hero-floating-elements {
   position: absolute;
-  inset: -20px 0 -40px 0;
+  inset: 0;
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .floating-elem {
@@ -1572,10 +1575,12 @@ button { font-family: 'Outfit', sans-serif; }
 /* Complete Four-Sided Assamese Gamosa Picture Frame */
 .hero-gamosa-picture-frame {
   position: relative;
+  width: 100%;
   max-width: 1040px;
   margin: 0 auto 3rem auto;
   border-radius: 8px;
   overflow: hidden;
+  box-sizing: border-box;
   box-shadow: 0 18px 55px rgba(0, 0, 0, 0.45), 0 0 35px rgba(200, 150, 12, 0.12);
   border: 1.5px solid rgba(200, 150, 12, 0.4);
   background: rgba(14, 25, 20, 0.82);
@@ -1686,7 +1691,9 @@ button { font-family: 'Outfit', sans-serif; }
 .hero-frame-inner {
   position: relative;
   z-index: 2;
-  padding: 6.2rem 4rem 4rem 4rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6.5rem 5.5rem 5rem 5.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1743,6 +1750,8 @@ button { font-family: 'Outfit', sans-serif; }
 .hero-center-content {
   position: relative;
   z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
   max-width: 860px;
   margin: 0 auto;
   padding: 0;
@@ -1751,35 +1760,6 @@ button { font-family: 'Outfit', sans-serif; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .hero-gamosa-picture-frame {
-    margin: 0 auto 2rem auto;
-  }
-  .gamosa-frame-top,
-  .gamosa-frame-bottom {
-    height: 36px;
-    left: 36px;
-    right: 36px;
-  }
-  .gamosa-frame-left,
-  .gamosa-frame-right {
-    width: 36px;
-    top: 36px;
-    bottom: 36px;
-  }
-  .gamosa-frame-corner {
-    width: 36px;
-    height: 36px;
-  }
-  .hero-frame-inner {
-    padding: 3.5rem 1.2rem 2.2rem 1.2rem;
-  }
-  .hero-jappi-img {
-    width: 160px;
-    height: 160px;
-  }
 }
 
 .hero-kicker-badge {
@@ -1796,6 +1776,7 @@ button { font-family: 'Outfit', sans-serif; }
   color: var(--primary);
   text-transform: uppercase;
   margin-bottom: 1.2rem;
+  box-sizing: border-box;
 }
 
 .hero-kicker-badge .motif-glyph {
@@ -1804,11 +1785,17 @@ button { font-family: 'Outfit', sans-serif; }
 }
 
 .hero-title.page-title {
-  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
-  line-height: 1.15;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.18;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin: 0.4rem 0 1.2rem 0;
+  padding-bottom: 0.15em;
+  overflow: visible;
+  box-sizing: border-box;
+  max-width: 100%;
+  word-break: normal;
+  overflow-wrap: break-word;
   background: linear-gradient(135deg, #fff2cc 0%, #C8960C 50%, #9e7405 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1828,6 +1815,108 @@ button { font-family: 'Outfit', sans-serif; }
   color: var(--text);
   max-width: 680px;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Tablet & Mobile Media Query (max-width: 768px) */
+@media (max-width: 768px) {
+  #app {
+    padding: 1.5rem 0.75rem;
+  }
+  .hero-gamosa-picture-frame {
+    margin: 0 auto 2rem auto;
+    border-radius: 6px;
+  }
+  .gamosa-frame-top,
+  .gamosa-frame-bottom {
+    height: 36px;
+    left: 36px;
+    right: 36px;
+  }
+  .gamosa-frame-left,
+  .gamosa-frame-right {
+    width: 36px;
+    top: 36px;
+    bottom: 36px;
+  }
+  .gamosa-frame-corner {
+    width: 36px;
+    height: 36px;
+  }
+  .hero-frame-inner {
+    padding: 3.6rem 46px 2.8rem 46px;
+  }
+  .hero-jappi-container {
+    margin: 0 auto 1.1rem auto;
+  }
+  .hero-jappi-wrapper {
+    width: 140px;
+    height: 110px;
+    display: inline-block;
+    position: relative;
+  }
+  .hero-jappi-img {
+    width: 140px;
+    height: 110px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  .jappi-gold-blend {
+    width: 140px;
+    height: 110px;
+    border-radius: 50%;
+  }
+  .hero-kicker-badge {
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.85rem;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+  .hero-title.page-title {
+    font-size: clamp(1.8rem, 6.5vw, 2.4rem);
+    line-height: 1.2;
+    margin: 0.3rem 0 0.9rem 0;
+    padding-bottom: 0.1em;
+  }
+  .hero-subtitle.page-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.62;
+    max-width: 100%;
+  }
+  .floating-rhino {
+    width: 90px;
+    height: 56px;
+    top: 3%;
+    right: 1%;
+  }
+  .floating-dhol {
+    width: 75px;
+    height: 55px;
+    top: 6%;
+    left: 1%;
+  }
+  .floating-lotus {
+    width: 44px;
+    height: 44px;
+  }
+  .lotus-left {
+    bottom: 3%;
+    left: 2%;
+  }
+  .lotus-right {
+    bottom: 4%;
+    right: 2%;
+  }
+  .assamese-section-divider {
+    margin: 2.2rem auto !important;
+    padding: 0 0.5rem !important;
+  }
+  .assamese-divider-svg {
+    height: 32px !important;
+  }
 }
 
 /* ==========================================================================
@@ -2756,6 +2845,75 @@ button { font-family: 'Outfit', sans-serif; }
    Ultra-Compact / Small Phone (iPhone 390px / 375px) Optimizations
    ========================================================================== */
 @media (max-width: 480px) {
+  #app {
+    padding: 1rem 0.5rem;
+  }
+
+  .hero-gamosa-picture-frame {
+    margin: 0 auto 1.5rem auto;
+    width: 100%;
+  }
+
+  .gamosa-frame-top,
+  .gamosa-frame-bottom {
+    height: 34px;
+    left: 34px;
+    right: 34px;
+  }
+
+  .gamosa-frame-left,
+  .gamosa-frame-right {
+    width: 34px;
+    top: 34px;
+    bottom: 34px;
+  }
+
+  .gamosa-frame-corner {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero-frame-inner {
+    padding: 3.2rem 42px 2.4rem 42px;
+  }
+
+  .hero-jappi-container {
+    margin: 0 auto 0.85rem auto;
+  }
+
+  .hero-jappi-wrapper {
+    width: 140px;
+    height: 110px;
+  }
+
+  .hero-jappi-img {
+    width: 140px;
+    height: 110px;
+  }
+
+  .jappi-gold-blend {
+    width: 140px;
+    height: 110px;
+  }
+
+  .hero-kicker-badge {
+    font-size: 0.65rem;
+    letter-spacing: 0.8px;
+    padding: 0.2rem 0.55rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-title.page-title {
+    font-size: clamp(1.4rem, 6.2vw, 1.75rem);
+    line-height: 1.22;
+    margin: 0.2rem 0 0.75rem 0;
+  }
+
+  .hero-subtitle.page-subtitle {
+    font-size: 0.88rem;
+    line-height: 1.58;
+  }
+
   nav {
     padding: 0.6rem 0.75rem;
   }
