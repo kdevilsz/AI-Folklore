@@ -1,0 +1,24 @@
+# ==========================================
+# LoreBridge Robots.txt
+# Digital Archive of Assamese Folklore
+# https://lorebridge.vercel.app/
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Googlebot specific directives
+User-agent: Googlebot
+Allow: /
+
+# Googlebot-Image crawler
+User-agent: Googlebot-Image
+Allow: /assets/images/
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# XML Sitemap
+Sitemap: https://lorebridge.vercel.app/sitemap.xml

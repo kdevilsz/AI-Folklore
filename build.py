@@ -14,14 +14,14 @@ def build_frontend():
     print("Building frontend assets...")
     
     # Files to copy directly to dist
-    root_files = ["index.html", "index.css", "mobile_styles.css", "folktales.json", "proverbs.json"]
+    root_files = ["index.html", "index.css", "mobile_styles.css", "folktales.json", "proverbs.json", "robots.txt", "sitemap.xml"]
     for f in root_files:
         src = os.path.join(BASE_DIR, f)
         if os.path.exists(src):
             shutil.copy2(src, os.path.join(DIST_DIR, f))
             
     # Directories to copy
-    dirs_to_copy = ["js", "pages"]
+    dirs_to_copy = ["js", "pages", "assets"]
     for d in dirs_to_copy:
         src_dir = os.path.join(BASE_DIR, d)
         if os.path.exists(src_dir):

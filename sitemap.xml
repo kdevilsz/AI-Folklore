@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- LoreBridge Root / Homepage -->
+  <url>
+    <loc>https://lorebridge.vercel.app/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lorebridge.vercel.app/assets/images/og-preview.png</image:loc>
+      <image:title>LoreBridge — Digital Archive of Assamese Folklore</image:title>
+      <image:caption>Explore Assamese folktales, proverbs, and cultural heritage. Discover stories of Lachit Borphukan, Tejeemola, Bodo legends, and more. Powered by AI.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lorebridge.vercel.app/assets/images/hero-jappi.png</image:loc>
+      <image:title>Traditional Assamese Jappi Emblem</image:title>
+      <image:caption>Authentic cultural emblem symbolizing the heritage of the Brahmaputra Valley.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Folktales Archive (Burhi Aair Sadhu, Historical & Community Legends) -->
+  <url>
+    <loc>https://lorebridge.vercel.app/#folktales</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Traditional Proverbs Archive (Dakor Boson, Agricultural & Moral Sayings) -->
+  <url>
+    <loc>https://lorebridge.vercel.app/#proverbs</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Lore Web (Interactive Semantic Knowledge Graph) -->
+  <url>
+    <loc>https://lorebridge.vercel.app/#graph</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Oracle AI (Bilingual Cultural Heritage Chat Assistant) -->
+  <url>
+    <loc>https://lorebridge.vercel.app/#chat</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About Assamese Folklore & The LoreBridge Mission -->
+  <url>
+    <loc>https://lorebridge.vercel.app/#about</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Community Folklore Submission Portal -->
+  <url>
+    <loc>https://lorebridge.vercel.app/#share</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
