@@ -1569,7 +1569,42 @@ button { font-family: 'Outfit', sans-serif; }
   100% { transform: translateY(0px) rotate(-4deg) scale(1); }
 }
 
-/* Illustrated Assamese Jappi Hat (~200x200px) */
+/* Real Assamese Gamosa Banner Strip (Full Width Below Nav) */
+.hero-gamosa-banner {
+  width: 100%;
+  height: 72px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-bottom: 2px solid rgba(200, 150, 12, 0.45);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  margin-bottom: 2.2rem;
+  z-index: 2;
+}
+
+.hero-gamosa-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: contrast(1.05) brightness(0.98);
+}
+
+.gamosa-gold-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, 
+    rgba(200, 150, 12, 0.22) 0%, 
+    rgba(200, 150, 12, 0.08) 25%, 
+    rgba(255, 216, 102, 0.15) 50%, 
+    rgba(200, 150, 12, 0.08) 75%, 
+    rgba(200, 150, 12, 0.22) 100%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Real Illustrated Assamese Jappi Hat Photo Centered Above Title */
 .hero-jappi-container {
   display: flex;
   justify-content: center;
@@ -1579,17 +1614,35 @@ button { font-family: 'Outfit', sans-serif; }
   z-index: 2;
 }
 
-.hero-jappi-svg {
+.hero-jappi-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.hero-jappi-img {
   width: 220px;
-  height: 180px;
-  filter: drop-shadow(0 0 18px rgba(200, 150, 12, 0.45));
+  height: 220px;
+  border-radius: 50%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 20px rgba(200, 150, 12, 0.45));
   transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.4s ease;
   animation: jappiGlow 4s ease-in-out infinite alternate;
 }
 
-.hero-jappi-svg:hover {
+.hero-jappi-img:hover {
   transform: scale(1.05) rotate(2deg);
-  filter: drop-shadow(0 0 28px rgba(200, 150, 12, 0.7));
+  filter: drop-shadow(0 0 32px rgba(200, 150, 12, 0.75));
+}
+
+.jappi-gold-blend {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 216, 102, 0.12) 0%, rgba(200, 150, 12, 0.18) 70%, rgba(200, 150, 12, 0.3) 100%);
+  mix-blend-mode: color-burn;
+  pointer-events: none;
 }
 
 @keyframes jappiGlow {
@@ -1597,54 +1650,14 @@ button { font-family: 'Outfit', sans-serif; }
   100% { filter: drop-shadow(0 0 26px rgba(200, 150, 12, 0.65)); }
 }
 
-/* Gamosa-Inspired Decorative Frame Wrapping Hero Text */
-.hero-gamosa-frame {
+/* Hero Center Content (Clean Cultural Typography) */
+.hero-center-content {
   position: relative;
   z-index: 2;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  max-width: 980px;
+  max-width: 880px;
   margin: 0 auto 2.5rem auto;
-  background: rgba(14, 25, 20, 0.78);
-  border-top: 3px solid #b8251b;
-  border-bottom: 3px solid #b8251b;
-  border-radius: 12px;
-  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(200, 150, 12, 0.12);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  overflow: hidden;
-}
-
-[data-theme="light"] .hero-gamosa-frame {
-  background: rgba(255, 253, 248, 0.94);
-  box-shadow: 0 12px 40px rgba(184, 134, 11, 0.18), 0 0 25px rgba(184, 37, 27, 0.08);
-}
-
-.gamosa-side-panel {
-  width: 60px;
-  flex-shrink: 0;
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2760%27 height=%27140%27 viewBox=%270 0 60 140%27%3E %3C!-- Crisp Pure White Handloom Cotton Base --%3E %3Crect width=%2760%27 height=%27140%27 fill=%27%23ffffff%27/%3E %3C!-- Outer and Inner Red Selvedge Stripes (Pahi) --%3E %3Crect x=%270%27 y=%270%27 width=%273.5%27 height=%27140%27 fill=%27%23c41e15%27/%3E %3Crect x=%2756.5%27 y=%270%27 width=%273.5%27 height=%27140%27 fill=%27%23c41e15%27/%3E %3Cline x1=%275%27 y1=%270%27 x2=%275%27 y2=%27140%27 stroke=%27%23c41e15%27 stroke-width=%270.8%27 opacity=%270.6%27/%3E %3Cline x1=%2755%27 y1=%270%27 x2=%2755%27 y2=%27140%27 stroke=%27%23c41e15%27 stroke-width=%270.8%27 opacity=%270.6%27/%3E %3C!-- Top Horizontal Woven Stripes (Aanchol Top Border) --%3E %3Crect x=%275%27 y=%273%27 width=%2750%27 height=%273.5%27 fill=%27%23c41e15%27/%3E %3Crect x=%275%27 y=%279%27 width=%2750%27 height=%271.5%27 fill=%27%23c41e15%27/%3E %3Crect x=%275%27 y=%2713%27 width=%2750%27 height=%271%27 fill=%27%23c41e15%27/%3E %3C!-- Row 1: Small Square Motifs & Checkerboard (Chokori / Ga-bhora) --%3E %3Cg fill=%27%23c41e15%27%3E %3Crect x=%279%27 y=%2717%27 width=%273%27 height=%273%27/%3E %3Crect x=%2715%27 y=%2717%27 width=%273%27 height=%273%27/%3E %3Crect x=%2721%27 y=%2717%27 width=%273%27 height=%273%27/%3E %3Crect x=%2727%27 y=%2717%27 width=%273%27 height=%273%27/%3E %3Crect x=%2733%27 y=%2717%27 width=%273%27 height=%273%27/%3E %3Crect x=%2739%27 y=%2717%27 width=%273%27 height=%273%27/%3E %3Crect x=%2745%27 y=%2717%27 width=%273%27 height=%273%27/%3E %3Crect x=%2712%27 y=%2721%27 width=%273%27 height=%273%27/%3E %3Crect x=%2718%27 y=%2721%27 width=%273%27 height=%273%27/%3E %3Crect x=%2724%27 y=%2721%27 width=%273%27 height=%273%27/%3E %3Crect x=%2730%27 y=%2721%27 width=%273%27 height=%273%27/%3E %3Crect x=%2736%27 y=%2721%27 width=%273%27 height=%273%27/%3E %3Crect x=%2742%27 y=%2721%27 width=%273%27 height=%273%27/%3E %3Crect x=%2748%27 y=%2721%27 width=%273%27 height=%273%27/%3E %3C/g%3E %3C!-- Horizontal Divider Stripe --%3E %3Crect x=%275%27 y=%2726%27 width=%2750%27 height=%271.5%27 fill=%27%23c41e15%27/%3E %3C!-- Cross Patterns (Kothiyara / Gos Phool) --%3E %3Cg stroke=%27%23c41e15%27 stroke-width=%272%27 stroke-linecap=%27square%27%3E %3Cline x1=%2730%27 y1=%2730%27 x2=%2730%27 y2=%2740%27/%3E %3Cline x1=%2725%27 y1=%2735%27 x2=%2735%27 y2=%2735%27/%3E %3Cline x1=%2714%27 y1=%2732%27 x2=%2714%27 y2=%2738%27/%3E %3Cline x1=%2711%27 y1=%2735%27 x2=%2717%27 y2=%2735%27/%3E %3Cline x1=%2746%27 y1=%2732%27 x2=%2746%27 y2=%2738%27/%3E %3Cline x1=%2743%27 y1=%2735%27 x2=%2749%27 y2=%2735%27/%3E %3C/g%3E %3C!-- Small Square Highlights inside Crosses --%3E %3Crect x=%2728.5%27 y=%2733.5%27 width=%273%27 height=%273%27 fill=%27%23ffffff%27/%3E %3Crect x=%2713%27 y=%2734%27 width=%272%27 height=%272%27 fill=%27%23ffffff%27/%3E %3Crect x=%2745%27 y=%2734%27 width=%272%27 height=%272%27 fill=%27%23ffffff%27/%3E %3C!-- Horizontal Boundary Stripe --%3E %3Crect x=%275%27 y=%2742%27 width=%2750%27 height=%272%27 fill=%27%23c41e15%27/%3E %3C!-- Main Assamese Stepped Diamond Aanchol Medallion (Kingkhap) --%3E %3Cpolygon points=%2730,47 48,65 30,83 12,65%27 fill=%27none%27 stroke=%27%23c41e15%27 stroke-width=%272.5%27/%3E %3Cpolygon points=%2730,52 43,65 30,78 17,65%27 fill=%27none%27 stroke=%27%23c41e15%27 stroke-width=%271.5%27/%3E %3Cpolygon points=%2730,56 39,65 30,74 21,65%27 fill=%27%23c41e15%27/%3E %3Cpolygon points=%2730,60 35,65 30,70 25,65%27 fill=%27%23ffffff%27/%3E %3Crect x=%2728.5%27 y=%2763.5%27 width=%273%27 height=%273%27 fill=%27%23c41e15%27/%3E %3C!-- Stepped Corner Diamond Finials --%3E %3Crect x=%2728%27 y=%2744%27 width=%274%27 height=%272.5%27 fill=%27%23c41e15%27/%3E %3Crect x=%2728%27 y=%2783.5%27 width=%274%27 height=%272.5%27 fill=%27%23c41e15%27/%3E %3Crect x=%278.5%27 y=%2763%27 width=%272.5%27 height=%274%27 fill=%27%23c41e15%27/%3E %3Crect x=%2749%27 y=%2763%27 width=%272.5%27 height=%274%27 fill=%27%23c41e15%27/%3E %3C!-- Flanking Half-Diamond Side Accents --%3E %3Cpolygon points=%275,56 12,65 5,74%27 fill=%27%23c41e15%27/%3E %3Cpolygon points=%2755,56 48,65 55,74%27 fill=%27%23c41e15%27/%3E %3C!-- Horizontal Divider Stripe --%3E %3Crect x=%275%27 y=%2787%27 width=%2750%27 height=%272%27 fill=%27%23c41e15%27/%3E %3C!-- Row of Traditional Chevron / Sawtooth Teeth (Danta Motifs) --%3E %3Cg fill=%27%23c41e15%27%3E %3Cpolygon points=%277,93 10,89 13,93%27/%3E %3Cpolygon points=%2715,93 18,89 21,93%27/%3E %3Cpolygon points=%2723,93 26,89 29,93%27/%3E %3Cpolygon points=%2731,93 34,89 37,93%27/%3E %3Cpolygon points=%2739,93 42,89 45,93%27/%3E %3Cpolygon points=%2747,93 50,89 53,93%27/%3E %3C/g%3E %3C!-- Horizontal Stripe Pair --%3E %3Crect x=%275%27 y=%2795%27 width=%2750%27 height=%273%27 fill=%27%23c41e15%27/%3E %3Crect x=%275%27 y=%27100%27 width=%2750%27 height=%271.5%27 fill=%27%23c41e15%27/%3E %3C!-- Repeating Diamond Chain (Miri Phool / Diamond Lattice) --%3E %3Cg fill=%27none%27 stroke=%27%23c41e15%27 stroke-width=%271.5%27%3E %3Cpolygon points=%2712,110 18,116 12,122 6,116%27/%3E %3Cpolygon points=%2724,110 30,116 24,122 18,116%27/%3E %3Cpolygon points=%2736,110 42,116 36,122 30,116%27/%3E %3Cpolygon points=%2748,110 54,116 48,122 42,116%27/%3E %3C/g%3E %3Crect x=%2710.5%27 y=%27114.5%27 width=%273%27 height=%273%27 fill=%27%23c41e15%27/%3E %3Crect x=%2722.5%27 y=%27114.5%27 width=%273%27 height=%273%27 fill=%27%23c41e15%27/%3E %3Crect x=%2734.5%27 y=%27114.5%27 width=%273%27 height=%273%27 fill=%27%23c41e15%27/%3E %3Crect x=%2746.5%27 y=%27114.5%27 width=%273%27 height=%273%27 fill=%27%23c41e15%27/%3E %3C!-- Bottom Heavy Horizontal Stripes (End Fringe Boundary) --%3E %3Crect x=%275%27 y=%27125%27 width=%2750%27 height=%271.5%27 fill=%27%23c41e15%27/%3E %3Crect x=%275%27 y=%27128%27 width=%2750%27 height=%272%27 fill=%27%23c41e15%27/%3E %3Crect x=%275%27 y=%27132%27 width=%2750%27 height=%275%27 fill=%27%23c41e15%27/%3E%3C/svg%3E");
-  background-repeat: repeat-y;
-  background-size: 60px 140px;
-  background-position: center top;
-  position: relative;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
-}
-
-.gamosa-panel-left {
-  border-right: 2px solid rgba(196, 30, 21, 0.6);
-}
-
-.gamosa-panel-right {
-  border-left: 2px solid rgba(196, 30, 21, 0.6);
-  transform: scaleX(-1);
-}
-
-.hero-frame-content {
-  flex: 1;
-  padding: 2.5rem 2rem;
+  padding: 0 1.5rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1652,16 +1665,16 @@ button { font-family: 'Outfit', sans-serif; }
 }
 
 @media (max-width: 640px) {
-  .hero-jappi-svg {
-    width: 180px;
-    height: 147px;
+  .hero-gamosa-banner {
+    height: 52px;
+    margin-bottom: 1.5rem;
   }
-  .gamosa-side-panel {
-    width: 28px;
-    background-size: 28px 65px;
+  .hero-jappi-img {
+    width: 170px;
+    height: 170px;
   }
-  .hero-frame-content {
-    padding: 2rem 0.8rem;
+  .hero-center-content {
+    padding: 0 1rem;
   }
 }
 
