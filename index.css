@@ -2,41 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
 
 :root {
-  --bg-dark: #0a0f0d;
-  --bg-gradient: linear-gradient(135deg, #0a0f0d 0%, #0d1a15 100%);
-  --surface: rgba(18, 38, 30, 0.65);
-  --surface-hover: rgba(26, 52, 45, 0.85);
+  --bg-dark: #080d0a;
+  --bg-gradient: radial-gradient(circle at 50% 0%, #13241b 0%, #080d0a 75%);
+  --surface: rgba(16, 32, 25, 0.72);
+  --surface-hover: rgba(24, 48, 38, 0.88);
   --surface-light: rgba(255, 255, 255, 0.05);
-  --primary: #e6c86a; /* Brightened Muga Silk Gold */
-  --primary-glow: rgba(230, 200, 106, 0.25);
-  --primary-dark: #b89a3a;
-  --text: #f7f4ef;
-  --text-muted: #95a39d;
-  --border: rgba(230, 200, 106, 0.15);
-  --accent-red: #a32a1d; 
+  --primary: #C8960C; /* Authentic Muga Silk Gold */
+  --primary-glow: rgba(200, 150, 12, 0.32);
+  --primary-dark: #9a7206;
+  --text: #f8f6f0;
+  --text-muted: #9baaa3;
+  --border: rgba(200, 150, 12, 0.22);
+  --accent-red: #b8251b; 
   --border-radius: 16px;
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Light Theme Variables (Parchment Aesthetic) */
+/* Light Theme Variables (Aged Parchment Aesthetic) */
 [data-theme="light"] {
-  --bg-dark: #fcf9f2; /* Warm parchment base */
-  --bg-gradient: linear-gradient(135deg, #fcf9f2 0%, #f0ead6 100%);
-  --surface: rgba(255, 255, 255, 0.85);
-  --surface-hover: rgba(245, 240, 225, 0.9);
+  --bg-dark: #fbf7ee; /* Warm aged parchment base */
+  --bg-gradient: linear-gradient(180deg, #fcf9f2 0%, #f4ede0 50%, #eae0cd 100%);
+  --surface: rgba(255, 252, 245, 0.92);
+  --surface-hover: rgba(246, 239, 224, 0.96);
   --surface-light: rgba(0, 0, 0, 0.03);
-  --primary: #c49a2b; /* Deeper gold for readability */
-  --primary-glow: rgba(196, 154, 43, 0.2);
-  --primary-dark: #9c7b22;
-  --text: #2c3e38; /* Deep rich forest green/black text */
-  --text-muted: #6e7a75;
-  --border: rgba(196, 154, 43, 0.2);
+  --primary: #C8960C; /* Rich Muga Silk Gold */
+  --primary-glow: rgba(200, 150, 12, 0.25);
+  --primary-dark: #8c6806;
+  --text: #24352f; /* Deep rich forest green/charcoal text */
+  --text-muted: #64736d;
+  --border: rgba(200, 150, 12, 0.28);
 }
 
 /* Base Styles & Typography */
 body {
-  background: var(--bg-dark);
-  background-image: var(--bg-gradient);
+  background-color: var(--bg-dark);
+  background-image: 
+    /* Dark Handwoven Assam Silk / Eri Loom Fabric Micro-Texture */
+    repeating-linear-gradient(0deg, rgba(200, 150, 12, 0.018) 0px, rgba(200, 150, 12, 0.018) 1px, transparent 1px, transparent 4px),
+    repeating-linear-gradient(90deg, rgba(200, 150, 12, 0.018) 0px, rgba(200, 150, 12, 0.018) 1px, transparent 1px, transparent 4px),
+    radial-gradient(ellipse at 50% 0%, rgba(20, 50, 36, 0.45) 0%, transparent 70%),
+    radial-gradient(circle at 85% 30%, rgba(200, 150, 12, 0.05) 0%, transparent 50%),
+    linear-gradient(180deg, #09120e 0%, #060a08 100%);
+  background-attachment: fixed;
   color: var(--text);
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
@@ -48,12 +55,34 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+[data-theme="light"] body {
+  background-color: #fbf7ee;
+  background-image:
+    /* Aged Parchment Organic Fibers & Warm Antiqued Paper Texture */
+    radial-gradient(circle at 50% 0%, rgba(200, 150, 12, 0.08) 0%, transparent 65%),
+    radial-gradient(ellipse at 90% 80%, rgba(184, 134, 11, 0.06) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, rgba(140, 100, 30, 0.015) 0px, rgba(140, 100, 30, 0.015) 1px, transparent 1px, transparent 6px),
+    repeating-linear-gradient(-45deg, rgba(140, 100, 30, 0.012) 0px, rgba(140, 100, 30, 0.012) 1px, transparent 1px, transparent 6px),
+    linear-gradient(180deg, #fcf9f2 0%, #f4ede0 50%, #eae0cd 100%);
+  background-attachment: fixed;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   color: var(--primary);
   margin-top: 0;
   line-height: 1.3;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55), 0 0 2px rgba(200, 150, 12, 0.25);
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+  text-shadow: 0 1px 3px rgba(44, 62, 56, 0.25), 0 2px 6px rgba(200, 150, 12, 0.15);
 }
 
 p {
@@ -66,7 +95,7 @@ p {
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
 }
 
 .ambient-glow {
@@ -294,7 +323,7 @@ nav a:hover::after, nav a.active::after {
   width: 100%;
   height: 9px;
   background-color: #faf7f0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='9' viewBox='0 0 28 9'%3E%3Cpath d='M0 0h28v9H0z' fill='%23faf7f0'/%3E%3Cpath d='M0 4.5L4.5 0h5L5 4.5 9.5 9h-5L0 4.5zm9.5 0L14 0h5l-4.5 4.5 4.5 4.5h-5L9.5 4.5zm9.5 0L23.5 0h5L24 4.5 28.5 9h-5L19 4.5z' fill='%23b8251b'/%3E%3Cpath d='M4.5 4.5l2.5-2.5 2.5 2.5-2.5 2.5zm9.5 0l2.5-2.5 2.5 2.5-2.5 2.5zm9.5 0l2.5-2.5 2.5 2.5-2.5 2.5z' fill='%23e6c86a'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='9' viewBox='0 0 28 9'%3E%3Cpath d='M0 0h28v9H0z' fill='%23faf7f0'/%3E%3Cpath d='M0 4.5L4.5 0h5L5 4.5 9.5 9h-5L0 4.5zm9.5 0L14 0h5l-4.5 4.5 4.5 4.5h-5L9.5 4.5zm9.5 0L23.5 0h5L24 4.5 28.5 9h-5L19 4.5z' fill='%23b8251b'/%3E%3Cpath d='M4.5 4.5l2.5-2.5 2.5 2.5-2.5 2.5zm9.5 0l2.5-2.5 2.5 2.5-2.5 2.5zm9.5 0l2.5-2.5 2.5 2.5-2.5 2.5z' fill='%23C8960C'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
   border-bottom: 1px solid rgba(184, 37, 27, 0.4);
   position: sticky;
@@ -307,26 +336,29 @@ nav a:hover::after, nav a.active::after {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
-/* Typography Classes */
+/* Typography Classes - Dramatic Assamese Heritage Editorial */
 .page-title {
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
   text-align: center;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1.5px;
+  line-height: 1.18;
+  color: var(--primary);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 20px var(--primary-glow);
 }
 
 @media (min-width: 768px) {
-  .page-title { font-size: 3.5rem; }
+  .page-title { font-size: clamp(3.2rem, 5.5vw, 4.4rem); }
 }
 
 .page-subtitle {
   text-align: center;
   color: var(--text-muted);
-  font-size: 1.1rem;
-  max-width: 650px;
-  margin: 0 auto 3rem auto;
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
   font-weight: 300;
+  line-height: 1.7;
 }
 
 /* General Layout Grids */
@@ -430,9 +462,9 @@ nav a:hover::after, nav a.active::after {
 .card {
   background: var(--surface);
   background-image: 
-    radial-gradient(ellipse at 10% 10%, rgba(230, 200, 106, 0.08) 0%, transparent 60%),
-    repeating-linear-gradient(45deg, rgba(230, 200, 106, 0.015) 0px, rgba(230, 200, 106, 0.015) 1px, transparent 1px, transparent 8px),
-    repeating-linear-gradient(-45deg, rgba(230, 200, 106, 0.015) 0px, rgba(230, 200, 106, 0.015) 1px, transparent 1px, transparent 8px);
+    radial-gradient(ellipse at 10% 10%, rgba(200, 150, 12, 0.08) 0%, transparent 60%),
+    repeating-linear-gradient(45deg, rgba(200, 150, 12, 0.015) 0px, rgba(200, 150, 12, 0.015) 1px, transparent 1px, transparent 8px),
+    repeating-linear-gradient(-45deg, rgba(200, 150, 12, 0.015) 0px, rgba(200, 150, 12, 0.015) 1px, transparent 1px, transparent 8px);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: var(--border-radius);
@@ -448,15 +480,15 @@ nav a:hover::after, nav a.active::after {
 
 [data-theme="light"] .card {
   background-image: 
-    radial-gradient(ellipse at 10% 10%, rgba(196, 154, 43, 0.06) 0%, transparent 60%),
-    repeating-linear-gradient(45deg, rgba(196, 154, 43, 0.02) 0px, rgba(196, 154, 43, 0.02) 1px, transparent 1px, transparent 8px),
-    repeating-linear-gradient(-45deg, rgba(196, 154, 43, 0.02) 0px, rgba(196, 154, 43, 0.02) 1px, transparent 1px, transparent 8px);
+    radial-gradient(ellipse at 10% 10%, rgba(200, 150, 12, 0.06) 0%, transparent 60%),
+    repeating-linear-gradient(45deg, rgba(200, 150, 12, 0.02) 0px, rgba(200, 150, 12, 0.02) 1px, transparent 1px, transparent 8px),
+    repeating-linear-gradient(-45deg, rgba(200, 150, 12, 0.02) 0px, rgba(200, 150, 12, 0.02) 1px, transparent 1px, transparent 8px);
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 50px rgba(0,0,0,0.4);
-  border-color: rgba(230, 200, 106, 0.4);
+  border-color: rgba(200, 150, 12, 0.4);
 }
 
 .card::before {
@@ -991,10 +1023,244 @@ button { font-family: 'Outfit', sans-serif; }
   color: #ffd700; /* Gold */
   font-size: 0.9rem;
   letter-spacing: 1px;
-  text-shadow: 0 0 5px rgba(230, 200, 106, 0.4);
+  text-shadow: 0 0 5px rgba(200, 150, 12, 0.4);
 }
 
-/* Authentic Assamese Section Separator */
+/* ==========================================================================
+   Hero Section - Authentic Assamese Heritage Architecture
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+  overflow: visible;
+}
+
+/* Floating Decorative Assamese Elements (Subtle Gold Opacity 0.15) */
+.hero-floating-elements {
+  position: absolute;
+  inset: -20px 0 -40px 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floating-elem {
+  position: absolute;
+  color: var(--primary);
+  opacity: 0.15;
+  transition: opacity 0.5s ease;
+  will-change: transform;
+}
+
+.floating-rhino {
+  top: 6%;
+  right: 2%;
+  width: 155px;
+  height: 98px;
+  animation: floatSlow 12s ease-in-out infinite alternate;
+}
+
+.floating-dhol {
+  top: 14%;
+  left: 2%;
+  width: 125px;
+  height: 92px;
+  animation: floatSlowRev 10s ease-in-out infinite alternate;
+}
+
+.floating-lotus {
+  width: 72px;
+  height: 72px;
+  animation: floatRotate 14s ease-in-out infinite alternate;
+}
+
+.lotus-left {
+  bottom: 6%;
+  left: 6%;
+}
+
+.lotus-right {
+  bottom: 8%;
+  right: 5%;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-16px) rotate(2deg); }
+}
+
+@keyframes floatSlowRev {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-14px) rotate(-2deg); }
+}
+
+@keyframes floatRotate {
+  0% { transform: translateY(0px) rotate(-4deg) scale(1); }
+  50% { transform: translateY(-12px) rotate(3deg) scale(1.06); }
+  100% { transform: translateY(0px) rotate(-4deg) scale(1); }
+}
+
+/* Illustrated Assamese Jappi Hat (~200x200px) */
+.hero-jappi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-jappi-svg {
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(0 0 18px rgba(200, 150, 12, 0.45));
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.4s ease;
+  animation: jappiGlow 4s ease-in-out infinite alternate;
+}
+
+.hero-jappi-svg:hover {
+  transform: scale(1.05) rotate(2deg);
+  filter: drop-shadow(0 0 28px rgba(200, 150, 12, 0.7));
+}
+
+@keyframes jappiGlow {
+  0% { filter: drop-shadow(0 0 14px rgba(200, 150, 12, 0.35)); }
+  100% { filter: drop-shadow(0 0 26px rgba(200, 150, 12, 0.65)); }
+}
+
+/* Gamosa-Inspired Decorative Frame Wrapping Hero Text */
+.hero-gamosa-frame {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto 2.5rem auto;
+  background: rgba(14, 25, 20, 0.78);
+  border-top: 3px solid #b8251b;
+  border-bottom: 3px solid #b8251b;
+  border-radius: 12px;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(200, 150, 12, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  overflow: hidden;
+}
+
+[data-theme="light"] .hero-gamosa-frame {
+  background: rgba(255, 253, 248, 0.94);
+  box-shadow: 0 12px 40px rgba(184, 134, 11, 0.18), 0 0 25px rgba(184, 37, 27, 0.08);
+}
+
+.gamosa-side-panel {
+  width: 44px;
+  flex-shrink: 0;
+  background-color: #faf6ee;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='64' viewBox='0 0 44 64'%3E%3Crect width='44' height='64' fill='%23faf6ee'/%3E%3Cpath d='M0 0h44v3H0zM0 61h44v3H0z' fill='%23b8251b'/%3E%3Cpath d='M2 6h40v2H2zM2 56h40v2H2z' fill='%23b8251b' opacity='0.5'/%3E%3Cpath d='M22 14 L34 26 L22 38 L10 26 Z' fill='%23b8251b'/%3E%3Cpath d='M22 19 L29 26 L22 33 L15 26 Z' fill='%23faf6ee'/%3E%3Cpath d='M22 23 L25 26 L22 29 L19 26 Z' fill='%23C8960C'/%3E%3Cpath d='M4 22 L10 26 L4 30 Z M40 22 L34 26 L40 30 Z' fill='%23b8251b'/%3E%3Cpath d='M22 42 L28 48 L22 54 L16 48 Z' fill='%23b8251b' opacity='0.7'/%3E%3Ccircle cx='22' cy='48' r='2' fill='%23C8960C'/%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  position: relative;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.gamosa-panel-left {
+  border-right: 2px solid rgba(184, 37, 27, 0.5);
+}
+
+.gamosa-panel-right {
+  border-left: 2px solid rgba(184, 37, 27, 0.5);
+  transform: scaleX(-1);
+}
+
+.hero-frame-content {
+  flex: 1;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .gamosa-side-panel {
+    width: 24px;
+    background-size: 24px auto;
+  }
+  .hero-frame-content {
+    padding: 2rem 1rem;
+  }
+}
+
+.hero-kicker-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 1rem;
+  background: rgba(200, 150, 12, 0.12);
+  border: 1px solid rgba(200, 150, 12, 0.3);
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.hero-kicker-badge .motif-glyph {
+  color: #b8251b;
+  font-size: 0.9rem;
+}
+
+.hero-title.page-title {
+  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0.4rem 0 1.2rem 0;
+  background: linear-gradient(135deg, #fff2cc 0%, #C8960C 50%, #9e7405 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 18px rgba(200, 150, 12, 0.35));
+}
+
+[data-theme="light"] .hero-title.page-title {
+  background: linear-gradient(135deg, #443004 0%, #C8960C 60%, #291d03 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(200, 150, 12, 0.25));
+}
+
+.hero-subtitle.page-subtitle {
+  font-size: clamp(1rem, 1.8vw, 1.18rem);
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Full-Width Traditional Assamese Geometric Section Dividers
+   ========================================================================== */
+.assamese-section-divider {
+  width: 100%;
+  max-width: 1100px;
+  margin: 3.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.assamese-divider-svg {
+  width: 100%;
+  height: 42px;
+  color: var(--primary);
+  filter: drop-shadow(0 0 10px var(--primary-glow));
+}
+
+/* Legacy Separator Support */
 .assamese-separator {
   display: flex;
   align-items: center;
@@ -1050,6 +1316,171 @@ button { font-family: 'Outfit', sans-serif; }
 .hero-assamese-motif:hover {
   filter: drop-shadow(0 0 14px var(--primary));
   transform: scale(1.03);
+}
+
+/* ==========================================================================
+   Featured Story Card: Ancient Assamese Sanchi Paat Manuscript / Scroll
+   ========================================================================== */
+.manuscript-card {
+  position: relative;
+  background: linear-gradient(145deg, #1f180f 0%, #15100a 50%, #1b140c 100%);
+  background-image: 
+    repeating-linear-gradient(0deg, rgba(200, 150, 12, 0.02) 0px, rgba(200, 150, 12, 0.02) 1px, transparent 1px, transparent 3px),
+    radial-gradient(ellipse at 15% 15%, rgba(200, 150, 12, 0.12) 0%, transparent 60%),
+    linear-gradient(145deg, #241c12 0%, #17110a 100%);
+  border: 1px solid rgba(200, 150, 12, 0.45);
+  border-radius: 12px;
+  padding: 2.2rem 2.2rem 2rem 2.2rem;
+  box-shadow: 
+    inset 0 0 35px rgba(200, 150, 12, 0.18),
+    inset 0 0 14px rgba(60, 35, 10, 0.65),
+    inset 0 0 3px rgba(25, 12, 4, 0.9),
+    0 16px 45px rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
+  overflow: visible !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+[data-theme="light"] .manuscript-card {
+  background: linear-gradient(145deg, #f7eed8 0%, #ebd8b4 100%);
+  background-image:
+    repeating-linear-gradient(0deg, rgba(140, 95, 20, 0.025) 0px, rgba(140, 95, 20, 0.025) 1px, transparent 1px, transparent 3px),
+    radial-gradient(ellipse at 15% 15%, rgba(200, 150, 12, 0.14) 0%, transparent 60%),
+    linear-gradient(145deg, #fcf4e2 0%, #ecd9b6 100%);
+  border: 1px solid rgba(184, 134, 11, 0.5);
+  box-shadow: 
+    inset 0 0 30px rgba(180, 130, 30, 0.22),
+    inset 0 0 12px rgba(120, 75, 15, 0.35),
+    0 14px 40px rgba(0, 0, 0, 0.15);
+}
+
+.manuscript-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(200, 150, 12, 0.7);
+  box-shadow: 
+    inset 0 0 45px rgba(200, 150, 12, 0.25),
+    inset 0 0 16px rgba(60, 35, 10, 0.8),
+    0 22px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Wax Seal Element in Top-Right Corner */
+.wax-seal {
+  position: absolute;
+  top: -14px;
+  right: -10px;
+  width: 56px;
+  height: 56px;
+  background: radial-gradient(circle at 35% 30%, #b8251b 0%, #80130b 65%, #520904 100%);
+  border-radius: 50%;
+  box-shadow: 
+    2px 5px 12px rgba(0, 0, 0, 0.65),
+    inset 1px 2px 3px rgba(255, 255, 255, 0.4),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.wax-seal:hover {
+  transform: scale(1.1) rotate(6deg);
+}
+
+.wax-seal-inner {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 215, 120, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.wax-seal-emblem {
+  font-size: 1.3rem;
+  color: #ffd866;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
+}
+
+.manuscript-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+  border-bottom: 1px dashed rgba(200, 150, 12, 0.4);
+  padding-bottom: 0.3rem;
+}
+
+.manuscript-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #fff1c7;
+  margin-bottom: 0.8rem;
+  line-height: 1.25;
+}
+
+[data-theme="light"] .manuscript-title {
+  color: #3b2803;
+}
+
+.manuscript-excerpt {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #cfd8d3;
+  margin-bottom: 1.4rem;
+  position: relative;
+  padding-left: 0.8rem;
+  border-left: 2px solid rgba(200, 150, 12, 0.5);
+}
+
+[data-theme="light"] .manuscript-excerpt {
+  color: #3f5049;
+}
+
+.manuscript-btn {
+  align-self: flex-start;
+  padding: 0.55rem 1.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: rgba(200, 150, 12, 0.15);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+}
+
+.manuscript-btn:hover {
+  background: var(--primary);
+  color: #000;
+  box-shadow: 0 0 16px var(--primary-glow);
+  transform: translateY(-2px);
+}
+
+/* Wisdom Card Heritage Styling */
+.wisdom-card {
+  background: var(--surface);
+  border: 1px solid rgba(200, 150, 12, 0.35);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.wisdom-card:hover {
+  border-color: var(--primary);
 }
 
 /* Authentic Cultural Heritage Footer */
